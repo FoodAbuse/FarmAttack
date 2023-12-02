@@ -1,0 +1,1 @@
+Drag whole folder for the new Farm Attack Project - GitIgnore file will make sure that libraries can't get pushed to save space

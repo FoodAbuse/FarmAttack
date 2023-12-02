@@ -1,1 +1,0 @@
-Drag whole folder for the oldFart Fart Attack Project (fart) - GitIgnore file will make sure that libraries can't get pushed to save space

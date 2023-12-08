@@ -1,0 +1,570 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.23f1 (9636b062134a) revision 9844400'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 32603 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.23f1-x86_64\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+N:/Documents/Git/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+52169
+Successfully changed project path to: N:/Documents/Git/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
+N:/Documents/Git/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 55.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.23f1 (9636b062134a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.23f1-x86_64/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path N:/Documents/Git/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4080 (ID=0x2704)
+    Vendor:   NVIDIA
+    VRAM:     16064 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1-x86_64/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1-x86_64/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.23f1-x86_64/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.23f1-x86_64/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.23f1-x86_64/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.003399 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 55.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.362 seconds
+Domain Reload Profiling:
+	ReloadAssembly (362ms)
+		BeginReloadAssembly (40ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (262ms)
+			LoadAssemblies (39ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (59ms)
+				TypeCache.Initialize (59ms)
+					TypeCache.ScanAssembly (58ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (14ms)
+			SetupLoadedEditorAssemblies (160ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (72ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003175 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image N:\Documents\Git\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image N:\Documents\Git\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 56.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.719 seconds
+Domain Reload Profiling:
+	ReloadAssembly (720ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (10ms)
+		EndReloadAssembly (587ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+				TypeCache.Initialize (155ms)
+					TypeCache.ScanAssembly (152ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (139ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Switching render pipeline 00000000000000000000000000000000 -> b70140ab00dd94240adc720185687aaa
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5173 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 36 unused Assets / (0.7 MB). Loaded Objects now: 5626.
+Memory consumption went from 0.79 GB to 0.79 GB.
+Total: 2.068000 ms (FindLiveObjects: 0.211900 ms CreateObjectMapping: 0.072500 ms MarkObjects: 1.602300 ms  DeleteObjects: 0.180300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 151184.471940 seconds.
+  path: Assets/DirtPile.prefab
+  artifactKey: Guid(5ae7fc35f85c18441b76f53ab55ed905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DirtPile.prefab using Guid(5ae7fc35f85c18441b76f53ab55ed905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f08ef27578f55ff4e6e21c96d2a8b99') in 0.164907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.698067 seconds.
+  path: Assets/Materials/Bullet.prefab
+  artifactKey: Guid(19c6bf1bf68d9974d8593c8273572262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bullet.prefab using Guid(19c6bf1bf68d9974d8593c8273572262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31340e61f6c3f1506fd38896f9c07fe3') in 0.014710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/New Material 3.mat
+  artifactKey: Guid(7be9909ae9b32f84d9f1e880cd2a66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 3.mat using Guid(7be9909ae9b32f84d9f1e880cd2a66fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872265ab370bdb8466ceb95c00230a7e') in 0.018933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Materials/New Material 2.mat
+  artifactKey: Guid(0b14d73705436f24b95af8cf29102d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 2.mat using Guid(0b14d73705436f24b95af8cf29102d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87491863755f080457136c5a81cd9769') in 0.010213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Materials/Jelly 3.mat
+  artifactKey: Guid(52b96f4265ff0684ea305dd3a945d8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 3.mat using Guid(52b96f4265ff0684ea305dd3a945d8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76f5d21042ae098565c8bcff53de153') in 0.011358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Materials/PlayerFlesh.mat
+  artifactKey: Guid(dbdab61710606654fbc9ce8a85a3033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PlayerFlesh.mat using Guid(dbdab61710606654fbc9ce8a85a3033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b172a753a413f552468107c19e19e314') in 0.011135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/Jelly 6.mat
+  artifactKey: Guid(80d3b6047d5091344933afe202ac934e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 6.mat using Guid(80d3b6047d5091344933afe202ac934e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e810e9ce7c64250b1de5a4b24354b8fd') in 0.010835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Materials/test.mat
+  artifactKey: Guid(82eaa1c7bab449247a9d2ea346c915ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/test.mat using Guid(82eaa1c7bab449247a9d2ea346c915ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f456f5fa8fdbe65b8b0aff55830e9c8') in 0.009517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Materials/Jelly.mat
+  artifactKey: Guid(82c5f28fcf412304981370759730baf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly.mat using Guid(82c5f28fcf412304981370759730baf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffac6f8e7884b137b2138623715d00bc') in 0.011338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Materials/Grass.mat
+  artifactKey: Guid(da6d57bd53237f64e834b11edd957888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass.mat using Guid(da6d57bd53237f64e834b11edd957888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29f0f9198a4358c5f1603a2e488da76') in 0.011437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/Jelly 2.mat
+  artifactKey: Guid(69d9b9077319e4b4b840abaa7c853f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 2.mat using Guid(69d9b9077319e4b4b840abaa7c853f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe6c284d185dc74e5d7ae59124c0533') in 0.009713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/Jelly 5.mat
+  artifactKey: Guid(610107f6b42e8714ca2efda156a47b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 5.mat using Guid(610107f6b42e8714ca2efda156a47b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0cc3e3669bb7f77a245ddbd241597bc') in 0.010100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/Jelly 1.mat
+  artifactKey: Guid(d394d6715e3e0c346b88ca84fa2da0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 1.mat using Guid(d394d6715e3e0c346b88ca84fa2da0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f413640880e997cc2c7aa1b26c31eb17') in 0.062099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Materials/Jelly 4.mat
+  artifactKey: Guid(85fdf0097eaf80f4c87d5c129ebad2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 4.mat using Guid(85fdf0097eaf80f4c87d5c129ebad2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6249717166061f856df3283d8d37639') in 0.009580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.210481 seconds.
+  path: Assets/Materials/Textured Materials/DirtMat.mat
+  artifactKey: Guid(4851336eaede5874ebfa428e8167f0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Textured Materials/DirtMat.mat using Guid(4851336eaede5874ebfa428e8167f0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4801dd8e8157944166a73f9cecb67ea0') in 0.014013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 233.064985 seconds.
+  path: Assets/FBX/BurgerSingleMat.fbx
+  artifactKey: Guid(b44aaf55136fcad40b697437bd8a4d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/BurgerSingleMat.fbx using Guid(b44aaf55136fcad40b697437bd8a4d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6134c0206fac3424fef7ba168a606b05') in 0.063761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/FBX/Donut.fbx
+  artifactKey: Guid(e2f0fc6cab791214da70d42200cf6151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/Donut.fbx using Guid(e2f0fc6cab791214da70d42200cf6151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24908151c2c94b07203d345ef44c178') in 0.014070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/FBX/crab.fbx
+  artifactKey: Guid(7e3be67cd0d51a045b6504426e58f36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/crab.fbx using Guid(7e3be67cd0d51a045b6504426e58f36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ac2369bf4bce0539a8a8c54424b1f8') in 0.222176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.034767 seconds.
+  path: Assets/FBX/BurgerSingleMat.fbx
+  artifactKey: Guid(b44aaf55136fcad40b697437bd8a4d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FBX/BurgerSingleMat.fbx using Guid(b44aaf55136fcad40b697437bd8a4d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149c4c0fbf5af3357f1277a9b957b5a1') in 0.037898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 349.857938 seconds.
+  path: Assets/Materials/Shaders
+  artifactKey: Guid(d6dc9c84f98d74b41b72aa6dd2c38f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders using Guid(d6dc9c84f98d74b41b72aa6dd2c38f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd234490500739200c3d28dbe933dd9fa') in 0.006277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.076138 seconds.
+  path: Assets/Materials/Shaders/New Folder
+  artifactKey: Guid(6dbcca97fb5467d479d544f7286004f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/New Folder using Guid(6dbcca97fb5467d479d544f7286004f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11937533f75de7ddd4252dfbadbcf226') in 0.005305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.732170 seconds.
+  path: Assets/Materials/Shaders/Shaders
+  artifactKey: Guid(c21f4999897e87d43b2a3dc2d6e01f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Shaders using Guid(c21f4999897e87d43b2a3dc2d6e01f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1003882a89394a907456d8d5795fbcb') in 0.001532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.227757 seconds.
+  path: Assets/Materials/Shaders/Shaders/V2.shadergraph
+  artifactKey: Guid(a3e340420f551634e89c3880f3fb415e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Shaders/V2.shadergraph using Guid(a3e340420f551634e89c3880f3fb415e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587055ea7be893036762a31d43d9b929') in 0.307784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.236270 seconds.
+  path: Assets/Materials/Shaders/Shaders/FarmAttackCore.shadergraph
+  artifactKey: Guid(974e659b5dc17934f960873d3d46154d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Shaders/FarmAttackCore.shadergraph using Guid(974e659b5dc17934f960873d3d46154d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813e32af38ef7e2fbb067850b43419ab') in 0.284711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.213774 seconds.
+  path: Assets/Materials/Images/BurgerTexture4k.png
+  artifactKey: Guid(f576572adb0daf247ba74b056f46aa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Images/BurgerTexture4k.png using Guid(f576572adb0daf247ba74b056f46aa12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ffb6cf6b98aceddd08346879a07ba7') in 0.059591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.954921 seconds.
+  path: Assets/Materials/Shaders/Shaders/SubGraphs
+  artifactKey: Guid(e702534d6f5ef8743aca0a97b996f88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Shaders/SubGraphs using Guid(e702534d6f5ef8743aca0a97b996f88f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b27a52e17b8f4a327eec09380e8e43') in 0.006061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.622847 seconds.
+  path: Assets/Materials/Shaders/Shaders/Gradients
+  artifactKey: Guid(d301f3e29f2c9b24ba2f45974d502dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Shaders/Gradients using Guid(d301f3e29f2c9b24ba2f45974d502dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b3f6481e112860482ad598b7041dba') in 0.005389 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003320 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image N:\Documents\Git\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image N:\Documents\Git\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.918 seconds
+Domain Reload Profiling:
+	ReloadAssembly (919ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (714ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+				TypeCache.Initialize (291ms)
+					TypeCache.ScanAssembly (288ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (141ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5054 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (339.9 KB). Loaded Objects now: 5735.
+Memory consumption went from 0.79 GB to 0.79 GB.
+Total: 1.998100 ms (FindLiveObjects: 0.195500 ms CreateObjectMapping: 0.068300 ms MarkObjects: 1.643600 ms  DeleteObjects: 0.089700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004229 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image N:\Documents\Git\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image N:\Documents\Git\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.710 seconds
+Domain Reload Profiling:
+	ReloadAssembly (710ms)
+		BeginReloadAssembly (81ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (570ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+				TypeCache.Initialize (189ms)
+					TypeCache.ScanAssembly (185ms)
+				ResolveRequiredComponents (8ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (123ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5052 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (340.9 KB). Loaded Objects now: 5739.
+Memory consumption went from 0.79 GB to 0.79 GB.
+Total: 1.914500 ms (FindLiveObjects: 0.196000 ms CreateObjectMapping: 0.074400 ms MarkObjects: 1.555100 ms  DeleteObjects: 0.088400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 295.193786 seconds.
+  path: Assets/Materials/ScytheHandle.mat
+  artifactKey: Guid(735a30c06cc84b34fad9c3f3b1155a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ScytheHandle.mat using Guid(735a30c06cc84b34fad9c3f3b1155a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa2f3cacce162c2d757e338b857039b') in 0.140145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.354275 seconds.
+  path: Assets/Materials/ScytheBlade.mat
+  artifactKey: Guid(14bcd6b28bb076a48aaee0b698b50d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ScytheBlade.mat using Guid(14bcd6b28bb076a48aaee0b698b50d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b16003a938e1497e2a1122847c0ace') in 0.012153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.049409 seconds.
+  path: Assets/Materials/Images/scytheColour.png
+  artifactKey: Guid(0d016713b42759b438801ae792062ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Images/scytheColour.png using Guid(0d016713b42759b438801ae792062ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13d8b118caf2a284eb148da4f2d0b34') in 0.012890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.762113 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/BakedLitDepthNormalsPass.hlsl
+  artifactKey: Guid(9604e389528d04ae39fe05a7b4212172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/BakedLitDepthNormalsPass.hlsl using Guid(9604e389528d04ae39fe05a7b4212172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf39af675db6567f9e2d610cb1e718d5') in 0.014111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/BakedLitMetaPass.hlsl
+  artifactKey: Guid(f31bf343921b848fa8e5cde15f1dbaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/BakedLitMetaPass.hlsl using Guid(f31bf343921b848fa8e5cde15f1dbaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf63ade455365df31a21259bb48e9afd') in 0.011619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007757 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/LitDepthNormalsPass.hlsl
+  artifactKey: Guid(d6641dcdedd1f422aa58ffec746e5342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/LitDepthNormalsPass.hlsl using Guid(d6641dcdedd1f422aa58ffec746e5342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91dbcb2f261cd8ec65de5b90165b281') in 0.004329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/LitGBufferPass.hlsl
+  artifactKey: Guid(92673cbb58cac8e4d8b5d044ce912dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/LitGBufferPass.hlsl using Guid(92673cbb58cac8e4d8b5d044ce912dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4256ee71ce5fa85e80dff18326840361') in 0.003817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/LitMetaPass.hlsl
+  artifactKey: Guid(dcf4e762d48204e33b575f8007e3d563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/LitMetaPass.hlsl using Guid(dcf4e762d48204e33b575f8007e3d563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cedf4ae24d8a5472adb8fc56749b3e25') in 0.004997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/LitInput.hlsl
+  artifactKey: Guid(c46f85bf266d7496d9b3659acfbdc711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/LitInput.hlsl using Guid(c46f85bf266d7496d9b3659acfbdc711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a12ca3f531c7f5685a7c3a3c93ecbec') in 0.004134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/Unity.RenderPipelines.Universal.Shaders.asmdef
+  artifactKey: Guid(b4517ec124862cb4bb3b8b27d72843a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/Unity.RenderPipelines.Universal.Shaders.asmdef using Guid(b4517ec124862cb4bb3b8b27d72843a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5149f017bdbfad8fdfe878e9c994c9') in 0.004642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/UnlitForwardPass.hlsl
+  artifactKey: Guid(574332cc54d34b3b96cd214f5febe833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/UnlitForwardPass.hlsl using Guid(574332cc54d34b3b96cd214f5febe833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7268ccfae02281f9115ceb17fe26f892') in 0.005536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitInput.hlsl
+  artifactKey: Guid(ad863d097888f42c6bcf419efb2946c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitInput.hlsl using Guid(ad863d097888f42c6bcf419efb2946c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8baad8c5babb297a86bb624f059e68cf') in 0.004434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/UnlitMetaPass.hlsl
+  artifactKey: Guid(138efaf7fb432134da44d5a4981a62ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/UnlitMetaPass.hlsl using Guid(138efaf7fb432134da44d5a4981a62ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353d41ef512a37814fc1bc14c53f90d2') in 0.004581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitForwardPass.hlsl
+  artifactKey: Guid(ee447e65526c7db45a978c16b28827a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Shaders/SimpleLitForwardPass.hlsl using Guid(ee447e65526c7db45a978c16b28827a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '209836e9305605734872d2ffae3ed7e3') in 0.004608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.880578 seconds.
+  path: Assets/Materials/ScytheBlade.mat
+  artifactKey: Guid(14bcd6b28bb076a48aaee0b698b50d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/ScytheBlade.mat using Guid(14bcd6b28bb076a48aaee0b698b50d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Farm Attack Shaders/FarmAttackCore': Couldn't open include file 'Assets/Materials/Shaders/Shaders/Includes/Lighting.hlsl'. at line 355
+
+Compiling Subshader: 0, Pass: Universal Forward, Vertex program with MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _RECIEVE_SHADOWS _SHADOWS_SOFT
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _SAMPLE_GI
+Shader warning in 'Farm Attack Shaders/FarmAttackCore': 'MAIN_LIGHT_CALCULATE_SHADOWS': macro redefinition. Previous definition found at :1. at /Documents/Git/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas/Library/PackageCache/com.unity.render-pipelines.universal@13.1.8/ShaderLibrary/Shadows.hlsl(11)
+
+Compiling Subshader: 0, Pass: Universal Forward, Vertex program with MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _RECIEVE_SHADOWS _SHADOWS_SOFT
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _SAMPLE_GI
+Shader error in 'Farm Attack Shaders/FarmAttackCore': Couldn't open include file 'Assets/Materials/Shaders/Shaders/Includes/Lighting.hlsl'. at line 355
+
+Compiling Subshader: 0, Pass: Universal Forward, Vertex program with MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _RECIEVE_SHADOWS _SHADOWS_SOFT
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _SAMPLE_GI
+Shader warning in 'Farm Attack Shaders/FarmAttackCore': 'MAIN_LIGHT_CALCULATE_SHADOWS': macro redefinition. Previous definition found at :1. at /Documents/Git/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas/Library/PackageCache/com.unity.render-pipelines.universal@13.1.8/ShaderLibrary/Shadows.hlsl(11)
+
+Compiling Subshader: 0, Pass: Universal Forward, Vertex program with MAIN_LIGHT_CALCULATE_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _RECIEVE_SHADOWS _SHADOWS_SOFT
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DOTS_INSTANCING_ON FOG_EXP FOG_EXP2 FOG_LINEAR INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _SAMPLE_GI
+ -> (artifact id: 'a49b9ba383841d788d33a6c4437976dc') in 0.039782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.701582 seconds.
+  path: Assets/Materials/Shaders/Includes/LightingV2.hlsl
+  artifactKey: Guid(606b08b4b0e092241be3f0af9f3201f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Includes/LightingV2.hlsl using Guid(606b08b4b0e092241be3f0af9f3201f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ef9b3b37cec1425ab16f62dcb70633') in 0.013303 seconds 

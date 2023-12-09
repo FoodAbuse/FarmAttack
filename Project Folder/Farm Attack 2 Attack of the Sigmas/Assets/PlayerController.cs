@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private float pitch = 0f;
 
     public Animator anim;
+    public Animator cameraMovementAnimator;
+    private float idleThreshold = 0f; // Adjust this value based on your preference
 
     void Start()
     {
@@ -26,6 +28,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        HeadMovement();
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -68,5 +72,20 @@ public class PlayerController : MonoBehaviour
 
         float moveMagnitude = new Vector2(horizontal, vertical).magnitude;
         anim.SetBool("Walking", moveMagnitude > 0);
+    }
+
+    public void HeadMovement()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        // Map the input to the range [0, 1] with 0 representing left, 0.5 representing idle, and 1 representing right
+        float mappedInput = Mathf.InverseLerp(-1f, 1f, horizontalInput);
+
+        // Ensure that mappedInput is never less than 0 or greater than 1
+        mappedInput = Mathf.Clamp01(mappedInput);
+
+
+        cameraMovementAnimator.SetFloat("Horizontal", mappedInput);
+
     }
 }

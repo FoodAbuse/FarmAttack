@@ -62,6 +62,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7500
   damage: 0
+  impactPrefab: {fileID: 150894640412286800, guid: 71a46165d30c20e46b2769d38cafb5b0, type: 3}
+  isPotato: 1
 --- !u!54 &4552152104648880387
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -77,7 +79,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1001 &5998684243523578024
 PrefabInstance:
   m_ObjectHideFlags: 0

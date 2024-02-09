@@ -16,7 +16,7 @@ public class weaponBehaviour : MonoBehaviour
     }
 
     GameManager gameManager;
-    Animator myAnim;
+    public Animator myAnim;
     public Animator handsAnim;
 
     public GameObject currentChosenAmmoType;
@@ -60,7 +60,7 @@ public class weaponBehaviour : MonoBehaviour
 
         if (!gameManager._CanAttack)
         {
-            myAnim.enabled = false;
+          //  myAnim.Play("Idle");
         }
 
     }
@@ -74,7 +74,6 @@ public class weaponBehaviour : MonoBehaviour
             index = (int)selectedAmmo;
             currentChosenAmmoType = ammoTypeList[index];
 
-
         }
     }
 
@@ -86,5 +85,9 @@ public class weaponBehaviour : MonoBehaviour
 
     }
 
+    public void selectedAmmoBehaviour()
+    {
+        myAnim.Play("Idle");
+    }
     
 }

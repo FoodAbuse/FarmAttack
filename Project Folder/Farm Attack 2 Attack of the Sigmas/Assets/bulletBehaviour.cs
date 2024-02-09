@@ -9,6 +9,9 @@ public class bulletBehaviour : MonoBehaviour
 
     Rigidbody rb;
 
+    public GameObject impactPrefab;
+    public bool isPotato;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,15 @@ public class bulletBehaviour : MonoBehaviour
         if(collision.gameObject.tag == "World")
         {
             Destroy(gameObject);
+        }
+
+        if(isPotato)
+        {
+
+            GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
+            Destroy(explode, 1);
+            Destroy(gameObject);
+
         }
     }
 }

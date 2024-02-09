@@ -23,6 +23,8 @@ public class UIHotwheelBehaviour : MonoBehaviour
     public void OnButtonPress()
     {
         WeaponBehaviour.SetAmmoType(myAmmoName);
+        FindObjectOfType<weaponBehaviour>().myAnim.Play("PlayerSwapAmmo");
+
     }
 
 

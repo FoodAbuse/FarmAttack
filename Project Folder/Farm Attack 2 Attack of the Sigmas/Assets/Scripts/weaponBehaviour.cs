@@ -4,43 +4,87 @@ using UnityEngine;
 
 public class weaponBehaviour : MonoBehaviour
 {
+    public enum AmmoType
+    {
+        Carrot,
+        Potato,
+        Mint,
+        Chilli,
+        Popcorn,
+        Beans
+
+    }
+
+    GameManager gameManager;
     Animator myAnim;
+    public Animator handsAnim;
 
+    public GameObject currentChosenAmmoType;
+    public Transform gunEnd;
 
-    // Temp - WIP Shotgun Testing
-    ShotgunCorn shotgunBhvr;
+    public AmmoType selectedAmmo;
+    public GameObject[] ammoTypeList;
+    int index;
 
     // Start is called before the first frame update
     void Start()
     {
+        selectedAmmo = AmmoType.Carrot;
+        gameManager = FindObjectOfType<GameManager>();
         myAnim = GetComponent<Animator>();
 
-        // Temp - WIP Shotgun Testing
-        shotgunBhvr = GetComponentInChildren<ShotgunCorn>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (gameManager._CanAttack)
         {
-            myAnim.Play("Shoot");
-            Camera.main.GetComponent<cameraShakeBehaviour>().ShakeCamera();
+            myAnim.enabled = true;
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                myAnim.Play("Shoot");
+                handsAnim.SetBool("PlayerIsShooting", true);
+
+                Camera.main.GetComponent<cameraShakeBehaviour>().ShakeCamera();
+
+            }
+            if (!Input.GetMouseButton(0))
+            {
+                handsAnim.SetBool("PlayerIsShooting", false);
+
+                myAnim.Play("Idle");
+            }
         }
-        if (Input.GetMouseButtonUp(0))
+
+        if (!gameManager._CanAttack)
         {
-            myAnim.Play("Idle");
+            myAnim.enabled = false;
         }
+
     }
 
-
-    // Temp - WIP Shotgun Testing
-    // deployed by animation event
-    public void Shoot()
+    public void SetAmmoType(string newAmmoType)
     {
-        if(shotgunBhvr != null)
+        if (System.Enum.TryParse(newAmmoType, out AmmoType parsedAmmoType))
         {
-            shotgunBhvr.Fire();
+            selectedAmmo = parsedAmmoType;
+
+            index = (int)selectedAmmo;
+            currentChosenAmmoType = ammoTypeList[index];
+
+
         }
     }
+
+
+    public void FireGun()
+    {
+
+        Instantiate(currentChosenAmmoType, gunEnd.position, transform.rotation);
+
+    }
+
+    
 }

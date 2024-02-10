@@ -44,7 +44,16 @@ public class weaponBehaviour : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
-                myAnim.Play("Shoot");
+                if (index == 4)
+                {
+                    myAnim.Play("ShootPopCorn");
+                }
+
+                if (index != 4)
+                {
+                    myAnim.Play("Shoot");
+                }
+
                 handsAnim.SetBool("PlayerIsShooting", true);
 
                 Camera.main.GetComponent<cameraShakeBehaviour>().ShakeCamera();
@@ -60,7 +69,7 @@ public class weaponBehaviour : MonoBehaviour
 
         if (!gameManager._CanAttack)
         {
-          //  myAnim.Play("Idle");
+            //  myAnim.Play("Idle");
         }
 
     }
@@ -89,5 +98,4 @@ public class weaponBehaviour : MonoBehaviour
     {
         myAnim.Play("Idle");
     }
-    
 }

@@ -29,7 +29,13 @@ public class bulletBehaviour : MonoBehaviour
     {
         if(collision.gameObject.tag == "World")
         {
-            Destroy(gameObject);
+            if(!isPotato)
+            {
+                GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
+                Destroy(explode, .25f);
+                Destroy(gameObject);
+
+            }
         }
 
         if(isPotato)
@@ -37,6 +43,7 @@ public class bulletBehaviour : MonoBehaviour
 
             GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
             Destroy(explode, 1);
+            
             Destroy(gameObject);
 
         }

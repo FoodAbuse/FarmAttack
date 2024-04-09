@@ -8,7 +8,6 @@ public class IceCreamHead : MonoBehaviour
     public Transform headTransform; // NPC's head transform
     public float maxAngle = 10f; // Maximum angle in degrees
     public float rotationSpeed;
-
     void Update()
     {
         // Calculate the direction vector from the NPC's head to the player

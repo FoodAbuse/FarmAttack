@@ -1,0 +1,243 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.23f1 (9636b062134a) revision 9844400'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\UnityStuff\2022.1.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52411
+Successfully changed project path to: F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
+F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 93.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.23f1 (9636b062134a)
+[Subsystems] Discovering subsystems at path F:/UnityStuff/2022.1.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 7800 XT (ID=0x747e)
+    Vendor:   ATI
+    VRAM:     16172 MB
+    Driver:   31.0.22030.2
+Initialize mono
+Mono path[0] = 'F:/UnityStuff/2022.1.23f1/Editor/Data/Managed'
+Mono path[1] = 'F:/UnityStuff/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/UnityStuff/2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56420
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/UnityStuff/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010259 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 86.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.574 seconds
+Domain Reload Profiling:
+	ReloadAssembly (575ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (385ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (78ms)
+				TypeCache.Initialize (78ms)
+					TypeCache.ScanAssembly (77ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (238ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012634 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 90.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.148 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1149ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (930ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+				TypeCache.Initialize (239ms)
+					TypeCache.ScanAssembly (236ms)
+				ResolveRequiredComponents (8ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (492ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5351 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (1.6 MB). Loaded Objects now: 5805.
+Memory consumption went from 0.91 GB to 0.91 GB.
+Total: 3.422900 ms (FindLiveObjects: 0.307200 ms CreateObjectMapping: 0.241500 ms MarkObjects: 2.562900 ms  DeleteObjects: 0.310700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6682.996477 seconds.
+  path: Assets/TestMenu.unity
+  artifactKey: Guid(f3a2ab6f0f23425488a7e9bb6093bfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestMenu.unity using Guid(f3a2ab6f0f23425488a7e9bb6093bfd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191fb8c75ce1cd89cb094044b803c29e') in 0.021420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 174.357269 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(e4154cee10853b84481cd094da7f2fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(e4154cee10853b84481cd094da7f2fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c51e75016474689c60aa4ef7fd43743') in 0.007098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.793589 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34d38e64147cdc42dc99a2362e0781c4') in 0.006512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.437867 seconds.
+  path: Assets/Scenes/SampleScene 1.unity
+  artifactKey: Guid(6000b7d60f771a14584b62c146690490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene 1.unity using Guid(6000b7d60f771a14584b62c146690490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a95d9eb5a0dfcc5e2ffbe6951b5b204') in 0.006317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.127433 seconds.
+  path: Assets/Scenes/MenuTest.unity
+  artifactKey: Guid(6000b7d60f771a14584b62c146690490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuTest.unity using Guid(6000b7d60f771a14584b62c146690490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f1c0720c6a4f60e25bf5f64774c2a8') in 0.006352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 193.216186 seconds.
+  path: Assets/Scenes/MenuTest.unity
+  artifactKey: Guid(6000b7d60f771a14584b62c146690490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuTest.unity using Guid(6000b7d60f771a14584b62c146690490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd953b212d47866670caa742bf0b8a14f') in 0.002281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 122.131571 seconds.
+  path: Assets/playerShirt.mat
+  artifactKey: Guid(a8dd31a3740933f43939c793a79336de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/playerShirt.mat using Guid(a8dd31a3740933f43939c793a79336de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733c8e7ba4d43a913a81ce1139a34cc5') in 0.252330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.913593 seconds.
+  path: Assets/PlayerShootPopCorn.anim
+  artifactKey: Guid(fb51e9211cd812743a7ced7f04e393a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerShootPopCorn.anim using Guid(fb51e9211cd812743a7ced7f04e393a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c62ec8a61153d1a05f8a736b0d9100f') in 0.010534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 227.172777 seconds.
+  path: Assets/Scenes/SampleScene/Main Camera Profile.asset
+  artifactKey: Guid(8837ca0eb05ee5c4bacb5a6f231c2503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/Main Camera Profile.asset using Guid(8837ca0eb05ee5c4bacb5a6f231c2503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa4b7f30c966da681f41b25c6598b48a') in 0.008862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.282085 seconds.
+  path: Assets/mrFarmer_Colour.png
+  artifactKey: Guid(34e4115cd88782440b1cec0aa8aacc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mrFarmer_Colour.png using Guid(34e4115cd88782440b1cec0aa8aacc69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fb882f8d424d854d1dd28b8ca74c00') in 0.131448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 91.871581 seconds.
+  path: Assets/TestNewPlayer_pde;.fbx
+  artifactKey: Guid(39d80fb0b91afb9499f66b4e93fec4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestNewPlayer_pde;.fbx using Guid(39d80fb0b91afb9499f66b4e93fec4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b77d27b9747ab55bd14c121fac783b') in 0.644000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.001467 seconds.
+  path: Assets/mrFarmer.fbx
+  artifactKey: Guid(c1cdfed1656817a4abc360af3524d803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mrFarmer.fbx using Guid(c1cdfed1656817a4abc360af3524d803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0d04fd4cd020965defda5cd2adda78') in 0.045872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.856418 seconds.
+  path: Assets/playerShirt.mat
+  artifactKey: Guid(a8dd31a3740933f43939c793a79336de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/playerShirt.mat using Guid(a8dd31a3740933f43939c793a79336de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84aa0bd765e57eee1439542cab3ad28c') in 0.015839 seconds 

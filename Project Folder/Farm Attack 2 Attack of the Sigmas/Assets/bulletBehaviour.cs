@@ -37,8 +37,19 @@ public class bulletBehaviour : MonoBehaviour
 
             }
         }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            if (!isPotato)
+            {
+                collision.transform.SendMessage("Flinch");
+                GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
+                Destroy(explode, .25f);
+                Destroy(gameObject);
 
-        if(isPotato)
+            }
+        }
+
+        if (isPotato)
         {
 
             GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);

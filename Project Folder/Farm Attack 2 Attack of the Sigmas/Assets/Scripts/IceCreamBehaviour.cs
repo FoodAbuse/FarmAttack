@@ -11,12 +11,13 @@ public class IceCreamBehaviour : MonoBehaviour
     public Transform gun1;
     public Transform gun2;
 
-    public Animator gun1Anim;
-    public Animator gun2Anim;
+   // public Animator gun1Anim;
+   // public Animator gun2Anim;
 
     public int ThrowForce;
 
     public NavMeshAgent myAgent;
+    public Animator anim;
     public Transform player;
 
     private void Start()
@@ -30,6 +31,9 @@ public class IceCreamBehaviour : MonoBehaviour
     {
         myAgent.SetDestination(player.position);
 
+        gun1.transform.LookAt(player);
+        gun2.transform.LookAt(player);
+
     }
 
     private System.Collections.IEnumerator ShootRoutine()
@@ -37,21 +41,22 @@ public class IceCreamBehaviour : MonoBehaviour
         while (true)
         {
             // Wait for 2.5 seconds
-            yield return new WaitForSeconds(2.5f);
-            gun1Anim.Play("Shoot");
+            yield return new WaitForSeconds(1.5f);
+          //  gun1Anim.Play("Shoot");
             GameObject projectile1 = Instantiate(bulletPrefab, gun1.position, gun1.rotation);
 
 
             Rigidbody rb1 = projectile1.GetComponent<Rigidbody>();
-
+            projectile1.transform.LookAt(player);
             rb1.AddForce(rb1.transform.forward * ThrowForce, ForceMode.Impulse);
 
             // Wait for another 2.5 seconds
-            yield return new WaitForSeconds(2.5f);
-            gun2Anim.Play("Shoot");
+            yield return new WaitForSeconds(1.5f);
+          //  gun2Anim.Play("Shoot");
 
             GameObject projectile2 = Instantiate(bulletPrefab, gun2.position, gun1.rotation);
 
+            projectile2.transform.LookAt(player);
 
             Rigidbody rb2 = projectile2.GetComponent<Rigidbody>();
 
@@ -59,5 +64,11 @@ public class IceCreamBehaviour : MonoBehaviour
         }
     }
 
-    
+    public void Flinch()
+    {
+        anim.Play("IceCreamFlinch");
+    }
+
+  
+
 }

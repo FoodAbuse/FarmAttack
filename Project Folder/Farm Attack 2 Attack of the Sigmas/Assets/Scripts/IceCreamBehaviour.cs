@@ -20,6 +20,9 @@ public class IceCreamBehaviour : MonoBehaviour
     public Animator anim;
     public Transform player;
 
+    public GameObject explodeGO;
+    public int health;
+
     private void Start()
     {
         // Start the shooting coroutine when the script starts
@@ -31,8 +34,12 @@ public class IceCreamBehaviour : MonoBehaviour
     {
         myAgent.SetDestination(player.position);
 
-        gun1.transform.LookAt(player);
-        gun2.transform.LookAt(player);
+        if (health <= 0)
+        {
+            Instantiate(explodeGO, transform.position, transform.rotation);
+            Destroy(explodeGO, 5);
+            Destroy(gameObject);
+        }
 
     }
 
@@ -64,11 +71,11 @@ public class IceCreamBehaviour : MonoBehaviour
         }
     }
 
-    public void Flinch()
+    public void TakeDamage()
     {
-        anim.Play("IceCreamFlinch");
+        health += -1;
     }
 
-  
+
 
 }

@@ -41,7 +41,7 @@ public class bulletBehaviour : MonoBehaviour
         {
             if (!isPotato)
             {
-                collision.transform.SendMessage("Flinch");
+                collision.transform.gameObject.SendMessage("TakeDamage");
                 GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
                 Destroy(explode, .25f);
                 Destroy(gameObject);
@@ -59,4 +59,6 @@ public class bulletBehaviour : MonoBehaviour
 
         }
     }
+
+    
 }

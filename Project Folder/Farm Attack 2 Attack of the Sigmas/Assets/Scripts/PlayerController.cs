@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
     public Animator cameraMovementAnimator;
+
+
+    public bool _isRunning;
     private float idleThreshold = 0f; // Adjust this value based on your preference
 
     void Start()
@@ -71,6 +74,15 @@ public class PlayerController : MonoBehaviour
 
         float moveMagnitude = new Vector2(horizontal, vertical).magnitude;
         anim.SetBool("Walking", moveMagnitude > 0);
+
+        if(currentSpeed == sprintSpeed)
+        {
+            _isRunning = true;
+        }
+        if (currentSpeed == walkSpeed)
+        {
+            _isRunning = false;
+        }
     }
 
     public void HeadMovement()

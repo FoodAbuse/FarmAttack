@@ -26,9 +26,12 @@ public class weaponBehaviour : MonoBehaviour
     public GameObject[] ammoTypeList;
     int index;
 
+
+    PlayerController playerController;
     // Start is called before the first frame update
     void Start()
     {
+        playerController = FindObjectOfType<PlayerController>();
         selectedAmmo = AmmoType.Carrot;
         gameManager = FindObjectOfType<GameManager>();
         myAnim = GetComponent<Animator>();
@@ -42,7 +45,7 @@ public class weaponBehaviour : MonoBehaviour
         {
             myAnim.enabled = true;
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !playerController._isRunning) // is stationary and shooting
             {
                 if (index == 4)
                 {
@@ -52,6 +55,9 @@ public class weaponBehaviour : MonoBehaviour
                 if (index != 4)
                 {
                     myAnim.Play("Shoot");
+
+                    myAnim.SetBool("isShooting", true);
+                    myAnim.SetBool("isRun", false);
                 }
 
                 handsAnim.SetBool("PlayerIsShooting", true);
@@ -59,11 +65,20 @@ public class weaponBehaviour : MonoBehaviour
                 Camera.main.GetComponent<cameraShakeBehaviour>().ShakeCamera();
 
             }
-            if (!Input.GetMouseButton(0))
+            if (!Input.GetMouseButton(0) && !playerController._isRunning) // not running or shooting
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
 
-                myAnim.Play("Idle");
+                myAnim.SetBool("isShooting", false);
+                myAnim.SetBool("isRun", false);
+
+            }
+            if (!Input.GetMouseButton(0) && playerController._isRunning) // is running
+            {
+                handsAnim.SetBool("PlayerIsShooting", false);
+
+                myAnim.SetBool("isShooting", false);
+                myAnim.SetBool("isRun", true);
             }
         }
 

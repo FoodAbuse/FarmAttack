@@ -5,77 +5,106 @@ using UnityEngine.AI;
 
 public class IceCreamBehaviour : MonoBehaviour
 {
-   
-    public GameObject bulletPrefab;
 
+    public GameObject bulletPrefab;
     public Transform gun1;
     public Transform gun2;
-
-   // public Animator gun1Anim;
-   // public Animator gun2Anim;
-
     public int ThrowForce;
 
     public NavMeshAgent myAgent;
-    public Animator anim;
     public Transform player;
+
+    public Animator anim;
+    public Transform torsoPivot; // The pivot for torso rotation
 
     public GameObject explodeGO;
     public int health;
 
+    private Rigidbody rb;
+
     private void Start()
     {
-        // Start the shooting coroutine when the script starts
+        rb = GetComponent<Rigidbody>();
         StartCoroutine(ShootRoutine());
     }
 
-
     private void Update()
     {
-        myAgent.SetDestination(player.position);
-
-        if (health <= 0)
-        {
-            Instantiate(explodeGO, transform.position, transform.rotation);
-            Destroy(explodeGO, 5);
-            Destroy(gameObject);
-        }
-
+        HandleMovement();
+        CheckHealth();
     }
 
-    private System.Collections.IEnumerator ShootRoutine()
+    private void LateUpdate()
+    {
+        LookAtPlayerWithRestrictions();
+    }
+
+    private void HandleMovement()
+    {
+        if (!myAgent.enabled) return;
+
+        myAgent.SetDestination(player.position);
+    }
+
+    private void CheckHealth()
+    {
+        if (health > 0) return;
+
+        Instantiate(explodeGO, transform.position, transform.rotation);
+        Destroy(explodeGO, 5);
+        Destroy(gameObject);
+    }
+
+    private void LookAtPlayerWithRestrictions()
+    {
+        Vector3 directionToPlayer = player.position - torsoPivot.position;
+        Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
+        Vector3 euler = lookRotation.eulerAngles;
+
+        // Calculate the desired rotation in local space
+        Quaternion localRotation = Quaternion.Inverse(transform.rotation) * Quaternion.Euler(euler);
+        Vector3 localEuler = localRotation.eulerAngles;
+
+        // Normalize and clamp the angles
+        localEuler.x = NormalizeAngle(localEuler.x);
+        localEuler.y = NormalizeAngle(localEuler.y);
+        localEuler.x = Mathf.Clamp(localEuler.x, -25f, 25f);
+        localEuler.y = Mathf.Clamp(localEuler.y, -45f, 45f);
+
+        // Apply the clamped rotation back in world space
+        Quaternion clampedLocalRotation = Quaternion.Euler(localEuler);
+        torsoPivot.rotation = transform.rotation * clampedLocalRotation;
+    }
+
+    private float NormalizeAngle(float angle)
+    {
+        while (angle > 180f) angle -= 360f;
+        while (angle < -180f) angle += 360f;
+        return angle;
+    }
+
+    private IEnumerator ShootRoutine()
     {
         while (true)
         {
-            // Wait for 2.5 seconds
             yield return new WaitForSeconds(1.25f);
-          //  gun1Anim.Play("Shoot");
-            GameObject projectile1 = Instantiate(bulletPrefab, gun1.position, gun1.rotation);
+            ShootFromGun(gun1);
 
-
-            Rigidbody rb1 = projectile1.GetComponent<Rigidbody>();
-            projectile1.transform.LookAt(player);
-            rb1.AddForce(rb1.transform.forward * ThrowForce, ForceMode.Impulse);
-
-            // Wait for another 2.5 seconds
             yield return new WaitForSeconds(1.25f);
-          //  gun2Anim.Play("Shoot");
-
-            GameObject projectile2 = Instantiate(bulletPrefab, gun2.position, gun1.rotation);
-
-            projectile2.transform.LookAt(player);
-
-            Rigidbody rb2 = projectile2.GetComponent<Rigidbody>();
-
-            rb2.AddForce(rb2.transform.forward * ThrowForce, ForceMode.Impulse);
+            ShootFromGun(gun2);
         }
+    }
+
+    private void ShootFromGun(Transform gun)
+    {
+        GameObject projectile = Instantiate(bulletPrefab, gun.position, gun.rotation);
+        projectile.transform.LookAt(player);
+        Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        rb.AddForce(rb.transform.forward * ThrowForce, ForceMode.Impulse);
     }
 
     public void TakeDamage()
     {
-        health += -1;
+        health -= 1;
     }
-
-
-
 }

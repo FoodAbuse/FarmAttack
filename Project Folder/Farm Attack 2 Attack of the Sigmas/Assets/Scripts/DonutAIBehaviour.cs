@@ -15,6 +15,8 @@ public class DonutAIBehaviour : MonoBehaviour
     private float hoverOffset;
     public NavMeshAgent navMeshAgent;
 
+    public Transform donutBody;
+
     void Start()
     {
         hoverOffset = Random.Range(0f, 2f * Mathf.PI);
@@ -22,6 +24,8 @@ public class DonutAIBehaviour : MonoBehaviour
 
     void Update()
     {
+        donutBody.Rotate(0, -4, 0, Space.Self);
+
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         if (distanceToPlayer < followDistance)

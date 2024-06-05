@@ -8,18 +8,14 @@ public class DonutAIBehaviour : MonoBehaviour
     public Transform player;
     public float hoverDistance = 3f;
     public float followDistance = 5f;
-    public float hoverAmplitude = 0.5f;
-    public float hoverFrequency = 1f;
     public float rotationSpeed = 5f;
     public Animator animator;
-    private float hoverOffset;
     public NavMeshAgent navMeshAgent;
 
     public Transform donutBody;
 
     void Start()
     {
-        hoverOffset = Random.Range(0f, 2f * Mathf.PI);
     }
 
     void Update()

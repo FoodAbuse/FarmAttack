@@ -5,6 +5,8 @@ using TMPro;
 
 public class plantPlotBehaviour : MonoBehaviour
 {
+  
+
     int myGrowTime; // Has to be set to the animation length of the growth
     float timer;
 
@@ -21,7 +23,7 @@ public class plantPlotBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -63,4 +65,14 @@ public class plantPlotBehaviour : MonoBehaviour
         }
 
     }
+
+    public void RecieveInformation(int index)
+    {
+        if (!_startGrowing)
+        {
+            chosenPlantPrefab = PlantPrefabs[index];
+            _startGrowing = true;
+        }
+    }
+
 }

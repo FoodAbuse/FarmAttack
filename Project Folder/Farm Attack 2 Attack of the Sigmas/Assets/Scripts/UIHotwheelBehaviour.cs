@@ -6,12 +6,17 @@ public class UIHotwheelBehaviour : MonoBehaviour
 {
     Animator anim;
     public weaponBehaviour WeaponBehaviour;
+    public playerSeedsBehaviour SeedsBehaviour;
     public string myAmmoName;
+    public bool _isForSeeds;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         WeaponBehaviour = FindObjectOfType<weaponBehaviour>();
+        SeedsBehaviour = FindObjectOfType<playerSeedsBehaviour>();
+
     }
 
     // Update is called once per frame
@@ -22,8 +27,17 @@ public class UIHotwheelBehaviour : MonoBehaviour
 
     public void OnButtonPress()
     {
-        WeaponBehaviour.SetAmmoType(myAmmoName);
-        FindObjectOfType<weaponBehaviour>().myAnim.Play("PlayerSwapAmmo");
+        if (!_isForSeeds)
+        {
+            WeaponBehaviour.SetAmmoType(myAmmoName);
+            FindObjectOfType<weaponBehaviour>().myAnim.Play("PlayerSwapAmmo");
+
+        }
+        if (_isForSeeds)
+        {
+            SeedsBehaviour.SetSeedType(myAmmoName);
+
+        }
 
     }
 

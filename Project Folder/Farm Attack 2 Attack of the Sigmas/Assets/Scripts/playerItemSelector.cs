@@ -10,7 +10,7 @@ public class playerItemSelector : MonoBehaviour
 
     public float itemSwapSpeed = 1f;
     private GameObject[] items;
-    private int currentItemIndex = 0; // 0: Scythe, 1: Gun, 2: Seeds
+    public int currentItemIndex = 0; // 0: Scythe, 1: Gun, 2: Seeds
     public Animator anim;
 
     private bool isSwapping = false;

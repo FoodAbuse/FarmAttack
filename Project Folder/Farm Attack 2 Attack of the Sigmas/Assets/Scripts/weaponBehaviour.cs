@@ -26,6 +26,8 @@ public class weaponBehaviour : MonoBehaviour
     public GameObject[] ammoTypeList;
     int index;
 
+    public AudioSource soundSource;
+    public AudioClip soundClip;
 
     PlayerController playerController;
     // Start is called before the first frame update
@@ -65,6 +67,7 @@ public class weaponBehaviour : MonoBehaviour
                 Camera.main.GetComponent<cameraShakeBehaviour>().ShakeCamera();
 
             }
+
             if (!Input.GetMouseButton(0) && !playerController._isRunning) // not running or shooting
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
@@ -104,13 +107,16 @@ public class weaponBehaviour : MonoBehaviour
 
     public void FireGun()
     {
+        Debug.Log("FireGun called");
+        soundSource.PlayOneShot(soundClip);
 
         Instantiate(currentChosenAmmoType, gunEnd.position, transform.rotation);
-
     }
 
     public void selectedAmmoBehaviour()
     {
         myAnim.Play("Idle");
     }
+
+   
 }

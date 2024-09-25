@@ -52,6 +52,9 @@ public class weaponBehaviour : MonoBehaviour
                 if (index == 4)
                 {
                     myAnim.Play("ShootPopCorn");
+
+                    myAnim.SetBool("isShootingPopcorn", true);
+                    myAnim.SetBool("isRun", false);
                 }
 
                 if (index != 4)
@@ -68,19 +71,22 @@ public class weaponBehaviour : MonoBehaviour
 
             }
 
-            if (!Input.GetMouseButton(0) && !playerController._isRunning) // not running or shooting
+            if (!Input.GetMouseButton(0) && !playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false) // not running or shooting
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
 
                 myAnim.SetBool("isShooting", false);
+
                 myAnim.SetBool("isRun", false);
 
             }
-            if (!Input.GetMouseButton(0) && playerController._isRunning) // is running
+            if (!Input.GetMouseButton(0) && playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false) // is running
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
 
                 myAnim.SetBool("isShooting", false);
+                myAnim.SetBool("isShootingPopcorn", false);
+
                 myAnim.SetBool("isRun", true);
             }
         }
@@ -118,5 +124,8 @@ public class weaponBehaviour : MonoBehaviour
         myAnim.Play("Idle");
     }
 
-   
+   public void TurnOffPopCorn()
+    {
+        myAnim.SetBool("isShootingPopcorn", false);
+    }
 }

@@ -11,11 +11,16 @@ public class GameManager : MonoBehaviour
 
     public bool _InHotBar;
     public bool _CanAttack;
+
+    [SerializeField]
+    private PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
         LockMouse();
         _CanAttack = true;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
     }
 
     // Update is called once per frame
@@ -60,6 +65,13 @@ public class GameManager : MonoBehaviour
 
     public void inHotBarInventory()
     {
+        // Hugo Addition - locking head rotation whilst selecting ammo type
+        if (player != null)
+        {
+            player.cameraFrozen = true;
+        }
+
+
         _CanAttack = false; // stops player from shooting
         Time.timeScale = .25f; // slows game speed
         _InHotBar = true;
@@ -68,6 +80,12 @@ public class GameManager : MonoBehaviour
     }
     public void inSeedsInventory()
     {
+        // Hugo Addition - locking head rotation whilst selecting seed type
+        if (player != null)
+        {
+            player.cameraFrozen = true;
+        }
+
         _CanAttack = false; // stops player from shooting
         Time.timeScale = .25f; // slows game speed
         _InHotBar = true;
@@ -76,6 +94,12 @@ public class GameManager : MonoBehaviour
     }
     public void ExitHotBarInventory()
     {
+        // Hugo Addition - unlocking head rotation after ammo is selected
+        if (player != null)
+        {
+            player.cameraFrozen = false;
+        }
+
         _CanAttack = true;
 
         Time.timeScale = 1;
@@ -85,6 +109,12 @@ public class GameManager : MonoBehaviour
     }
     public void ExitSeedsInventory()
     {
+        // Hugo Addition - unlocking head rotation after seed type is selected
+        if (player != null)
+        {
+            player.cameraFrozen = false;
+        }
+
         _CanAttack = true;
 
         Time.timeScale = 1;

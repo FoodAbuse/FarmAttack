@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
     public bool _isRunning;
     private float idleThreshold = 0f; // Adjust this value based on your preference
 
+
+    // Hugo's Testing - Freeze heat rotation when Radial Dial is Active
+    public bool cameraFrozen;
+
     void Start()
     {
      
@@ -60,14 +64,17 @@ public class PlayerController : MonoBehaviour
         }
 
         // Mouse Look
-        float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
-        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
+        if (!cameraFrozen)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
+            float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
 
-        pitch -= mouseY;
-        pitch = Mathf.Clamp(pitch, -90f, 90f);
+            pitch -= mouseY;
+            pitch = Mathf.Clamp(pitch, -90f, 90f);
 
-        transform.Rotate(Vector3.up * mouseX);
-        Camera.main.transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+            transform.Rotate(Vector3.up * mouseX);
+            Camera.main.transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+        }
 
         // Move the player using CharacterController
         characterController.Move((moveSpeed + new Vector3(0f, ySpeed, 0f)) * Time.deltaTime);
@@ -99,4 +106,6 @@ public class PlayerController : MonoBehaviour
         cameraMovementAnimator.SetFloat("Horizontal", mappedInput);
 
     }
+
+
 }

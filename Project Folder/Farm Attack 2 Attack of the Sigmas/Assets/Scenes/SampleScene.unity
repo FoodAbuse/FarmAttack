@@ -13119,7 +13119,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cedcc09b741fd6c4f88cf00a91631ace, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cedcc09b741fd6c4f88cf00a91631ace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34683,6 +34683,7 @@ MonoBehaviour:
   seedsHotBarGO: {fileID: 1968852143}
   _InHotBar: 0
   _CanAttack: 0
+  player: {fileID: 0}
 --- !u!4 &728481003
 Transform:
   m_ObjectHideFlags: 0
@@ -35501,7 +35502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 151d9d4709a05c843807d8fc0826da9c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 151d9d4709a05c843807d8fc0826da9c, type: 3}
       propertyPath: m_LocalScale.x
@@ -49395,6 +49396,7 @@ MonoBehaviour:
   anim: {fileID: 963194229}
   cameraMovementAnimator: {fileID: 1629683111}
   _isRunning: 0
+  cameraFrozen: 0
 --- !u!4 &1405611054
 Transform:
   m_ObjectHideFlags: 0
@@ -49410,7 +49412,7 @@ Transform:
   - {fileID: 1629683110}
   - {fileID: 2030017119}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -176.045, z: 0}
 --- !u!143 &1405611055
 CharacterController:
@@ -49786,7 +49788,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0a5a33d22c56a0840bdfb93dd8c78eaa, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0a5a33d22c56a0840bdfb93dd8c78eaa, type: 3}
       propertyPath: m_LocalScale.x
@@ -64959,7 +64961,7 @@ Transform:
   - {fileID: 8879528568436805311}
   - {fileID: 8594560197292462186}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -156.737, z: 0}
 --- !u!4 &543450651979774261
 Transform:
@@ -68003,6 +68005,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 342413573}
     m_Modifications:
+    - target: {fileID: 915381235602242656, guid: 8ee2b629975bac54ca14f5935d8a2d25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e694981a1acf214da47232eb5379295, type: 2}
     - target: {fileID: 3399793684204538439, guid: 8ee2b629975bac54ca14f5935d8a2d25, type: 3}
       propertyPath: m_Name
       value: Cropanator
@@ -68063,6 +68069,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.021111965
       objectReference: {fileID: 0}
+    - target: {fileID: 4266840291169403117, guid: 8ee2b629975bac54ca14f5935d8a2d25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e694981a1acf214da47232eb5379295, type: 2}
     - target: {fileID: 5998334631992286323, guid: 8ee2b629975bac54ca14f5935d8a2d25, type: 3}
       propertyPath: m_Icon
       value: 
@@ -70663,7 +70673,7 @@ Transform:
   - {fileID: 751087332357429888}
   - {fileID: 1933058704}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7341522329195445571
 Animator:

@@ -5,9 +5,16 @@ using UnityEngine.AI;
 
 public class MarshmellowAIBehaviour : MonoBehaviour
 {
-    public Transform player;
+    public GameObject vomitGO;
 
+    public Transform player;
+    public Transform vomitPos;
+    public int minVomitDistance;
+    public int maxVomitDistance;
+    float timeBetweenVomit;
     NavMeshAgent myAgent;
+
+    float distanceFromPlayer;
 
     void Start()
     {
@@ -16,11 +23,16 @@ public class MarshmellowAIBehaviour : MonoBehaviour
 
     void Update()
     {
+        distanceFromPlayer = Vector3.Distance(transform.position, player.position);
         myAgent.SetDestination(player.position);
+        timeBetweenVomit += Time.deltaTime;
+        if(distanceFromPlayer >= minVomitDistance && distanceFromPlayer <= maxVomitDistance && timeBetweenVomit > 2)
+        {
+
+            Instantiate(vomitGO, vomitPos.position, vomitPos.rotation);
+            timeBetweenVomit = 0;
+        }
     }
 
-    void FixedUpdate()
-    {
-
-    }
+ 
 }

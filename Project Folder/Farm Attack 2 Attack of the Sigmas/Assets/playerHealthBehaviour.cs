@@ -8,7 +8,9 @@ public class playerHealthBehaviour : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth; 
     public Image healthSlider;
-    public TMP_Text healthText; 
+    public TMP_Text healthText;
+
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -49,4 +51,12 @@ public class playerHealthBehaviour : MonoBehaviour
     {
         return currentHealth <= 0;
     }
+
+    public void TakeDamage(int TakeDamageAmount)
+    {
+        anim.Play("DamageUI");
+        currentHealth += -TakeDamageAmount;
+
+    }
+
 }

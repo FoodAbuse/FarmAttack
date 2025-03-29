@@ -5,16 +5,18 @@ using UnityEngine.AI;
 
 public class burgerEnemyController : MonoBehaviour
 {
-    public Transform player; // Reference to the player GameObject
-    public float followDistance = 5f; // Distance at which the enemy starts following the player
-    public float followSpeed = 3f; // Speed of normal following
-    public float rollSpeed = 6f; // Speed of rolling when player is far away
-    public Animator animator; // Reference to the Animator component
-    public bool isRolling = false; // Flag to indicate if the burger is currently rolling
-    public float returnToNormalDistance = 2f; // Distance threshold to return to normal behavior
+    public Transform player;
+    public float followDistance = 5f;
+    public float followSpeed = 3f;
+    public float rollSpeed = 6f;
+    public float attackDistance = 1.5f;
+    public Animator animator;
+    public float returnToNormalDistance = 2f;
 
     private NavMeshAgent agent;
-    private bool isFollowing = false;
+    public bool isFollowing = false;
+    public bool isAttacking = false;
+    public bool isRolling = false;
 
     void Start()
     {
@@ -23,52 +25,74 @@ public class burgerEnemyController : MonoBehaviour
 
     void Update()
     {
-            
-
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // Check if the player is within follow distance
-        if (distanceToPlayer <= followDistance)
+        if (distanceToPlayer <= attackDistance && !isAttacking)
         {
-            isFollowing = true;
-            agent.speed = followSpeed;
-            agent.SetDestination(player.position);
+            Attack();
+        }
+        else if (distanceToPlayer <= followDistance && !isAttacking)
+        {
+            FollowPlayer();
         }
         else
         {
-            isFollowing = false;
             Roll();
         }
 
-        // Update animator parameters based on rolling state
         animator.SetBool("IsRolling", isRolling);
         animator.SetBool("IsFollowing", isFollowing);
+        animator.SetBool("IsAttacking", isAttacking);
 
-        // Rotate the burger mesh towards the direction it's heading
         RotateTowardsDirection(agent.velocity.normalized);
 
-        // Check if the player is close enough to return to normal behavior
         if (distanceToPlayer <= returnToNormalDistance)
         {
             isRolling = false;
+            animator.SetBool("IsRolling", false);
+
         }
     }
 
-    void RotateTowardsDirection(Vector3 direction)
+    void FollowPlayer()
     {
-        // Calculate the rotation needed to face the direction
-        Quaternion targetRotation = Quaternion.LookRotation(direction);
-        // Apply the rotation to the burger mesh
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
+        isFollowing = true;
+        agent.speed = followSpeed;
+        agent.SetDestination(player.position);
     }
 
     void Roll()
     {
         isRolling = true;
-        // Set rolling speed
         agent.speed = rollSpeed;
-
-        // Move directly towards the player
         agent.SetDestination(player.position);
+    }
+
+    void Attack()
+    {
+        isAttacking = true;
+        agent.isStopped = true;
+        StartCoroutine(EndAttack());
+    }
+
+    IEnumerator EndAttack()
+    {
+        yield return new WaitForSeconds(1.5f);
+        isAttacking = false;
+        agent.isStopped = false;
+
+        if (Vector3.Distance(transform.position, player.position) > attackDistance)
+        {
+            isFollowing = true;
+        }
+    }
+
+    void RotateTowardsDirection(Vector3 direction)
+    {
+        if (direction != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
+        }
     }
 }

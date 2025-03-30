@@ -14,9 +14,9 @@ public class burgerEnemyController : MonoBehaviour
     public float returnToNormalDistance = 2f;
 
     private NavMeshAgent agent;
-    public bool isFollowing = false;
-    public bool isAttacking = false;
-    public bool isRolling = false;
+    public bool isFollowing;
+    public bool isAttacking;
+    public bool isRolling;
 
     void Start()
     {
@@ -77,7 +77,7 @@ public class burgerEnemyController : MonoBehaviour
 
     IEnumerator EndAttack()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3);
         isAttacking = false;
         agent.isStopped = false;
 

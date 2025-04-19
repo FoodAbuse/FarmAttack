@@ -15,7 +15,7 @@ F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52435
+63321
 Successfully changed project path to: F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
 F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 79.18 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.23f1 (9636b062134a)
 [Subsystems] Discovering subsystems at path F:/UnityStuff/2022.1.23f1/Editor/Data/Resources/UnitySubsystems
@@ -63,53 +63,270 @@ Initialize mono
 Mono path[0] = 'F:/UnityStuff/2022.1.23f1/Editor/Data/Managed'
 Mono path[1] = 'F:/UnityStuff/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'F:/UnityStuff/2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56492
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/UnityStuff/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007276 seconds.
+Registered in 0.007000 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.743 seconds
+- Completed reload, in  0.476 seconds
 Domain Reload Profiling:
-	ReloadAssembly (743ms)
-		BeginReloadAssembly (107ms)
+	ReloadAssembly (476ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (391ms)
-			LoadAssemblies (103ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (314ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (133ms)
-				TypeCache.Initialize (132ms)
-					TypeCache.ScanAssembly (131ms)
+			SetupTypeCache (69ms)
+				TypeCache.Initialize (69ms)
+					TypeCache.ScanAssembly (68ms)
 				ResolveRequiredComponents (0ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (192ms)
+			RebuildScriptCaches (15ms)
+			SetupLoadedEditorAssemblies (189ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (70ms)
+				RefreshPlugins (74ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010437 seconds.
+Registered in 0.011065 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 68.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 70.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.286 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1287ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (1109ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (238ms)
+				TypeCache.Initialize (231ms)
+					TypeCache.ScanAssembly (227ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (708ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (399ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5492 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (1.6 MB). Loaded Objects now: 5950.
+Memory consumption went from 0.93 GB to 0.93 GB.
+Total: 2.982400 ms (FindLiveObjects: 0.292100 ms CreateObjectMapping: 0.086300 ms MarkObjects: 2.300000 ms  DeleteObjects: 0.303400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 33905.663854 seconds.
+  path: Assets/TestColourfulTree.prefab
+  artifactKey: Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestColourfulTree.prefab using Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce78d679f47952d26ef722fbce2265df') in 0.236211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.366403 seconds.
+  path: Assets/Prefabs/Trees/tree1.fbx
+  artifactKey: Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.fbx using Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03a59c1c6c51867a9cdc57a657515e9b') in 0.124636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Trees/tree2.prefab
+  artifactKey: Guid(3cb639e1985e0ac4990732dc8353f556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree2.prefab using Guid(3cb639e1985e0ac4990732dc8353f556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0822321d36ae809b3f672ff9040f2d5c') in 0.034547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 129.705040 seconds.
+  path: Assets/Prefabs/Trees/tree1.fbx
+  artifactKey: Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.fbx using Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ea7a8a2310ad6b1c2ff32e2c526442') in 0.067944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.769997 seconds.
+  path: Assets/Prefabs/Trees/tree1.fbx
+  artifactKey: Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.fbx using Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53c19fdcadae63f79db6a4b58e90aa3') in 0.199923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Trees/tree3.prefab
+  artifactKey: Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree3.prefab using Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe9ed801b779370960655058db8da22') in 0.032918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.488354 seconds.
+  path: Assets/Prefabs/Trees/tree1.fbx
+  artifactKey: Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.fbx using Guid(9baf7ddf2d562774798b4476aa24956b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59349a87edc8e1453244b85c4603326a') in 0.052164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Trees/tree3.prefab
+  artifactKey: Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree3.prefab using Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd17209dee16c1541740ecb28eeeb53') in 0.017557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.126672 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73a86cf048f6f4109b3e940e7c5be27') in 0.038208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.580949 seconds.
+  path: Assets/TestColourfulTree.prefab
+  artifactKey: Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestColourfulTree.prefab using Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eb2b58672057782dd7f6dd68539ba3') in 0.036950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.897774 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb438a393fa4983c69bc06eacd70e3d3') in 0.022141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.583695 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a28a6c026421f5111f219af00d7813') in 0.040107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.614615 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3dd89db6746535d307e862685af724') in 0.034146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.686008 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b61e6e625e47c366c69de15baa45dea') in 0.039262 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009433 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.839 seconds
+Domain Reload Profiling:
+	ReloadAssembly (840ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (642ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+				TypeCache.Initialize (180ms)
+					TypeCache.ScanAssembly (175ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6007.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.664900 ms (FindLiveObjects: 0.278200 ms CreateObjectMapping: 0.106000 ms MarkObjects: 2.055600 ms  DeleteObjects: 0.224400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 122.472360 seconds.
+  path: Assets/TestColourfulTree.prefab
+  artifactKey: Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestColourfulTree.prefab using Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f2694794c44e91673ebfb0b0082f1d') in 0.134923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.326056 seconds.
+  path: Assets/Materials/GunMats/BarkMaterial.mat
+  artifactKey: Guid(f2f61c3fcb2ba144db257fc204337919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/BarkMaterial.mat using Guid(f2f61c3fcb2ba144db257fc204337919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdf16eb248859115774fcc1dac8f603') in 0.111154 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008158 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
@@ -138,46 +355,263 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.258 seconds
+- Completed reload, in  0.854 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1258ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (653ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+				TypeCache.Initialize (176ms)
+					TypeCache.ScanAssembly (171ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6084.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.278700 ms (FindLiveObjects: 0.329500 ms CreateObjectMapping: 0.108400 ms MarkObjects: 2.593600 ms  DeleteObjects: 0.246600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009855 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (850ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (1078ms)
-			LoadAssemblies (103ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (651ms)
+			LoadAssemblies (96ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (402ms)
-				TypeCache.Initialize (395ms)
-					TypeCache.ScanAssembly (391ms)
+			SetupTypeCache (184ms)
+				TypeCache.Initialize (177ms)
+					TypeCache.ScanAssembly (173ms)
 				ResolveRequiredComponents (7ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (502ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (300ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (68ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (266ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5492 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.6 MB). Loaded Objects now: 5950.
-Memory consumption went from 0.93 GB to 0.93 GB.
-Total: 3.188400 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.099400 ms MarkObjects: 2.473800 ms  DeleteObjects: 0.368800 ms)
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6089.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.736600 ms (FindLiveObjects: 0.279400 ms CreateObjectMapping: 0.099800 ms MarkObjects: 2.100500 ms  DeleteObjects: 0.256300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009183 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Domain Reload Profiling:
+	ReloadAssembly (865ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (661ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+				TypeCache.Initialize (181ms)
+					TypeCache.ScanAssembly (176ms)
+				ResolveRequiredComponents (9ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (301ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6094.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.049400 ms (FindLiveObjects: 0.310200 ms CreateObjectMapping: 0.125300 ms MarkObjects: 2.401100 ms  DeleteObjects: 0.211800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008903 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Domain Reload Profiling:
+	ReloadAssembly (879ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (673ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+				TypeCache.Initialize (181ms)
+					TypeCache.ScanAssembly (176ms)
+				ResolveRequiredComponents (8ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (315ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (157ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6099.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.940800 ms (FindLiveObjects: 0.310300 ms CreateObjectMapping: 0.105900 ms MarkObjects: 2.285300 ms  DeleteObjects: 0.238400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -191,64 +625,342 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 37551.209291 seconds.
-  path: Assets/HealthBar.controller
-  artifactKey: Guid(d153833ee88da564cb255ac3cb7c4fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HealthBar.controller using Guid(d153833ee88da564cb255ac3cb7c4fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2c7643479581881de0245759eaac32') in 0.040919 seconds 
+  Time since last request: 914.402551 seconds.
+  path: Assets/Materials/Grass/GrassPrefab.prefab
+  artifactKey: Guid(b4fed30d418dbcc4691b22bdb6037e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass/GrassPrefab.prefab using Guid(b4fed30d418dbcc4691b22bdb6037e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dafbc228f936e590cd7f302d5985ec5') in 0.163024 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.962532 seconds.
-  path: Assets/TakeDamageUIAnim.anim
-  artifactKey: Guid(190f640936f3c2f4d83b3ece89dbd693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TakeDamageUIAnim.anim using Guid(190f640936f3c2f4d83b3ece89dbd693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebf94ff5331172d0b7c4edb80568ebda') in 0.009185 seconds 
+  Time since last request: 15.849045 seconds.
+  path: Assets/Materials/Grass/GrassPrefab2.prefab
+  artifactKey: Guid(968333302ff559143b4e9bbeabe27266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass/GrassPrefab2.prefab using Guid(968333302ff559143b4e9bbeabe27266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff0eaff22e99ace6378047f618e2b98') in 0.044260 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007840 seconds.
+Registered in 0.008576 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
 Mono: successfully reloaded assembly
-- Completed reload, in  0.868 seconds
+- Completed reload, in  0.846 seconds
 Domain Reload Profiling:
-	ReloadAssembly (868ms)
-		BeginReloadAssembly (123ms)
+	ReloadAssembly (847ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (648ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+				TypeCache.Initialize (178ms)
+					TypeCache.ScanAssembly (173ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6143.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.016400 ms (FindLiveObjects: 0.310900 ms CreateObjectMapping: 0.107500 ms MarkObjects: 2.363200 ms  DeleteObjects: 0.234200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008459 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (849ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (650ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+				TypeCache.Initialize (172ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (304ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6148.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.231800 ms (FindLiveObjects: 0.331300 ms CreateObjectMapping: 0.157100 ms MarkObjects: 2.453900 ms  DeleteObjects: 0.288700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1395.738245 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9996347947fddc203986ac072e4d287') in 0.137157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.648575 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4dd8bc851a932ff36141d8fa442bf5') in 0.041227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.632480 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121eba39b1642c79b9aef8dae36b66f9') in 0.021159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.105270 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea562ea149f6cab777c7450237c8d62') in 0.023064 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008856 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.853 seconds
+Domain Reload Profiling:
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (652ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+				TypeCache.Initialize (177ms)
+					TypeCache.ScanAssembly (172ms)
+				ResolveRequiredComponents (8ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (300ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6192.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.130000 ms (FindLiveObjects: 0.355700 ms CreateObjectMapping: 0.118500 ms MarkObjects: 2.436600 ms  DeleteObjects: 0.218500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008202 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.848 seconds
+Domain Reload Profiling:
+	ReloadAssembly (848ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (669ms)
-			LoadAssemblies (94ms)
+		EndReloadAssembly (651ms)
+			LoadAssemblies (97ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (193ms)
-				TypeCache.Initialize (186ms)
-					TypeCache.ScanAssembly (181ms)
+			SetupTypeCache (183ms)
+				TypeCache.Initialize (176ms)
+					TypeCache.ScanAssembly (172ms)
 				ResolveRequiredComponents (7ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (321ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (296ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 5956.
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6197.
 Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.570200 ms (FindLiveObjects: 0.252900 ms CreateObjectMapping: 0.088700 ms MarkObjects: 2.013200 ms  DeleteObjects: 0.214900 ms)
+Total: 3.065500 ms (FindLiveObjects: 0.284800 ms CreateObjectMapping: 0.101800 ms MarkObjects: 2.455200 ms  DeleteObjects: 0.223000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -262,14 +974,91 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.297768 seconds.
-  path: Assets/TakeDamageUIAnim.anim
-  artifactKey: Guid(190f640936f3c2f4d83b3ece89dbd693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TakeDamageUIAnim.anim using Guid(190f640936f3c2f4d83b3ece89dbd693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6085a5ca8ba7663e23c733279f51f8b2') in 0.013696 seconds 
+  Time since last request: 583.749811 seconds.
+  path: Assets/Materials/Grass/GrassPrefab.prefab
+  artifactKey: Guid(b4fed30d418dbcc4691b22bdb6037e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass/GrassPrefab.prefab using Guid(b4fed30d418dbcc4691b22bdb6037e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7fe999e7d746ac50fe76b1e96ada424') in 0.130223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 151.567938 seconds.
+  path: Assets/Settings/NewLayer.terrainlayer
+  artifactKey: Guid(d1fe0cc193127d64ab4e78b46b47401d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/NewLayer.terrainlayer using Guid(d1fe0cc193127d64ab4e78b46b47401d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd424aee3d152cb503c9cb7ee97df90') in 0.016502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.714921 seconds.
+  path: Assets/NewLayer.terrainlayer
+  artifactKey: Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer.terrainlayer using Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72272c176fcc95708400b6d385c91e0') in 0.010605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.921240 seconds.
+  path: Assets/NewLayer.terrainlayer
+  artifactKey: Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer.terrainlayer using Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4284a3e267533e1d6957a49dc0905e') in 0.009420 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008215 seconds.
+Registered in 0.009806 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Domain Reload Profiling:
+	ReloadAssembly (866ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (664ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+				TypeCache.Initialize (173ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (143ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6245.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.652100 ms (FindLiveObjects: 0.281500 ms CreateObjectMapping: 0.099000 ms MarkObjects: 2.042000 ms  DeleteObjects: 0.228500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008531 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -302,91 +1091,6 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 (Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
 
-Mono: successfully reloaded assembly
-- Completed reload, in  0.831 seconds
-Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (119ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (635ms)
-			LoadAssemblies (95ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
-				TypeCache.Initialize (175ms)
-					TypeCache.ScanAssembly (170ms)
-				ResolveRequiredComponents (7ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (301ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (149ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 5961.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 3.151900 ms (FindLiveObjects: 0.448700 ms CreateObjectMapping: 0.131300 ms MarkObjects: 2.315800 ms  DeleteObjects: 0.255300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009914 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
 Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
@@ -405,102 +1109,43 @@ UnityEditor.Tools:set_lockedLayers (int)
 UnityEditor.Tools:OnEnable ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
+- Completed reload, in  0.830 seconds
 Domain Reload Profiling:
-	ReloadAssembly (858ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (654ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
-				TypeCache.Initialize (188ms)
-					TypeCache.ScanAssembly (183ms)
-				ResolveRequiredComponents (7ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (302ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (151ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 5966.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.648300 ms (FindLiveObjects: 0.306700 ms CreateObjectMapping: 0.080800 ms MarkObjects: 2.025600 ms  DeleteObjects: 0.234500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009057 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.839 seconds
-Domain Reload Profiling:
-	ReloadAssembly (840ms)
+	ReloadAssembly (831ms)
 		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (644ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (633ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (191ms)
-				TypeCache.Initialize (184ms)
-					TypeCache.ScanAssembly (180ms)
+			SetupTypeCache (176ms)
+				TypeCache.Initialize (168ms)
+					TypeCache.ScanAssembly (163ms)
 				ResolveRequiredComponents (7ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (300ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (293ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (147ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 5971.
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6250.
 Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.934100 ms (FindLiveObjects: 0.461700 ms CreateObjectMapping: 0.148900 ms MarkObjects: 2.102600 ms  DeleteObjects: 0.220000 ms)
+Total: 2.998100 ms (FindLiveObjects: 0.285400 ms CreateObjectMapping: 0.105700 ms MarkObjects: 2.383700 ms  DeleteObjects: 0.222500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -512,3 +1157,492 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008148 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.827 seconds
+Domain Reload Profiling:
+	ReloadAssembly (827ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+				TypeCache.Initialize (173ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (292ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6255.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.761200 ms (FindLiveObjects: 0.280200 ms CreateObjectMapping: 0.121400 ms MarkObjects: 2.140400 ms  DeleteObjects: 0.218400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 267.412966 seconds.
+  path: Assets/NewLayer.terrainlayer
+  artifactKey: Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer.terrainlayer using Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b95a3d13b1a233bd6b6d118f8d7262') in 0.071365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.522168 seconds.
+  path: Assets/Materials/WorldPebble.prefab
+  artifactKey: Guid(f520daf92b4dbfc41ba0b801d88219d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WorldPebble.prefab using Guid(f520daf92b4dbfc41ba0b801d88219d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff970e3370af1f848139f1f10be72af') in 0.161273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.126460 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a7896f1b722764240dab8595c09fce') in 0.042926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.507521 seconds.
+  path: Assets/Prefabs/DirtPile.prefab
+  artifactKey: Guid(5ae7fc35f85c18441b76f53ab55ed905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DirtPile.prefab using Guid(5ae7fc35f85c18441b76f53ab55ed905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe86653b93274b3297096a0d577824cc') in 0.044263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.115850 seconds.
+  path: Assets/IceCream/IceCreamExplode.prefab
+  artifactKey: Guid(895dcd8da16b98e489711b0f82890823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IceCream/IceCreamExplode.prefab using Guid(895dcd8da16b98e489711b0f82890823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89242ba3807a40bd8c91853560ce6c1a') in 0.242025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.104548 seconds.
+  path: Assets/Materials/Grass/Plane.002 1.prefab
+  artifactKey: Guid(6cfcccafacaa91e479b0844c66ca069d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass/Plane.002 1.prefab using Guid(6cfcccafacaa91e479b0844c66ca069d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bba6415057ea89265b178b1313e7cfd') in 0.013406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.047941 seconds.
+  path: Assets/Materials/CarrotTexture.mat
+  artifactKey: Guid(eb74bf9d9ea11854190af607580ded37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/CarrotTexture.mat using Guid(eb74bf9d9ea11854190af607580ded37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c180de0a102723d67c487267a0599f') in 0.082041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/GumballRed.mat
+  artifactKey: Guid(578c64dcbde1c334db48fa47c854da48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GumballRed.mat using Guid(578c64dcbde1c334db48fa47c854da48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ea18b1144f15cacbb283784691e771') in 0.097715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/IcecreamTest.mat
+  artifactKey: Guid(4710debdce0aaf348bdae08ac4fbbc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/IcecreamTest.mat using Guid(4710debdce0aaf348bdae08ac4fbbc66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec8c4cf34e0b740d2cf583e383670715') in 0.044600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Materials/Jelly 1.mat
+  artifactKey: Guid(d394d6715e3e0c346b88ca84fa2da0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Jelly 1.mat using Guid(d394d6715e3e0c346b88ca84fa2da0eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744571858acbefb024655c62797d7bac') in 0.009780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.013248 seconds.
+  path: Assets/Materials/RockTexture.mat
+  artifactKey: Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/RockTexture.mat using Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1100d563a57019c8f49d8d9d1745c62') in 0.071898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.176491 seconds.
+  path: Assets/Materials/WaffleTest.mat
+  artifactKey: Guid(6671beb86f2b9c444bfa1e276f39ee17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WaffleTest.mat using Guid(6671beb86f2b9c444bfa1e276f39ee17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eab57785319887617895cb26fc0cf79') in 0.010467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.809513 seconds.
+  path: Assets/Materials/GunMats/DarkGrey.mat
+  artifactKey: Guid(de2be06403eb9174aac91e09d2f6660b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/DarkGrey.mat using Guid(de2be06403eb9174aac91e09d2f6660b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da833cd95378c09906d11431edd67a2f') in 0.064199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Materials/GunMats/Yellow.mat
+  artifactKey: Guid(1e21c0be3c6ba2a43b561ee89d6747bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/Yellow.mat using Guid(1e21c0be3c6ba2a43b561ee89d6747bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df74aa9d65e6377e082df2cc11e27c5') in 0.258345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Materials/GunMats/MouthMaterial.mat
+  artifactKey: Guid(f86f20c903f174e4086c2e97a4617e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/MouthMaterial.mat using Guid(f86f20c903f174e4086c2e97a4617e1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c910f1c600d5f2cc7f4a2826c63c0c') in 0.145782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/GunMats/Labels.mat
+  artifactKey: Guid(d1585bf62feb74c43a6fe85b02013f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/Labels.mat using Guid(d1585bf62feb74c43a6fe85b02013f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cabc5bd5cc13af027b0dbdb52bb110a') in 0.034149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Materials/GunMats/EyeBallsTexture.mat
+  artifactKey: Guid(0b5bd0bd1d7aad245a93fb7155e2e67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/EyeBallsTexture.mat using Guid(0b5bd0bd1d7aad245a93fb7155e2e67f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a7f3987144ded683adad5045a28b88') in 0.164610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/GunMats/HatMaterial.mat
+  artifactKey: Guid(1e04c6c309f1b27459acfb428529e25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/HatMaterial.mat using Guid(1e04c6c309f1b27459acfb428529e25a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44646237d3b533e6b99162e3a959b25d') in 0.165743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Materials/GunMats/UntexturedGold.mat
+  artifactKey: Guid(78030f923327aef499d63f06a036b412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/GunMats/UntexturedGold.mat using Guid(78030f923327aef499d63f06a036b412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c81e424947068c3dcf0a9bb98056af') in 0.081107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.559420 seconds.
+  path: Assets/Materials/Grass/Plane.002 2.prefab
+  artifactKey: Guid(163e42dbc6f1151468cc6f283e761204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass/Plane.002 2.prefab using Guid(163e42dbc6f1151468cc6f283e761204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e8bbf78f7ecbea45cd849c63a22e2d') in 0.016545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.914735 seconds.
+  path: Assets/Carrot/CarrotCrop 1.prefab
+  artifactKey: Guid(103765226e44ccf4c9d15638036d680b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Carrot/CarrotCrop 1.prefab using Guid(103765226e44ccf4c9d15638036d680b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c356a9ef1368a90ccc288c5c4afff5f') in 0.094834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.095903 seconds.
+  path: Assets/Materials/Grass/GrassPrefabTexture 1.mat
+  artifactKey: Guid(31d5a1ce8bfb0b04a933c385b78f3b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Grass/GrassPrefabTexture 1.mat using Guid(31d5a1ce8bfb0b04a933c385b78f3b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcaead7e1ab00f4d0973fe2f55ddd077') in 0.020847 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008561 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.846 seconds
+Domain Reload Profiling:
+	ReloadAssembly (846ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (643ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+				TypeCache.Initialize (173ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.5 MB). Loaded Objects now: 6299.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.865000 ms (FindLiveObjects: 0.294800 ms CreateObjectMapping: 0.111000 ms MarkObjects: 2.169200 ms  DeleteObjects: 0.289400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008166 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.841 seconds
+Domain Reload Profiling:
+	ReloadAssembly (841ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (645ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+				TypeCache.Initialize (174ms)
+					TypeCache.ScanAssembly (169ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (298ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6304.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.796800 ms (FindLiveObjects: 0.304800 ms CreateObjectMapping: 0.108600 ms MarkObjects: 2.149000 ms  DeleteObjects: 0.234000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008798 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Domain Reload Profiling:
+	ReloadAssembly (830ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (638ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+				TypeCache.Initialize (169ms)
+					TypeCache.ScanAssembly (164ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6309.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.002800 ms (FindLiveObjects: 0.295000 ms CreateObjectMapping: 0.113900 ms MarkObjects: 2.376400 ms  DeleteObjects: 0.216800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009695 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (850ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (653ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+				TypeCache.Initialize (178ms)
+					TypeCache.ScanAssembly (173ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6314.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.743100 ms (FindLiveObjects: 0.284600 ms CreateObjectMapping: 0.108100 ms MarkObjects: 2.120900 ms  DeleteObjects: 0.229000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 451.635448 seconds.
+  path: Assets/TerrainData_9d7e1106-c595-484a-9f21-15679bbac0ee.asset
+  artifactKey: Guid(41b8aead218ccc94fbd0329357d5e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_9d7e1106-c595-484a-9f21-15679bbac0ee.asset using Guid(41b8aead218ccc94fbd0329357d5e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1c064801283efa5736d5eca8969e52') in 0.043656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.652427 seconds.
+  path: Assets/Materials/WorldPebble.prefab
+  artifactKey: Guid(f520daf92b4dbfc41ba0b801d88219d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WorldPebble.prefab using Guid(f520daf92b4dbfc41ba0b801d88219d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce861a2c04401b5c469a6916ca7707a') in 0.109241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 234.809013 seconds.
+  path: Assets/Prefabs/Donut/DonutIcingMaterial 1.mat
+  artifactKey: Guid(d8123888d5150e647a0832193a971c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Donut/DonutIcingMaterial 1.mat using Guid(d8123888d5150e647a0832193a971c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b49d878818d45abf8f9fc042c4497a') in 0.022182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Donut/DonutMaterial.mat
+  artifactKey: Guid(54f6ece2f5233454c9d146728f461149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Donut/DonutMaterial.mat using Guid(54f6ece2f5233454c9d146728f461149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2baab6fbd885dcf5e3366d6c5ea99120') in 0.088028 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

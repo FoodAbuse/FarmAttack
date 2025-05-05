@@ -15,7 +15,7 @@ F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53168
+52012
 Successfully changed project path to: F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
 F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the Sigmas
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ F:/GameProject/GitHubStuff/FarmAttack/Project Folder/Farm Attack 2 Attack of the
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 72.21 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 75.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.1.23f1 (9636b062134a)
 [Subsystems] Discovering subsystems at path F:/UnityStuff/2022.1.23f1/Editor/Data/Resources/UnitySubsystems
@@ -63,404 +63,53 @@ Initialize mono
 Mono path[0] = 'F:/UnityStuff/2022.1.23f1/Editor/Data/Managed'
 Mono path[1] = 'F:/UnityStuff/2022.1.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'F:/UnityStuff/2022.1.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/UnityStuff/2022.1.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.023774 seconds.
+Registered in 0.007020 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 67.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.902 seconds
+- Completed reload, in  0.444 seconds
 Domain Reload Profiling:
-	ReloadAssembly (903ms)
-		BeginReloadAssembly (100ms)
+	ReloadAssembly (445ms)
+		BeginReloadAssembly (71ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (541ms)
-			LoadAssemblies (96ms)
+		EndReloadAssembly (300ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-				TypeCache.Initialize (302ms)
-					TypeCache.ScanAssembly (301ms)
+			SetupTypeCache (60ms)
+				TypeCache.Initialize (60ms)
+					TypeCache.ScanAssembly (59ms)
 				ResolveRequiredComponents (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (16ms)
-			SetupLoadedEditorAssemblies (183ms)
+			SetupLoadedEditorAssemblies (187ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (68ms)
+				RefreshPlugins (72ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (76ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010695 seconds.
+Registered in 0.010168 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.229 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1230ms)
-		BeginReloadAssembly (99ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1040ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (382ms)
-				TypeCache.Initialize (375ms)
-					TypeCache.ScanAssembly (372ms)
-				ResolveRequiredComponents (7ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (499ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (77ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (253ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5492 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.6 MB). Loaded Objects now: 5950.
-Memory consumption went from 0.93 GB to 0.93 GB.
-Total: 3.383600 ms (FindLiveObjects: 0.385000 ms CreateObjectMapping: 0.098100 ms MarkObjects: 2.558600 ms  DeleteObjects: 0.341200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 10393.190773 seconds.
-  path: Assets/Flower1.png
-  artifactKey: Guid(878c50ad2326d23409f7691aa8c11c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flower1.png using Guid(878c50ad2326d23409f7691aa8c11c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4683759e7e0c48ab823102f87d10750') in 0.087687 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.309776 seconds.
-  path: Assets/Flowers1Model.fbx
-  artifactKey: Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.fbx using Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e3adf0b88de93aa80bc3fdde3dc75c') in 0.222398 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.150264 seconds.
-  path: Assets/Flowers1Material.mat
-  artifactKey: Guid(0d1a2b36dc8dc2f489cb91d545858a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Material.mat using Guid(0d1a2b36dc8dc2f489cb91d545858a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292f189fd22ff989f6fecd3f2a981c21') in 0.014209 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.985267 seconds.
-  path: Assets/Materials/Grass/GrassPrefab 1.prefab
-  artifactKey: Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefab 1.prefab using Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f987701c210615d55d64d812c378b0e2') in 0.023608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.717823 seconds.
-  path: Assets/Materials/Grass/GrassPrefabTexture 2.mat
-  artifactKey: Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefabTexture 2.mat using Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd584a2cf400dd2bb8db80c6a4cf8bf8f') in 0.013230 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.472409 seconds.
-  path: Assets/Materials/Grass/Flowers1Material.mat
-  artifactKey: Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/Flowers1Material.mat using Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348a4bb0f85f05ea0d908813e7042efa') in 0.011510 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 82.654815 seconds.
-  path: Assets/Materials/Grass/Flowers1Material.mat
-  artifactKey: Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/Flowers1Material.mat using Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3248861d09f6600abac45b4f23b1bd') in 0.559562 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.983640 seconds.
-  path: Assets/Materials/Grass/GrassPrefab 1.prefab
-  artifactKey: Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefab 1.prefab using Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f4d10f87ef18dccd004be8c21b4968') in 0.015339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.318920 seconds.
-  path: Assets/Materials/Grass/GrassPrefab 1.prefab
-  artifactKey: Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefab 1.prefab using Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af4718e5a889c77017f09fd66b34d91') in 0.038948 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.098564 seconds.
-  path: Assets/Materials/Grass/GrassPrefab 1.prefab
-  artifactKey: Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefab 1.prefab using Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e89b7721198783b33a99d475d99dbdf') in 0.025392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.324430 seconds.
-  path: Assets/Flowers1Model.prefab
-  artifactKey: Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.prefab using Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a7634e0399293c823f84239a9524eb') in 0.013687 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.609618 seconds.
-  path: Assets/Materials/Grass/GrassPrefab 1.prefab
-  artifactKey: Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefab 1.prefab using Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd698ea38eb9a7f62ffdd8e13fd423db') in 0.015385 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.830304 seconds.
-  path: Assets/Flowers1Model.prefab
-  artifactKey: Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.prefab using Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd581f4a6498db0aa862bfa9d0bbd5214') in 0.022096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.819079 seconds.
-  path: Assets/Flowers1Model.prefab
-  artifactKey: Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.prefab using Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6765c90ea24307c6e0e77f92e18ed04b') in 0.024468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.209964 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692a928ab8ef9f4b00990869be79f459') in 0.021529 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Flowers1Model.prefab
-  artifactKey: Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.prefab using Guid(b23ae832f371c1a41bd0608c75dc44cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41dc6b5de8afe92682dab752d9991fa8') in 0.020971 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.094321 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a63b4151204d0c2255367179a2c9e7') in 0.020451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.362659 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3d973f441c4e0880bbdc962ca4a0e2') in 0.034999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.176864 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad9a7c8fafcaafc430fc98347dc53a5') in 0.021481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.173427 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b80ebebe4b8f8e76c3b104d0afdf6bc') in 0.022511 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.441188 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d8d4ce43066fb06a0c74d9881b36020') in 0.022571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.251663 seconds.
-  path: Assets/Materials/Grass/GrassPrefab 1.prefab
-  artifactKey: Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefab 1.prefab using Guid(0b1b35a901e4e1d45855f555ddfa6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ff6b3553d3660b0b7b69385292b85e') in 0.003978 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.798150 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524cc9a5ce36bad64edd4f5116919bff') in 0.034698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.654731 seconds.
-  path: Assets/Flowers1Model.fbx
-  artifactKey: Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.fbx using Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e47bc892cb5f21b262997dc9506a402') in 0.112993 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.078897 seconds.
-  path: Assets/Flowers1Model.fbx
-  artifactKey: Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.fbx using Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc70d011e660ea278460e59bec5fec8') in 0.116315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.329035 seconds.
-  path: Assets/Flowers1Model.fbx
-  artifactKey: Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1Model.fbx using Guid(3b7c0f29ae84f1e43b07c2f1c3ce28be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2e67313d59dd7580d2e6dbb8a5a0f4') in 0.112553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.750218 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f99ed59f91e32881bfa9bf6070d1c8') in 0.029833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.986877 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5937f1f316971d4324349e3a02803fcd') in 0.022103 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.795687 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be47e701dee6a196d6bdacb3cd6b187') in 0.028531 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.765986 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b303e81d2e9e9d9b9c9000b696e01e') in 0.024362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.485223 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71556bf6512778488987c59c603b02ad') in 0.034737 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.572457 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8026977f0e899e89e06c4cc1d4bd8acb') in 0.023165 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.041205 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd533df8c913aba02940ef54adc824cf6') in 0.022401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.994721 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0429450ac3fc76bbe835e4511f0f4d60') in 0.022720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.588570 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9abe3fe8573171e3bf026d78e85380') in 0.037353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.596910 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe3f5de776101f961658705f8533850') in 0.012984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.019584 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b3353b5ebcd5fd9ae85dba2c8d43ad') in 0.169846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.095383 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9414326f74bd652e474a87521fca7e') in 0.021450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.750139 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b73a249d964970c4c971abf46faf2e') in 0.020185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.432964 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '043791da365ba61ea6627b599db77c32') in 0.022473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.862045 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147197f16c239f5e01160be92d1c02a3') in 0.023289 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.719180 seconds.
-  path: Assets/TerrainData_9d7e1106-c595-484a-9f21-15679bbac0ee.asset
-  artifactKey: Guid(41b8aead218ccc94fbd0329357d5e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_9d7e1106-c595-484a-9f21-15679bbac0ee.asset using Guid(41b8aead218ccc94fbd0329357d5e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree flower couldn't be instanced because the prefab contains no valid mesh renderer.
- -> (artifact id: '5d287c56229c925a43fff882d8606272') in 0.022674 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.416173 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22713c40f188a2656b0a80a5f14948be') in 0.031375 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.942999 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e786b5397774b7aa7ea22613497d4d') in 0.022913 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.566590 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6fcadea543e5278da72c553cd1ecda2') in 0.029368 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.363677 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09584022246e33cc3c00958a5beaffe3') in 0.004368 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.970346 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8084b05218f54271d90bd69585266d') in 0.101560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.627378 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91a41eb7a2bcffc8ab38dedbdf9b796') in 0.021792 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008530 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 70.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
@@ -489,17 +138,808 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 (Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.835 seconds
+- Completed reload, in  0.887 seconds
 Domain Reload Profiling:
-	ReloadAssembly (835ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (887ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (713ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+				TypeCache.Initialize (176ms)
+					TypeCache.ScanAssembly (172ms)
+				ResolveRequiredComponents (9ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (385ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5492 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (1.6 MB). Loaded Objects now: 5950.
+Memory consumption went from 0.93 GB to 0.93 GB.
+Total: 2.815800 ms (FindLiveObjects: 0.252900 ms CreateObjectMapping: 0.083800 ms MarkObjects: 2.143500 ms  DeleteObjects: 0.335000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4472.728928 seconds.
+  path: Assets/Materials/RockTexture.mat
+  artifactKey: Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/RockTexture.mat using Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea94705eaaaa69d33d951eb48a4387d') in 0.555543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 79.997902 seconds.
+  path: Assets/Materials/Rock.fbx
+  artifactKey: Guid(441b40cbac31d794ca561100739505f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Rock.fbx using Guid(441b40cbac31d794ca561100739505f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bbaa9949344ef679c4b7b8396481ff') in 0.094408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.720800 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '253f26c1e2185e66e36c6bcbd2a9b7ec') in 0.079888 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007787 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Domain Reload Profiling:
+	ReloadAssembly (824ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (628ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+				TypeCache.Initialize (175ms)
+					TypeCache.ScanAssembly (170ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (1.5 MB). Loaded Objects now: 6042.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.595900 ms (FindLiveObjects: 0.250900 ms CreateObjectMapping: 0.079300 ms MarkObjects: 2.037400 ms  DeleteObjects: 0.227700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 236.245008 seconds.
+  path: Assets/NewLayer.terrainlayer
+  artifactKey: Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewLayer.terrainlayer using Guid(66f4a571c0c09c04389db8d65d0e9eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dc45cadca3aa0cac785667735847385') in 0.037072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 536.131064 seconds.
+  path: Assets/TreeTEST.fbx
+  artifactKey: Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TreeTEST.fbx using Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f613d845bbf1d206242a9e0505fbee') in 0.132594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.294679 seconds.
+  path: Assets/TreeTEST.fbx
+  artifactKey: Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TreeTEST.fbx using Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48361c9765969be54e284468f225306c') in 0.034416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.281954 seconds.
+  path: Assets/TreeTEST.fbx
+  artifactKey: Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TreeTEST.fbx using Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e10d476719f0d0dce2b17b347c5140f') in 0.044072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.340162 seconds.
+  path: Assets/TreeTEST.fbx
+  artifactKey: Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TreeTEST.fbx using Guid(20f7110a305efab4da12068978aa2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f3b686ad0d34128dd60ca2fc75b857') in 0.031641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 114.931102 seconds.
+  path: Assets/Materials/RockTexture.mat
+  artifactKey: Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/RockTexture.mat using Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8c38e70b68276d9b76a53ba14b3d00') in 0.014704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.042769 seconds.
+  path: Assets/Materials/WorldPebble.prefab
+  artifactKey: Guid(f520daf92b4dbfc41ba0b801d88219d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/WorldPebble.prefab using Guid(f520daf92b4dbfc41ba0b801d88219d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808eeb53be87db46c550af9004bb5846') in 0.012607 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008036 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.828 seconds
+Domain Reload Profiling:
+	ReloadAssembly (829ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (634ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (631ms)
 			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (180ms)
+				TypeCache.Initialize (173ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6088.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.729900 ms (FindLiveObjects: 0.293000 ms CreateObjectMapping: 0.138000 ms MarkObjects: 2.079100 ms  DeleteObjects: 0.219200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008655 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.834 seconds
+Domain Reload Profiling:
+	ReloadAssembly (834ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (643ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+				TypeCache.Initialize (178ms)
+					TypeCache.ScanAssembly (173ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6093.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.822600 ms (FindLiveObjects: 0.400500 ms CreateObjectMapping: 0.087600 ms MarkObjects: 2.116300 ms  DeleteObjects: 0.217500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 511.203835 seconds.
+  path: Assets/Materials/RockTexture.mat
+  artifactKey: Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/RockTexture.mat using Guid(a86c696468d71aa4cb73815623d4722a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f264a7eaa1a3a417d3d74a13c18af7') in 0.128801 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009396 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.834 seconds
+Domain Reload Profiling:
+	ReloadAssembly (835ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (640ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (176ms)
+				TypeCache.Initialize (170ms)
+					TypeCache.ScanAssembly (165ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (297ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6137.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.518700 ms (FindLiveObjects: 0.279600 ms CreateObjectMapping: 0.081800 ms MarkObjects: 1.927600 ms  DeleteObjects: 0.229200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009004 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (849ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (655ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+				TypeCache.Initialize (188ms)
+					TypeCache.ScanAssembly (183ms)
+				ResolveRequiredComponents (6ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6142.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.783700 ms (FindLiveObjects: 0.335900 ms CreateObjectMapping: 0.099700 ms MarkObjects: 2.129400 ms  DeleteObjects: 0.218000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008514 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.819 seconds
+Domain Reload Profiling:
+	ReloadAssembly (819ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (628ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (175ms)
+				TypeCache.Initialize (168ms)
+					TypeCache.ScanAssembly (163ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (289ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (143ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6147.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.617700 ms (FindLiveObjects: 0.280300 ms CreateObjectMapping: 0.081400 ms MarkObjects: 2.032100 ms  DeleteObjects: 0.223400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008271 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Domain Reload Profiling:
+	ReloadAssembly (830ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (638ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+				TypeCache.Initialize (173ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6152.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 2.795300 ms (FindLiveObjects: 0.279100 ms CreateObjectMapping: 0.093500 ms MarkObjects: 2.204200 ms  DeleteObjects: 0.217900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009117 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error loading file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].GetState (UnityEngine.Hash128 key, T defaultValue) [0x00041] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:GetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.869 seconds
+Domain Reload Profiling:
+	ReloadAssembly (869ms)
+		BeginReloadAssembly (121ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (670ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (199ms)
+				TypeCache.Initialize (192ms)
+					TypeCache.ScanAssembly (187ms)
+				ResolveRequiredComponents (7ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (305ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6157.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 3.069300 ms (FindLiveObjects: 0.521100 ms CreateObjectMapping: 0.150000 ms MarkObjects: 2.180400 ms  DeleteObjects: 0.216900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3150.366451 seconds.
+  path: Assets/TestColourfulTree.prefab
+  artifactKey: Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TestColourfulTree.prefab using Guid(f795b9481e134a842b6c19c3bd8ddf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a1011f7abb1d63628ebb668e1bc8c9') in 0.185750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Trees/tree2.prefab
+  artifactKey: Guid(3cb639e1985e0ac4990732dc8353f556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree2.prefab using Guid(3cb639e1985e0ac4990732dc8353f556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aaa58a1270efcd9d8af238173de48d8') in 0.026535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Trees/tree3.prefab
+  artifactKey: Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree3.prefab using Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d4baf2d300cbad9c1e1eab0a940a8e') in 0.023696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.517055 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739c6e07ddf4bb474314eaf26460a007') in 0.023123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Trees/tree3.prefab
+  artifactKey: Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree3.prefab using Guid(a16e39c0bc16c5f46afc06eeb54c7972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc78891f1ceb5a8bb32bfb636df91f33') in 0.018490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.831639 seconds.
+  path: Assets/Prefabs/Trees/tree1.prefab
+  artifactKey: Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trees/tree1.prefab using Guid(194accf0a66b5e142addf990f3f6440a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b10ae2cec2f26158ba8f0c5ce1071b9') in 0.025333 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008761 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Domain Reload Profiling:
+	ReloadAssembly (890ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (666ms)
+			LoadAssemblies (109ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (182ms)
 				TypeCache.Initialize (175ms)
@@ -507,538 +947,25 @@ Domain Reload Profiling:
 				ResolveRequiredComponents (7ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (291ms)
+			SetupLoadedEditorAssemblies (304ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (4ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (145ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6042.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.861300 ms (FindLiveObjects: 0.240500 ms CreateObjectMapping: 0.079700 ms MarkObjects: 2.326700 ms  DeleteObjects: 0.213800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 149.207864 seconds.
-  path: Assets/Flowers1.prefab
-  artifactKey: Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers1.prefab using Guid(f16f68a7dbd2fe6419653f5c01b704a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419818b5e175d5d9cf4273d4e8d916e8') in 0.135881 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1856.977748 seconds.
-  path: Assets/Flowers2Model.fbx
-  artifactKey: Guid(104d17e443974e343a7cda3c0ce42fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.fbx using Guid(104d17e443974e343a7cda3c0ce42fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319840ce7a964923be487a0500141ce8') in 0.046500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.008915 seconds.
-  path: Assets/Material.002.mat
-  artifactKey: Guid(926a0edce6c669f4186e73bf64d0e87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material.002.mat using Guid(926a0edce6c669f4186e73bf64d0e87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd6a3720992ad8d0be1259974c6e5ae') in 0.018972 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.957245 seconds.
-  path: Assets/Materials/Grass/Flowers1Material.mat
-  artifactKey: Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/Flowers1Material.mat using Guid(2bde75f14ff160240982890e00f59afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f609900ba21fdff7dd1ac6acbcfc9d') in 0.013861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.042435 seconds.
-  path: Assets/Materials/Grass/GrassPrefabTexture 2.mat
-  artifactKey: Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GrassPrefabTexture 2.mat using Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9f5800d097c840ff18a0151b320332') in 0.012118 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.489844 seconds.
-  path: Assets/Materials/Grass/PinkyFlowerMat.mat
-  artifactKey: Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/PinkyFlowerMat.mat using Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b1c54169cb286a0a595fd51bb668d9') in 0.017821 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.463748 seconds.
-  path: Assets/Materials/Grass/PinkyFlowerMat.mat
-  artifactKey: Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/PinkyFlowerMat.mat using Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef714054054fd301da813a1f6c527f2') in 0.049077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 50.213771 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554c3274b7c405b0046e96eb13956f5e') in 0.013729 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.114733 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b99b7fd395434ce53dbb4a8e52dad6') in 0.021027 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.583987 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4096e0008b09b9b96eb71559cb5a7bd0') in 0.022180 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.178981 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7758d2ceca86631d2b3f805aff22cd34') in 0.021718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.551623 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3946a5be7544664c3f2d96ee7af07c1f') in 0.021504 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.583644 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3531e7aa788f2944cdc518a6ce7996a6') in 0.028197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.766093 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5585962544f15c2697f84b097ab0af') in 0.021119 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.001780 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e048410c12cc0fd48314d135ab39c7') in 0.033017 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.821344 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12669d206466bb8768ad416f8b00197') in 0.022811 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.377357 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bea2226f84306581625bed0f101c844') in 0.058326 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 128.514007 seconds.
-  path: Assets/Flowers2Model.fbx
-  artifactKey: Guid(104d17e443974e343a7cda3c0ce42fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.fbx using Guid(104d17e443974e343a7cda3c0ce42fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a656a751c043e19c47a8e4b6fbcd797f') in 0.141150 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.027746 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d47d72066863453dadf263f1355d826') in 0.035597 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.591919 seconds.
-  path: Assets/Flowers2Model.prefab
-  artifactKey: Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.prefab using Guid(a11ad9d22bad84c4b81b0d66c9b1ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1ed54620127af328c76cfab37d192e') in 0.039116 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.329215 seconds.
-  path: Assets/Cube.prefab
-  artifactKey: Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cube.prefab using Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0665e6d830293f200bedcade022353d0') in 0.036796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.807723 seconds.
-  path: Assets/Materials/Grass/PinkyFlowerMat.mat
-  artifactKey: Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/PinkyFlowerMat.mat using Guid(4067292c802997a40b1f8146a6257a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4d593a5e915cf610a23a840a8ba254') in 0.015647 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.017423 seconds.
-  path: Assets/Materials/Grass/GreenLeafLittleMat.mat
-  artifactKey: Guid(c9bda684655e2a04e9741a2612330298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/GreenLeafLittleMat.mat using Guid(c9bda684655e2a04e9741a2612330298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324a6aae968bed5309a0b82305ca5e70') in 0.034721 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.786442 seconds.
-  path: Assets/Cube.prefab
-  artifactKey: Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cube.prefab using Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f09e896d1390b936cb51ba2ab89608') in 0.037731 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.760687 seconds.
-  path: Assets/Cube.prefab
-  artifactKey: Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cube.prefab using Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa14f89a83e87c53d69e3d33736d242') in 0.011236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.779759 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2adfb077b995da53c5aee9c031620f8d') in 0.050630 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.734309 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(9e855896c0357794bb0c11bfc021c4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3fe7184b56386168bda55c149f7e97d') in 0.025099 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.272731 seconds.
-  path: Assets/Flowers2Model.fbx
-  artifactKey: Guid(104d17e443974e343a7cda3c0ce42fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model.fbx using Guid(104d17e443974e343a7cda3c0ce42fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c5fcd3edaa183f8097b99d1b04ec34') in 0.041270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.747810 seconds.
-  path: Assets/Cube.prefab
-  artifactKey: Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cube.prefab using Guid(f8994a5870868b046bed5bd87dc0aead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d12528409b0cb7d52708b92380da2f0') in 0.012633 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009366 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.841 seconds
-Domain Reload Profiling:
-	ReloadAssembly (842ms)
-		BeginReloadAssembly (126ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (635ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
-				TypeCache.Initialize (174ms)
-					TypeCache.ScanAssembly (170ms)
-				ResolveRequiredComponents (7ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (295ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (147ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6086.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.784100 ms (FindLiveObjects: 0.261800 ms CreateObjectMapping: 0.080800 ms MarkObjects: 2.220200 ms  DeleteObjects: 0.220800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 231.476516 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453b4810d53012038e5edca385fed6b6') in 0.137942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.376491 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9674758bbd2259532f71a9030e58595b') in 0.018662 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.017949 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0e99079490a96091dc115a99389677') in 0.046266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.394813 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470fc378340625c438febb55835f16b6') in 0.015021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.967379 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e816b96574e79cc1fab4dff9240306b') in 0.014308 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.409857 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d69184928a8bebab11475ed904014f') in 0.029528 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.427646 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457254d51a738d17c5f5e5d4f44477bb') in 0.013911 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.781502 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce85e59e30632b774a79d33b5eb05ff8') in 0.032620 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.109994 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60c18de6f0a8d997deb92e4621b84ae') in 0.013120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.264131 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2948ddf92a7da4ae13b6ccbd68bcf46e') in 0.027027 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.237989 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c69005371c54ee7713ead4e2af2c70') in 0.013350 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.476716 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e7785fb16ba300e838e93202cde028') in 0.016945 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.826858 seconds.
-  path: Assets/Flowers2Model (1).prefab
-  artifactKey: Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1).prefab using Guid(b5d1323d9768a424f9630a26d4782f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569073ead28b0fd4a0b28e06aef43a5f') in 0.013642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 107.766023 seconds.
-  path: Assets/TerrainData_9d7e1106-c595-484a-9f21-15679bbac0ee.asset
-  artifactKey: Guid(41b8aead218ccc94fbd0329357d5e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_9d7e1106-c595-484a-9f21-15679bbac0ee.asset using Guid(41b8aead218ccc94fbd0329357d5e255) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree flower couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree Flowers2Model (1) must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (artifact id: 'd0eb64cb5306ae1e5eee2a0712c70d99') in 0.027403 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.169054 seconds.
-  path: Assets/Flowers2Model (1) 1.prefab
-  artifactKey: Guid(7be076bcba2b7cb45a0a0498d6e5fecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Flowers2Model (1) 1.prefab using Guid(7be076bcba2b7cb45a0a0498d6e5fecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba22cf651537f7dafbbcb622a02b0718') in 0.013122 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.861739 seconds.
-  path: Assets/Materials/Grass/PinkyFlowerMat 1.mat
-  artifactKey: Guid(cca12c544dc842f4f924dc5855469e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/PinkyFlowerMat 1.mat using Guid(cca12c544dc842f4f924dc5855469e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2308d509cf7efd3e533029d84cb960dc') in 0.023557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.895681 seconds.
-  path: Assets/Materials/Grass/BlueyFlowerMat.mat
-  artifactKey: Guid(cca12c544dc842f4f924dc5855469e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/BlueyFlowerMat.mat using Guid(cca12c544dc842f4f924dc5855469e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9d7e950c2c82cf98d4f26a7c151ee5') in 0.019446 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007841 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.831 seconds
-Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (124ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (632ms)
-			LoadAssemblies (93ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
-				TypeCache.Initialize (174ms)
-					TypeCache.ScanAssembly (168ms)
-				ResolveRequiredComponents (7ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (292ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (143ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6130.
-Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.564400 ms (FindLiveObjects: 0.268000 ms CreateObjectMapping: 0.083900 ms MarkObjects: 1.996600 ms  DeleteObjects: 0.215500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 167.348707 seconds.
-  path: Assets/Materials/Grass/BlueyFlowerMat.mat
-  artifactKey: Guid(cca12c544dc842f4f924dc5855469e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Grass/BlueyFlowerMat.mat using Guid(cca12c544dc842f4f924dc5855469e0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d816a4b04f3a572412603f810a454a3') in 0.131653 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008122 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path F:\GameProject\GitHubStuff\FarmAttack\Project Folder\Farm Attack 2 Attack of the Sigmas\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
-  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <252f5a151e57406087568ebdeb88d5fe>:0 
-  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <4ce403b7cdf744109283ae55cdc24285>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
-UnityEditor.Tools:set_lockedLayers (int)
-UnityEditor.Tools:OnEnable ()
-UnityEngine.ScriptableObject:CreateInstance (System.Type)
-UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
-UnityEditor.Tools:get_get ()
-UnityEditor.Tools:get_visibleLayers ()
-UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.841 seconds
-Domain Reload Profiling:
-	ReloadAssembly (841ms)
-		BeginReloadAssembly (125ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (641ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
-				TypeCache.Initialize (179ms)
-					TypeCache.ScanAssembly (173ms)
-				ResolveRequiredComponents (8ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (291ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (144ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5305 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6174.
+Unloading 37 unused Assets / (1.5 MB). Loaded Objects now: 6201.
 Memory consumption went from 0.90 GB to 0.90 GB.
-Total: 2.875700 ms (FindLiveObjects: 0.282200 ms CreateObjectMapping: 0.086600 ms MarkObjects: 2.260100 ms  DeleteObjects: 0.245900 ms)
+Total: 2.895300 ms (FindLiveObjects: 0.284600 ms CreateObjectMapping: 0.081600 ms MarkObjects: 2.304200 ms  DeleteObjects: 0.224100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

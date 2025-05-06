@@ -5,16 +5,25 @@ using UnityEngine.AI;
 
 public class MarshmellowAIBehaviour : MonoBehaviour
 {
-    public GameObject vomitGO;
 
+    [Header("Vomit Settings")]
+    public GameObject vomitGO;
     public Transform player;
     public Transform vomitPos;
-    public int minVomitDistance;
-    public int maxVomitDistance;
-    float timeBetweenVomit;
-    NavMeshAgent myAgent;
+    public int minVomitDistance = 5;
+    public int maxVomitDistance = 10;
+    public float vomitCooldown = 2f;
 
-    float distanceFromPlayer;
+    [Header("Hop Movement Settings")]
+    public float moveDuration = 1f;      // How long it moves
+    public float stopDuration = 0.25f;   // How long it pauses
+
+    private float vomitTimer;
+    private float movementTimer;
+    private bool isStopped = false;
+
+    private NavMeshAgent myAgent;
+    private float distanceFromPlayer;
 
     void Start()
     {
@@ -23,16 +32,39 @@ public class MarshmellowAIBehaviour : MonoBehaviour
 
     void Update()
     {
-        distanceFromPlayer = Vector3.Distance(transform.position, player.position);
-        myAgent.SetDestination(player.position);
-        timeBetweenVomit += Time.deltaTime;
-        if(distanceFromPlayer >= minVomitDistance && distanceFromPlayer <= maxVomitDistance && timeBetweenVomit > 2)
-        {
+        // Update movement state
+        movementTimer += Time.deltaTime;
 
+        if (!isStopped && movementTimer >= moveDuration)
+        {
+            myAgent.isStopped = true;
+            isStopped = true;
+            movementTimer = 0f;
+        }
+        else if (isStopped && movementTimer >= stopDuration)
+        {
+            myAgent.isStopped = false;
+            isStopped = false;
+            movementTimer = 0f;
+        }
+
+        // Move toward player only while not stopped
+        if (!isStopped)
+        {
+            myAgent.SetDestination(player.position);
+        }
+
+        // Vomit attack logic
+        vomitTimer += Time.deltaTime;
+        distanceFromPlayer = Vector3.Distance(transform.position, player.position);
+
+        if (distanceFromPlayer >= minVomitDistance && distanceFromPlayer <= maxVomitDistance && vomitTimer > vomitCooldown)
+        {
             Instantiate(vomitGO, vomitPos.position, vomitPos.rotation);
-            timeBetweenVomit = 0;
+            vomitTimer = 0f;
         }
     }
-
- 
 }
+
+
+

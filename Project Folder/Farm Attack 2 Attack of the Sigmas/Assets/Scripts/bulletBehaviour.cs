@@ -42,6 +42,8 @@ public class bulletBehaviour : MonoBehaviour
             if (!isPotato)
             {
                 collision.transform.gameObject.SendMessage("TakeDamage");
+                collision.transform.gameObject.GetComponent<enemyHealthBehaviour>().damageAmount = damage;
+
                 GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
                 Destroy(explode, .25f);
                 Destroy(gameObject);

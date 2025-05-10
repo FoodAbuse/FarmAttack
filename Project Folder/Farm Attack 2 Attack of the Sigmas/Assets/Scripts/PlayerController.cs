@@ -17,18 +17,19 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
     public Animator cameraMovementAnimator;
 
-
     public bool _isRunning;
     private float idleThreshold = 0f; // Adjust this value based on your preference
-
 
     // Hugo's Testing - Freeze heat rotation when Radial Dial is Active
     public bool cameraFrozen;
 
+     public float knockbackForce = 10f; // Strength of the knockback
+    public float knockbackDuration = 0.5f; // How long the knockback lasts
+    private float knockbackTimer = 0f;
+    private Vector3 knockbackDirection;
+
     void Start()
     {
-     
-
         characterController = GetComponent<CharacterController>();
     }
 
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         HeadMovement();
 
+        // Regular movement
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -54,13 +56,21 @@ public class PlayerController : MonoBehaviour
 
         if (characterController.isGrounded)
         {
-            ySpeed = -0.5f; 
+            ySpeed = -0.5f;
 
             // Jumping
             if (Input.GetButtonDown("Jump"))
             {
                 ySpeed = jumpForce;
             }
+        }
+
+        // Apply knockback
+        if (knockbackTimer > 0)
+        {
+            // Apply knockback force
+            characterController.Move(knockbackDirection * knockbackForce * Time.deltaTime);
+            knockbackTimer -= Time.deltaTime; // Decrease the timer
         }
 
         // Mouse Look
@@ -77,12 +87,15 @@ public class PlayerController : MonoBehaviour
         }
 
         // Move the player using CharacterController
-        characterController.Move((moveSpeed + new Vector3(0f, ySpeed, 0f)) * Time.deltaTime);
+        if (knockbackTimer <= 0)  // Only move if not in knockback state
+        {
+            characterController.Move((moveSpeed + new Vector3(0f, ySpeed, 0f)) * Time.deltaTime);
+        }
 
         float moveMagnitude = new Vector2(horizontal, vertical).magnitude;
         anim.SetBool("Walking", moveMagnitude > 0);
 
-        if(currentSpeed == sprintSpeed)
+        if (currentSpeed == sprintSpeed)
         {
             _isRunning = true;
         }
@@ -90,6 +103,18 @@ public class PlayerController : MonoBehaviour
         {
             _isRunning = false;
         }
+    }
+
+    // Function to apply knockback
+    public void ApplyKnockback(Vector3 attackerPosition)
+    {
+        // Calculate direction opposite to the attacker position
+        knockbackDirection = (transform.position - attackerPosition).normalized;
+
+        // Apply some upward force for more dramatic knockback
+        knockbackDirection.y = 0.5f; // Adjust for desired vertical effect
+
+        knockbackTimer = knockbackDuration; // Set knockback duration
     }
 
     public void HeadMovement()
@@ -102,10 +127,7 @@ public class PlayerController : MonoBehaviour
         // Ensure that mappedInput is never less than 0 or greater than 1
         mappedInput = Mathf.Clamp01(mappedInput);
 
-
         cameraMovementAnimator.SetFloat("Horizontal", mappedInput);
-
     }
-
 
 }

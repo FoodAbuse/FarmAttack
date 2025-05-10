@@ -6,7 +6,6 @@ using UnityEngine.AI;
 public class MarshmellowAIBehaviour : MonoBehaviour
 {
 
-    [Header("Vomit Settings")]
     public GameObject vomitGO;
     public Transform player;
     public Transform vomitPos;
@@ -14,16 +13,17 @@ public class MarshmellowAIBehaviour : MonoBehaviour
     public int maxVomitDistance = 10;
     public float vomitCooldown = 2f;
 
-    [Header("Hop Movement Settings")]
-    public float moveDuration = 1f;      // How long it moves
-    public float stopDuration = 0.25f;   // How long it pauses
+    public float moveDuration;      // How long it moves
+    public float stopDuration;   // How long it pauses
 
-    private float vomitTimer;
-    private float movementTimer;
-    private bool isStopped = false;
+    float vomitTimer;
+    float movementTimer;
+    bool isStopped = false;
 
-    private NavMeshAgent myAgent;
-    private float distanceFromPlayer;
+    NavMeshAgent myAgent;
+    float distanceFromPlayer;
+
+    public Animator anim;
 
     void Start()
     {
@@ -60,6 +60,7 @@ public class MarshmellowAIBehaviour : MonoBehaviour
 
         if (distanceFromPlayer >= minVomitDistance && distanceFromPlayer <= maxVomitDistance && vomitTimer > vomitCooldown)
         {
+            anim.Play("Vomit");
             Instantiate(vomitGO, vomitPos.position, vomitPos.rotation);
             vomitTimer = 0f;
         }

@@ -6,6 +6,8 @@ public class enemyHealthBehaviour : MonoBehaviour
 {
     public float myHealth;
     public float damageAmount;
+
+    public GameObject explodeGO;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +19,7 @@ public class enemyHealthBehaviour : MonoBehaviour
     {
         if(myHealth <= 0)
         {
+            Instantiate(explodeGO, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

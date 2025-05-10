@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class crabEnemyBehaviour : MonoBehaviour
 {
-
     public bool closeGap;
     public bool closeGapFollow;
     public bool exitGap;
@@ -15,16 +14,17 @@ public class crabEnemyBehaviour : MonoBehaviour
     public Animator anim;
     float timer;
 
+    // Reference to the player's knockback script
+     PlayerController playerKnockback;
 
-    // Start is called before the first frame update
     void Start()
     {
         myAgent = GetComponent<NavMeshAgent>();
 
-
+        // Get reference to the player's knockback script
+        playerKnockback = playerPos.GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(transform.position, playerPos.position);
@@ -36,11 +36,10 @@ public class crabEnemyBehaviour : MonoBehaviour
             anim.Play("Walk");
         }
 
-        if(distance > 10)
+        if (distance > 10)
         {
             closeGap = true;
         }
-
 
         if (closeGap)
         {
@@ -58,26 +57,31 @@ public class crabEnemyBehaviour : MonoBehaviour
         if (closeGapFollow)
         {
             myAgent.speed = 9;
-
             myAgent.SetDestination(playerPos.position);
-            if (distance < 2.5f)
+
+            // If the enemy is close enough to the player, exit and apply knockback
+            if (distance < 3)
             {
                 closeGapFollow = false;
                 exitGap = true;
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", true);
-            }
 
+                // Trigger knockback effect when the enemy exits close range
+                if (playerKnockback != null)
+                {
+                    // Call the knockback function passing the enemy's position
+                    playerKnockback.ApplyKnockback(transform.position);
+                }
+            }
         }
 
-        if(exitGap)
+        if (exitGap)
         {
             myAgent.SetDestination(transform.position);
 
-           
-
             timer += Time.deltaTime;
-            if(timer >= 1)
+            if (timer >= 1)
             {
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", false);

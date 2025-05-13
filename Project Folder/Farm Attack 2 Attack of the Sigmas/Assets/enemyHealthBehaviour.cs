@@ -19,6 +19,8 @@ public class enemyHealthBehaviour : MonoBehaviour
     {
         if(myHealth <= 0)
         {
+            FindObjectOfType<PointsBehaviour>().CallPoints();
+
             Instantiate(explodeGO, transform.position, transform.rotation);
             Destroy(gameObject);
         }

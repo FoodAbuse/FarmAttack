@@ -11,12 +11,9 @@ public class burgerEnemyController : MonoBehaviour
     public float rollSpeed = 6f;
     public float attackDistance = 1.5f;
     public Animator animator;
-    public float returnToNormalDistance = 2f;
 
     private NavMeshAgent agent;
-    public bool isFollowing;
-    public bool isAttacking;
-    public bool isRolling;
+    private bool isAttacking;
 
     void Start()
     {
@@ -27,72 +24,64 @@ public class burgerEnemyController : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        if (distanceToPlayer <= attackDistance && !isAttacking)
+        if (!isAttacking)
         {
-            Attack();
-        }
-        else if (distanceToPlayer <= followDistance && !isAttacking)
-        {
-            FollowPlayer();
+            if (distanceToPlayer <= attackDistance)
+            {
+                Attack();
+            }
+            else if (distanceToPlayer <= followDistance)
+            {
+                FollowPlayer();
+            }
+            else
+            {
+                Roll();
+            }
         }
         else
         {
-            Roll();
+            // Keep chasing the player during attack
+            agent.SetDestination(player.position);
         }
 
-        animator.SetBool("IsRolling", isRolling);
-        animator.SetBool("IsFollowing", isFollowing);
-        animator.SetBool("IsAttacking", isAttacking);
+        // True if moving (follow or roll), false if standing still
+        bool isMoving = !isAttacking && agent.velocity.magnitude > 0.1f;
+        animator.SetBool("IsMoving", isMoving);
 
-        RotateTowardsDirection(agent.velocity.normalized);
-
-        if (distanceToPlayer <= returnToNormalDistance)
-        {
-            isRolling = false;
-            animator.SetBool("IsRolling", false);
-
-        }
+        animator.SetBool("IsRolling", !isAttacking && agent.speed == rollSpeed);
     }
 
     void FollowPlayer()
     {
-        isFollowing = true;
         agent.speed = followSpeed;
+        agent.isStopped = false;
         agent.SetDestination(player.position);
     }
 
     void Roll()
     {
-        isRolling = true;
         agent.speed = rollSpeed;
+        agent.isStopped = false;
         agent.SetDestination(player.position);
     }
 
     void Attack()
     {
         isAttacking = true;
-        agent.isStopped = true;
+        // DON'T stop agent here, keep moving so it chases player
+        animator.SetTrigger("Attack");
         StartCoroutine(EndAttack());
     }
 
     IEnumerator EndAttack()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
+
+        // Optional: short delay to "recover" or reassess
+        yield return new WaitForSeconds(0.3f);
+
         isAttacking = false;
         agent.isStopped = false;
-
-        if (Vector3.Distance(transform.position, player.position) > attackDistance)
-        {
-            isFollowing = true;
-        }
-    }
-
-    void RotateTowardsDirection(Vector3 direction)
-    {
-        if (direction != Vector3.zero)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
-        }
     }
 }

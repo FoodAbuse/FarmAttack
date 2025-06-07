@@ -5,6 +5,10 @@ using UnityEngine;
 public class CropPrefabBehaviour : MonoBehaviour
 {
     public int myGrowthTime;
+
+    public GameObject[] myChildren;
+
+    public GameObject PublicAmmoGO;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +19,15 @@ public class CropPrefabBehaviour : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void HasBeenHarvested()
+    {
+        foreach (GameObject child in myChildren)
+        {
+            Instantiate(PublicAmmoGO, child.transform.position, PublicAmmoGO.transform.rotation);
+        }
+
+
     }
 }

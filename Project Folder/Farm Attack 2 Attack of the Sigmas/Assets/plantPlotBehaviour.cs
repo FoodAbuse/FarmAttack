@@ -12,7 +12,7 @@ public class plantPlotBehaviour : MonoBehaviour
 
     public GameObject chosenPlantPrefab; // I choose you! To be set by when player clicks on the plot with the specific seeds in hand
     public GameObject[] PlantPrefabs; // Put those suckers in here
-    GameObject TempPrefabPlant;
+    public GameObject TempPrefabPlant;
 
     public TextMeshProUGUI TitleText;
     public bool _finishedGrowing;
@@ -38,7 +38,7 @@ public class plantPlotBehaviour : MonoBehaviour
         {
             if(!_spawnedPrefab)
             {
-                TempPrefabPlant = Instantiate(chosenPlantPrefab, transform.position, transform.rotation);
+                TempPrefabPlant = Instantiate(chosenPlantPrefab, transform.position, transform.rotation); // this is the thing in the world
                 TitleText.text = chosenPlantPrefab.name.ToString();
                 _spawnedPrefab = true;
             }
@@ -53,6 +53,7 @@ public class plantPlotBehaviour : MonoBehaviour
 
         if(_hasBeenHarvested) // full reset
         {
+            TempPrefabPlant.GetComponent<CropPrefabBehaviour>().HasBeenHarvested();
             TitleText.text = "Empty Plot";
             Destroy(TempPrefabPlant);
             TempPrefabPlant = null;

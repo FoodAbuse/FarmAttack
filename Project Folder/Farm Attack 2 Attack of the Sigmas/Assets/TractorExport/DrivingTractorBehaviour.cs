@@ -4,92 +4,85 @@ using UnityEngine;
 
 public class DrivingTractorBehaviour : MonoBehaviour
 {
-    public Camera playerCamera;
-    public float lookXLimit = 45.0f;
-    public float lookSpeed;
+    public enum ControlMode { Keyboard, Buttons }
+    public enum Axel { Front, Rear }
 
-    float rotationX = 0;
-
-    public WheelCollider FR;
-    public WheelCollider FL;
-    public WheelCollider BR;
-    public WheelCollider BL;
-
-    public Transform FRTransform;
-    public Transform FLTransform;
-    public Transform BRTransform;
-    public Transform BLTransform;
-
-    public float acceleration;
-    public float breaking;
-
-    public float maxTurnAngle;
-
-    float currentSpeed;
-    float currentBreakForce;
-    float currentTurn;
-
-    public void Update()
+    public struct Wheel
     {
-        rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-        rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+        public GameObject wheelModel;
+        public WheelCollider wheelCollider;
+        public GameObject wheelEffectObj;
+        public ParticleSystem smokeParticle;
+        public Axel axel;
+    }
 
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, Input.GetAxis("Mouse X"), 0);
+    public ControlMode control;
+    public float maxAcceleration = 30f;
+    public float brakeAcceleration = 50f;
+    public float turnSensitivity = 1f;
+    public float maxSteerAngle = 30f;
+    public Vector3 _centerOfMass;
+    public List<Wheel> wheels;
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+    float moveInput, steerInput;
+    Rigidbody carRb;
+
+    void Start()
+    {
+        carRb = GetComponent<Rigidbody>();
+        carRb.centerOfMass = _centerOfMass;
+    }
+
+    void Update()
+    {
+        if (control == ControlMode.Keyboard)
         {
-            acceleration = 500;
+            moveInput = Input.GetAxis("Vertical");
+            steerInput = Input.GetAxis("Horizontal");
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        AnimateWheels();
+    }
+
+    void LateUpdate()
+    {
+        Move();
+        Steer();
+        Brake();
+    }
+
+    public void MoveInput(float input) => moveInput = input;
+    public void SteerInput(float input) => steerInput = input;
+
+    void Move()
+    {
+        float torque = moveInput * 600 * maxAcceleration * Time.deltaTime;
+        foreach (var wheel in wheels)
+            wheel.wheelCollider.motorTorque = torque;
+    }
+
+    void Steer()
+    {
+        float steerAngle = steerInput * turnSensitivity * maxSteerAngle;
+        foreach (var wheel in wheels)
         {
-            acceleration = 250;
+            if (wheel.axel == Axel.Front)
+                wheel.wheelCollider.steerAngle = Mathf.Lerp(wheel.wheelCollider.steerAngle, steerAngle, 0.6f);
         }
     }
 
-    public void FixedUpdate()
+    void Brake()
     {
-        currentSpeed = acceleration * Input.GetAxis("Vertical");
-
-
-
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            currentBreakForce = breaking;
-        }
-        else
-        {
-            currentBreakForce = 0;
-        }
-
-        FR.motorTorque = currentSpeed;
-        FL.motorTorque = currentSpeed;
-
-        FR.brakeTorque = currentBreakForce;
-        FL.brakeTorque = currentBreakForce;
-        BR.brakeTorque = currentBreakForce;
-        BL.brakeTorque = currentBreakForce;
-
-        currentTurn = maxTurnAngle * Input.GetAxis("Horizontal");
-        FR.steerAngle = currentTurn;
-        FL.steerAngle = currentTurn;
-
-        UpdateWheel(FL, FLTransform);
-        UpdateWheel(FR, FRTransform);
-        
-
-
+        float brakeTorque = (Input.GetKey(KeyCode.Space) || moveInput == 0) ? 300 * brakeAcceleration * Time.deltaTime : 0f;
+        foreach (var wheel in wheels)
+            wheel.wheelCollider.brakeTorque = brakeTorque;
     }
 
-    void UpdateWheel(WheelCollider col, Transform trans)
+    void AnimateWheels()
     {
-        Vector3 position;
-        Quaternion rotation;
-
-        col.GetWorldPose(out position, out rotation);
-
-        trans.position = position;
-        trans.rotation = rotation;
+        foreach (var wheel in wheels)
+        {
+            wheel.wheelCollider.GetWorldPose(out Vector3 pos, out Quaternion rot);
+            wheel.wheelModel.transform.SetPositionAndRotation(pos, rot);
+        }
     }
-
-}
+    }

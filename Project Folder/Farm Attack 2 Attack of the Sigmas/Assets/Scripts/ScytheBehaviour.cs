@@ -17,6 +17,10 @@ public class ScytheBehaviour : MonoBehaviour
 
     public float comboTimeWindow = 1.5f;
     private float lastAttackTime;
+
+    public Transform camPos;
+
+    public LayerMask targetMask;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +32,8 @@ public class ScytheBehaviour : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            print("Working! 1");
+
             Attack();
         }
 
@@ -60,15 +66,25 @@ public class ScytheBehaviour : MonoBehaviour
         // Call the appropriate attack function based on the attackIndex
         if (attackIndex == 1) // hit1
         {
+            RaycastHit hit;
+            // Does the ray intersect any objects excluding the player layer
+            if (Physics.Raycast(camPos.position, camPos.TransformDirection(Vector3.forward), out hit, 55, targetMask))
+
+            {
+                if (hit.transform.gameObject.tag == "Planter")
+                {
+                    hit.transform.GetComponent<plantPlotBehaviour>()._hasBeenHarvested = true;
+                }
+            }
             playerAnim.Play("hit1");
-          //  soundSource.Play();
-          
+            //  soundSource.Play();
+
         }
         else if (attackIndex == 2) // hit2
         {
             playerAnim.Play("hit2");
-           // soundSource.Play();
-            
+            // soundSource.Play();
+
         }
 
     }
@@ -80,4 +96,6 @@ public class ScytheBehaviour : MonoBehaviour
         comboCount = 0;
         attackIndex = 0;
     }
+
+
 }

@@ -9,6 +9,13 @@ public class CropPrefabBehaviour : MonoBehaviour
     public GameObject[] myChildren;
 
     public GameObject PublicAmmoGO;
+
+    public string myName;
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +25,7 @@ public class CropPrefabBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void HasBeenHarvested()
@@ -30,4 +37,6 @@ public class CropPrefabBehaviour : MonoBehaviour
 
 
     }
+
+   
 }

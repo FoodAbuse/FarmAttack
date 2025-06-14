@@ -7,6 +7,8 @@ public class burgerEnemyController : MonoBehaviour
 {
     public Transform player;
     public float followDistance = 5f;
+    public float followBuffer = 0.5f; // add this
+
     public float followSpeed = 3f;
     public float rollSpeed = 6f;
     public float attackDistance = 1.5f;
@@ -20,35 +22,54 @@ public class burgerEnemyController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    private enum State { Idle, Walking, Rolling }
+    private State currentState = State.Idle;
+
     void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         if (!isAttacking)
         {
+            // Transition logic with hysteresis
+            switch (currentState)
+            {
+                case State.Rolling:
+                    if (distanceToPlayer <= followDistance - followBuffer)
+                    {
+                        currentState = State.Walking;
+                    }
+                    break;
+
+                case State.Walking:
+                    if (distanceToPlayer > followDistance + followBuffer)
+                    {
+                        currentState = State.Rolling;
+                    }
+                    break;
+
+                default:
+                    currentState = (distanceToPlayer > followDistance + followBuffer) ? State.Rolling : State.Walking;
+                    break;
+            }
+
+            // Behavior based on state
             if (distanceToPlayer <= attackDistance)
             {
                 Attack();
             }
-            else if (distanceToPlayer <= followDistance)
+            else if (currentState == State.Walking)
             {
                 FollowPlayer();
             }
-            else
+            else if (currentState == State.Rolling)
             {
                 Roll();
             }
         }
-        else
-        {
-            // Keep chasing the player during attack
-            agent.SetDestination(player.position);
-        }
 
-        // True if moving (follow or roll), false if standing still
         bool isMoving = !isAttacking && agent.velocity.magnitude > 0.1f;
         animator.SetBool("IsMoving", isMoving);
-
         animator.SetBool("IsRolling", !isAttacking && agent.speed == rollSpeed);
     }
 
@@ -68,20 +89,56 @@ public class burgerEnemyController : MonoBehaviour
 
     void Attack()
     {
+        if (isAttacking) return;
+
         isAttacking = true;
-        // DON'T stop agent here, keep moving so it chases player
+        agent.isStopped = true; // Stop moving for the attack
+        animator.ResetTrigger("Attack");
         animator.SetTrigger("Attack");
-        StartCoroutine(EndAttack());
+
+        StartCoroutine(AttackRoutine());
     }
 
-    IEnumerator EndAttack()
+    IEnumerator AttackRoutine()
     {
-        yield return new WaitForSeconds(2);
+        // Rotate toward the player before attacking
+        Vector3 directionToPlayer = (player.position - transform.position).normalized;
+        directionToPlayer.y = 0; // Keep rotation on horizontal plane
+        Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
 
-        // Optional: short delay to "recover" or reassess
-        yield return new WaitForSeconds(0.3f);
+        float rotationSpeed = 10f;
+        while (Quaternion.Angle(transform.rotation, lookRotation) > 1f)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+            yield return null;
+        }
 
+        // Begin the attack
+        float attackDuration = 1.15f;
+        float timer = 0f;
+
+        while (timer < attackDuration)
+        {
+            float distance = Vector3.Distance(transform.position, player.position);
+
+            // Cancel attack if player moves away mid-animation
+            if (distance > attackDistance)
+            {
+                animator.ResetTrigger("Attack");
+                animator.SetTrigger("CancelAttack"); // optional cancel animation trigger
+                isAttacking = false;
+                agent.isStopped = false;
+                yield break;
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Attack finished normally
         isAttacking = false;
         agent.isStopped = false;
     }
+
+
 }

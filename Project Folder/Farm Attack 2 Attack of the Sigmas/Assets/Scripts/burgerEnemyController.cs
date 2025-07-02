@@ -19,6 +19,7 @@ public class burgerEnemyController : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform   ;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -101,19 +102,6 @@ public class burgerEnemyController : MonoBehaviour
 
     IEnumerator AttackRoutine()
     {
-        // Rotate toward the player before attacking
-        Vector3 directionToPlayer = (player.position - transform.position).normalized;
-        directionToPlayer.y = 0; // Keep rotation on horizontal plane
-        Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
-
-        float rotationSpeed = 10f;
-        while (Quaternion.Angle(transform.rotation, lookRotation) > 1f)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
-            yield return null;
-        }
-
-        // Begin the attack
         float attackDuration = 1.15f;
         float timer = 0f;
 
@@ -139,6 +127,4 @@ public class burgerEnemyController : MonoBehaviour
         isAttacking = false;
         agent.isStopped = false;
     }
-
-
 }

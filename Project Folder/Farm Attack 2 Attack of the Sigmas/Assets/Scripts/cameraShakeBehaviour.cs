@@ -33,9 +33,10 @@ public class cameraShakeBehaviour : MonoBehaviour
         }
     }
 
-    public void ShakeCamera()
+    public void ShakeCamera(float intensity)
     {
-        // Trigger camera shake
-        shakeTimer = shakeDuration;
+        shakeIntensity = intensity;
+           // Trigger camera shake
+           shakeTimer = shakeDuration;
     }
 }

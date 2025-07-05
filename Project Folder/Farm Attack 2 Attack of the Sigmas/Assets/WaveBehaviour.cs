@@ -59,16 +59,9 @@ public class WaveBehaviour : MonoBehaviour
             yield break;
         }
 
-        Wave wave = waves[currentWaveIndex];
-        isSpawning = true;
-        OnWaveStarted?.Invoke(currentWaveIndex + 1);
+        // By default spawn with 0% targeting player (all crops), you can customize as needed
+        yield return SpawnWaveCoroutine(currentWaveIndex, 0f);
 
-        foreach (var group in wave.spawnGroups)
-        {
-            yield return StartCoroutine(SpawnGroup(group));
-        }
-
-        isSpawning = false;
         currentWaveIndex++;
 
         // Wait until all enemies are cleared
@@ -78,12 +71,63 @@ public class WaveBehaviour : MonoBehaviour
         StartCoroutine(StartNextWave());
     }
 
-    IEnumerator SpawnGroup(EnemySpawnInfo group)
+    // New method: Spawn a specific wave with percentage of enemies targeting player
+    public void SpawnWave(int waveIndex, float percentToPlayer)
     {
-        for (int i = 0; i < group.count; i++)
+        if (waveIndex < 0 || waveIndex >= waves.Count)
+        {
+            Debug.LogWarning("Wave index out of range!");
+            return;
+        }
+
+        if (!isSpawning)
+        {
+            StartCoroutine(SpawnWaveCoroutine(waveIndex, percentToPlayer));
+        }
+    }
+
+    // Coroutine for spawning waves with targeting intent
+    private IEnumerator SpawnWaveCoroutine(int waveIndex, float percentToPlayer)
+    {
+        Wave wave = waves[waveIndex];
+        isSpawning = true;
+        OnWaveStarted?.Invoke(waveIndex + 1);
+
+        foreach (var group in wave.spawnGroups)
+        {
+            yield return StartCoroutine(SpawnGroup(group, percentToPlayer));
+        }
+
+        isSpawning = false;
+    }
+
+    // Modified SpawnGroup to assign targeting intent to enemies
+    IEnumerator SpawnGroup(EnemySpawnInfo group, float percentToPlayer)
+    {
+        int total = group.count;
+        int toPlayer = Mathf.RoundToInt(total * percentToPlayer);
+        int spawnedForPlayer = 0;
+
+        for (int i = 0; i < total; i++)
         {
             Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            Instantiate(group.enemyPrefab, spawnPoint.position, Quaternion.identity);
+            GameObject enemyGO = Instantiate(group.enemyPrefab, spawnPoint.position, Quaternion.identity);
+
+            // Assign targeting intent
+            burgerEnemyController enemyAI = enemyGO.GetComponent<burgerEnemyController>();
+            if (enemyAI != null)
+            {
+                if (spawnedForPlayer < toPlayer)
+                {
+                    enemyAI.intent = burgerEnemyController.TargetIntent.Player;
+                    spawnedForPlayer++;
+                }
+                else
+                {
+                    enemyAI.intent = burgerEnemyController.TargetIntent.Planter;
+                }
+            }
+
             yield return new WaitForSeconds(group.spawnDelay);
         }
     }

@@ -30,9 +30,13 @@ public class weaponBehaviour : MonoBehaviour
     public AudioClip soundClip;
 
     PlayerController playerController;
+
+    cameraShakeBehaviour CamShakeControl;
+
     // Start is called before the first frame update
     void Start()
     {
+        CamShakeControl = FindObjectOfType<cameraShakeBehaviour>();
         playerController = FindObjectOfType<PlayerController>();
         selectedAmmo = AmmoType.Carrot;
         gameManager = FindObjectOfType<GameManager>();
@@ -66,8 +70,6 @@ public class weaponBehaviour : MonoBehaviour
                 }
 
                 handsAnim.SetBool("PlayerIsShooting", true);
-
-                Camera.main.GetComponent<cameraShakeBehaviour>().ShakeCamera();
 
             }
 
@@ -113,6 +115,7 @@ public class weaponBehaviour : MonoBehaviour
 
     public void FireGun()
     {
+        CamShakeControl.ShakeCamera(.0175f);
         Debug.Log("FireGun called");
         soundSource.PlayOneShot(soundClip);
 

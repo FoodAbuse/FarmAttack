@@ -7,8 +7,7 @@ public class burgerEnemyController : MonoBehaviour
 {
     public Transform player;
     public float followDistance = 5f;
-    public float followBuffer = 0.5f; // add this
-
+    public float followBuffer = 0.5f;
     public float followSpeed = 3f;
     public float rollSpeed = 6f;
     public float attackDistance = 1.5f;
@@ -17,55 +16,72 @@ public class burgerEnemyController : MonoBehaviour
     private NavMeshAgent agent;
     private bool isAttacking;
 
-    void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").transform   ;
-        agent = GetComponent<NavMeshAgent>();
-    }
+    public enum TargetIntent { Player, Planter }
+    public TargetIntent intent = TargetIntent.Planter;
+
+    private Transform PlanterTarget;
+    private Transform currentTarget;
+
+    public float aggroRange = 8f;
+    public float deAggroRange = 12f;
 
     private enum State { Idle, Walking, Rolling }
     private State currentState = State.Idle;
 
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        PlanterTarget = FindClosestPlanter();
+        currentTarget = (intent == TargetIntent.Player) ? player : PlanterTarget;
+
+        agent = GetComponent<NavMeshAgent>();
+    }
+
     void Update()
     {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        float distToPlayer = Vector3.Distance(transform.position, player.position);
+
+        // Dynamically re-target based on proximity
+        if (intent == TargetIntent.Planter)
+        {
+            if (distToPlayer < aggroRange)
+                currentTarget = player;
+            else if (distToPlayer > deAggroRange)
+                currentTarget = PlanterTarget;
+        }
+
+        float distanceToTarget = Vector3.Distance(transform.position, currentTarget.position);
 
         if (!isAttacking)
         {
-            // Transition logic with hysteresis
             switch (currentState)
             {
                 case State.Rolling:
-                    if (distanceToPlayer <= followDistance - followBuffer)
-                    {
+                    if (distanceToTarget <= followDistance - followBuffer)
                         currentState = State.Walking;
-                    }
                     break;
 
                 case State.Walking:
-                    if (distanceToPlayer > followDistance + followBuffer)
-                    {
+                    if (distanceToTarget > followDistance + followBuffer)
                         currentState = State.Rolling;
-                    }
                     break;
 
                 default:
-                    currentState = (distanceToPlayer > followDistance + followBuffer) ? State.Rolling : State.Walking;
+                    currentState = (distanceToTarget > followDistance + followBuffer) ? State.Rolling : State.Walking;
                     break;
             }
 
-            // Behavior based on state
-            if (distanceToPlayer <= attackDistance)
+            if (distanceToTarget <= attackDistance)
             {
                 Attack();
             }
             else if (currentState == State.Walking)
             {
-                FollowPlayer();
+                MoveToTarget(followSpeed);
             }
             else if (currentState == State.Rolling)
             {
-                Roll();
+                MoveToTarget(rollSpeed);
             }
         }
 
@@ -74,18 +90,11 @@ public class burgerEnemyController : MonoBehaviour
         animator.SetBool("IsRolling", !isAttacking && agent.speed == rollSpeed);
     }
 
-    void FollowPlayer()
+    void MoveToTarget(float speed)
     {
-        agent.speed = followSpeed;
+        agent.speed = speed;
         agent.isStopped = false;
-        agent.SetDestination(player.position);
-    }
-
-    void Roll()
-    {
-        agent.speed = rollSpeed;
-        agent.isStopped = false;
-        agent.SetDestination(player.position);
+        agent.SetDestination(currentTarget.position);
     }
 
     void Attack()
@@ -93,7 +102,7 @@ public class burgerEnemyController : MonoBehaviour
         if (isAttacking) return;
 
         isAttacking = true;
-        agent.isStopped = true; // Stop moving for the attack
+        agent.isStopped = true;
         animator.ResetTrigger("Attack");
         animator.SetTrigger("Attack");
 
@@ -107,13 +116,12 @@ public class burgerEnemyController : MonoBehaviour
 
         while (timer < attackDuration)
         {
-            float distance = Vector3.Distance(transform.position, player.position);
+            float distance = Vector3.Distance(transform.position, currentTarget.position);
 
-            // Cancel attack if player moves away mid-animation
             if (distance > attackDistance)
             {
                 animator.ResetTrigger("Attack");
-                animator.SetTrigger("CancelAttack"); // optional cancel animation trigger
+                animator.SetTrigger("CancelAttack");
                 isAttacking = false;
                 agent.isStopped = false;
                 yield break;
@@ -123,8 +131,27 @@ public class burgerEnemyController : MonoBehaviour
             yield return null;
         }
 
-        // Attack finished normally
+        // Attack completed
         isAttacking = false;
         agent.isStopped = false;
+    }
+
+    Transform FindClosestPlanter()
+    {
+        GameObject[] Planters = GameObject.FindGameObjectsWithTag("Planter");
+        Transform closest = null;
+        float minDist = Mathf.Infinity;
+
+        foreach (GameObject c in Planters)
+        {
+            float dist = Vector3.Distance(transform.position, c.transform.position);
+            if (dist < minDist)
+            {
+                minDist = dist;
+                closest = c.transform;
+            }
+        }
+
+        return closest;
     }
 }

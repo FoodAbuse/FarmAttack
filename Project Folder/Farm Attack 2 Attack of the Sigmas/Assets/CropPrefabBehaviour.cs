@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CropPrefabBehaviour : MonoBehaviour
 {
@@ -9,11 +10,7 @@ public class CropPrefabBehaviour : MonoBehaviour
     public GameObject[] myChildren;
 
     public GameObject PublicAmmoGO;
-
-    public string myName;
-
-
-
+    public Sprite mySpriteForImage;
 
 
     // Start is called before the first frame update
@@ -25,7 +22,8 @@ public class CropPrefabBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        transform.parent.GetComponent<plantPlotBehaviour>().showcaseImage.sprite = mySpriteForImage;
+
     }
 
     public void HasBeenHarvested()

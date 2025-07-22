@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class plantPlotBehaviour : MonoBehaviour
 {
@@ -14,8 +14,8 @@ public class plantPlotBehaviour : MonoBehaviour
     public GameObject[] PlantPrefabs; // Put those suckers in here
     public GameObject TempPrefabPlant;
     public GameObject myCanvas;
+    public Image showcaseImage;
 
-    public TextMeshProUGUI TitleText;
     public bool _finishedGrowing;
     public bool _startGrowing;
     public bool _spawnedPrefab;
@@ -53,9 +53,10 @@ public class plantPlotBehaviour : MonoBehaviour
         {
             if(!_spawnedPrefab)
             {
+
                 TempPrefabPlant = Instantiate(chosenPlantPrefab, transform.position, transform.rotation); // this is the thing in the world
-               
-                TitleText.text = chosenPlantPrefab.GetComponent<CropPrefabBehaviour>().myName.ToString();
+                TempPrefabPlant.transform.parent = transform;
+                
                 _spawnedPrefab = true;
             }
 
@@ -70,7 +71,6 @@ public class plantPlotBehaviour : MonoBehaviour
         if(_hasBeenHarvested) // full reset
         {
             TempPrefabPlant.GetComponent<CropPrefabBehaviour>().HasBeenHarvested();
-            TitleText.text = "Empty Plot";
             Destroy(TempPrefabPlant);
             TempPrefabPlant = null;
             _spawnedPrefab = false;
@@ -79,6 +79,7 @@ public class plantPlotBehaviour : MonoBehaviour
             _startGrowing = false;
             timer = 0;
             _hasBeenHarvested = false;
+            showcaseImage = null;
         }
 
     }

@@ -1413,6 +1413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4971641694541186587}
   - component: {fileID: 4971641694971489106}
+  - component: {fileID: 8686202793257423333}
   m_Layer: 0
   m_Name: CarrotCrop 1
   m_TagString: Untagged
@@ -1457,6 +1458,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myGrowthTime: 8
+  moisture: 100
+  moistureDecayPerSecond: 1
+  highMoistureYield: 1.25
+  midMoistureYield: 1
+  lowMoistureYield: 0.75
+  dryMoistureYield: 0.5
   myChildren:
   - {fileID: 4753608217608640735}
   - {fileID: 4971641694903521702}
@@ -1469,7 +1476,19 @@ MonoBehaviour:
   - {fileID: 4971641694338342201}
   PublicAmmoGO: {fileID: 6041179055703323277, guid: 63688836bdaab3246a4af8b8ae2c3832, type: 3}
   mySpriteForImage: {fileID: 21300000, guid: fc96533f956335a4e8d9e46a6b1d4688, type: 3}
-  myName: Carrots
+--- !u!65 &8686202793257423333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971641694541186584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9959517, y: 1.6840284, z: 2.0820215}
+  m_Center: {x: -0.0061478615, y: 0.5817803, z: -0.06762636}
 --- !u!1 &4971641694557635322
 GameObject:
   m_ObjectHideFlags: 0

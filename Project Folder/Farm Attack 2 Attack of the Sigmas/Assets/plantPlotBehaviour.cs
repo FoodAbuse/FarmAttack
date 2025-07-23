@@ -7,7 +7,7 @@ public class plantPlotBehaviour : MonoBehaviour
 {
   
 
-    int myGrowTime; // Has to be set to the animation length of the growth
+    float myGrowTime; // Has to be set to the animation length of the growth
     float timer;
 
     public GameObject chosenPlantPrefab; // I choose you! To be set by when player clicks on the plot with the specific seeds in hand

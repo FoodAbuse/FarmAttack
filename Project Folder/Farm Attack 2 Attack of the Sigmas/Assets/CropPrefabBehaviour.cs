@@ -5,36 +5,70 @@ using UnityEngine.UI;
 
 public class CropPrefabBehaviour : MonoBehaviour
 {
-    public int myGrowthTime;
+    public float myGrowthTime = 30f;              // seconds until mature
+    private bool _isMature = false;
 
-    public GameObject[] myChildren;
+    [Range(0, 100)] public float moisture = 100f;
+    public float moistureDecayPerSecond = 1f;     // moisture loss per second
+   // public Image moistureBar;                     // optional UI
 
-    public GameObject PublicAmmoGO;
-    public Sprite mySpriteForImage;
+    public float highMoistureYield = 1.25f;       // >=80%
+    public float midMoistureYield = 1.00f;       // >=50%
+    public float lowMoistureYield = 0.75f;       // >=20%
+    public float dryMoistureYield = 0.50f;       // <20%
 
+    public GameObject[] myChildren;               // spawn positions
+    public GameObject PublicAmmoGO;               // prefab to spawn
+    public Sprite mySpriteForImage;               // final-stage icon
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        // start growth timer
+        StartCoroutine(GrowRoutine());
+       // if (moistureBar) moistureBar.fillAmount = moisture / 100f;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.parent.GetComponent<plantPlotBehaviour>().showcaseImage.sprite = mySpriteForImage;
-
+        // decay moisture over time
+        moisture = Mathf.Max(0f, moisture - moistureDecayPerSecond * Time.deltaTime);
+        //if (moistureBar) moistureBar.fillAmount = moisture / 100f;
     }
 
-    public void HasBeenHarvested()
+    public void WaterPlant(float amount)
     {
-        foreach (GameObject child in myChildren)
-        {
-            Instantiate(PublicAmmoGO, child.transform.position, PublicAmmoGO.transform.rotation);
-        }
+        moisture = Mathf.Min(100f, moisture + amount);
+     //   if (moistureBar) moistureBar.fillAmount = moisture / 100f;
+    }
 
-
+    private IEnumerator GrowRoutine()
+    {
+        yield return new WaitForSeconds(myGrowthTime);
+        _isMature = true;
     }
 
    
+    public void HasBeenHarvested()
+    {
+        if (!_isMature) return;
+
+        // choose yield multiplier
+        float mul = dryMoistureYield;
+        if (moisture >= 80f) mul = highMoistureYield;
+        else if (moisture >= 50f) mul = midMoistureYield;
+        else if (moisture >= 20f) mul = lowMoistureYield;
+
+        int total = Mathf.RoundToInt(myChildren.Length * mul);
+        for (int i = 0; i < total; i++)
+        {
+            // choose a random child slot
+            var slot = myChildren[Random.Range(0, myChildren.Length)];
+            Instantiate(PublicAmmoGO, slot.transform.position, slot.transform.rotation);
+            print("YO IMA CARROT");
+        }
+
+        Destroy(gameObject);
+    }
+
+
 }

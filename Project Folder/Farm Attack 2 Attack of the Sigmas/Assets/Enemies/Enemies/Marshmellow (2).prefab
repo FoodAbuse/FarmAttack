@@ -456,14 +456,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473292676948010788}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 473292678219613442}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &473292676948010781
 MonoBehaviour:
@@ -480,8 +480,8 @@ MonoBehaviour:
   vomitGO: {fileID: 4128522793781534049, guid: 3f1dc5fa3146ffe42b3c7f44cb1f5155, type: 3}
   player: {fileID: 0}
   vomitPos: {fileID: 473292677420889307}
-  minVomitDistance: 5
-  maxVomitDistance: 8
+  minVomitDistance: 7
+  maxVomitDistance: 15
   vomitCooldown: 2
   moveDuration: 0.45
   stopDuration: 0.35
@@ -496,7 +496,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 999

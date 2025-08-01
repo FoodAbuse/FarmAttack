@@ -50,6 +50,18 @@ public class bulletBehaviour : MonoBehaviour
 
             }
         }
+        if (collision.gameObject.tag == "WorldAsset")
+        {
+            if (!isPotato)
+            {
+                collision.transform.gameObject.SendMessage("TakeDamage");
+
+                GameObject explode = Instantiate(impactPrefab, transform.position, transform.rotation);
+                Destroy(explode, .25f);
+                Destroy(gameObject);
+
+            }
+        }
 
         if (isPotato)
         {

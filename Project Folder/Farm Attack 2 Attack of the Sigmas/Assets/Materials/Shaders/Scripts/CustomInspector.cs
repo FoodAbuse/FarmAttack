@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 
@@ -6,42 +7,28 @@ public class CustomInspector : Editor
 {
     public override void OnInspectorGUI()
     {
-       
         DrawDefaultInspector();
 
-        GradientGenerator gScript = (GradientGenerator) target;
+        GradientGenerator gScript = (GradientGenerator)target;
+
+        // Generate Button
+        if (GUILayout.Button("Generate"))
         {
-            if(GUILayout.Button("Generate"))
-            {
-                gScript.GenR8();
+            gScript.GenR8();
+        }
 
+        // Texture Preview (only if we have a generated texture)
+        if (gScript.generatedGradient != null)
+        {
+            GUILayout.Label("Preview:");
 
-
-                int y = gScript.generatedGradient.height;
-                int x = gScript.generatedGradient.width;
-
-                /*
-                GUILayout.Label("Preview", GUILayout.Height(y), GUILayout.Width(x));
-                GUI.DrawTexture(GUILayoutUtility.GetLastRect(), gScript.generatedGradient);
-                */
-
-                GUILayout.Label(gScript.generatedGradient);
-
-                EditorGUI.PrefixLabel(new Rect(25, 45, 100, 15), 0, new GUIContent("Preview:"));
-                EditorGUI.DrawPreviewTexture(new Rect(25, 60, 100, 100), gScript.generatedGradient);
-
-            }
-
-            if (GUILayout.Button("Export"))
-            {
-                gScript.Export();
-
-            }
+            // Keep preview square
+            float previewSize = Mathf.Min(EditorGUIUtility.currentViewWidth - 40, 128);
+            Rect previewRect = GUILayoutUtility.GetRect(previewSize, previewSize, GUILayout.ExpandWidth(false));
+            EditorGUI.DrawPreviewTexture(previewRect, gScript.generatedGradient);
         }
 
         
     }
-    
-
- 
 }
+#endif

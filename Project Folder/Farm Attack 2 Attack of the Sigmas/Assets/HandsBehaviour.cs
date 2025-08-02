@@ -8,9 +8,9 @@ public class HandsBehaviour : MonoBehaviour
     {
        Scythe,
        WateringCan,
+       Cheese,
        PumpkinTurret,
        Hands,
-       StinkyCheese,
     }
 
     GameManager gameManager;

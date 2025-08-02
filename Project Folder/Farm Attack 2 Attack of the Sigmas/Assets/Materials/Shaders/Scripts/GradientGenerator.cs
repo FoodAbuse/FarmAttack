@@ -1,97 +1,49 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-[ExecuteInEditMode]
 public class GradientGenerator : MonoBehaviour
 {
-    [SerializeField]
-    private int layers;
-
-    [SerializeField]
+    public int layers = 1;
+    public List<float> steps = new List<float>() { 0f, 1f };
     public Texture2D generatedGradient;
 
-    [SerializeField]
-    [Range(0f, 1f)]
-    private List<float> steps;
-
-    private byte[] bytesToExport;
-    [SerializeField]
-    private string desiredFilePath;
-    [SerializeField]
-    private string desiredFileName;
-    private string exportPath;
-    
-
-    
-
-
-
-
+    void Start()
+    {
+        GenR8();
+        SaveGradientRuntime();
+    }
 
     public void GenR8()
     {
+        if (steps.Count < 2) return;
+
         generatedGradient = new Texture2D(100, layers, TextureFormat.RGBA32, false);
         float adjustedLength = steps.Count - 1;
-        Debug.Log(adjustedLength);
-        float colourSplit = (1 / adjustedLength);
-        Debug.Log(colourSplit);
+        float colourSplit = 1f / adjustedLength;
 
         for (int i = 0; i < steps.Count; i++)
         {
-            int currentPos = (Mathf.RoundToInt(steps[i] * generatedGradient.width));
-
-            int lastPos;
-            int endPos;
-
-
-            //int cVal = Mathf.RoundToInt(steps[i] * 255);
-            //Debug.Log((byte)cVal);
-
+            int currentPos = Mathf.RoundToInt(steps[i] * generatedGradient.width);
+            int lastPos = (i == 0) ? 0 : Mathf.RoundToInt(steps[i - 1] * generatedGradient.width);
             int cVal = Mathf.RoundToInt((i * colourSplit) * 255);
-            //Debug.Log(cVal);
-
-            if (i == 0 || i == (steps.Count-1))
-            {
-               if(i == 0) //If we are first in line
-                {
-                    lastPos = 0;
-                    endPos = Mathf.RoundToInt(steps[i + 1] * generatedGradient.width);
-                    
-                }
-               else //If we are last in line
-                {
-                    lastPos = Mathf.RoundToInt(steps[i - 1] * generatedGradient.width);
-                }
-            }
-            else
-            {
-                lastPos = Mathf.RoundToInt(steps[i - 1] * generatedGradient.width);
-                endPos = Mathf.RoundToInt(steps[i + 1] * generatedGradient.width);
-            }
             Color32 myC = new Color32((byte)cVal, (byte)cVal, (byte)cVal, 255);
 
-            int wAffected = currentPos - lastPos;
+            int wAffected = Mathf.Clamp(currentPos - lastPos, 1, generatedGradient.width - lastPos);
             Color32[] newVal = new Color32[wAffected];
-            for (int ii = 0; ii<newVal.Length; ii++)
-            {
+            for (int ii = 0; ii < newVal.Length; ii++)
                 newVal[ii] = myC;
-            }
+
             generatedGradient.SetPixels32(lastPos, 0, wAffected, generatedGradient.height, newVal);
         }
         generatedGradient.Apply();
     }
 
-    public void Export()
+    public void SaveGradientRuntime()
     {
-        exportPath = Application.dataPath+desiredFilePath+desiredFileName;
-        Debug.Log(exportPath);
-
-        bytesToExport = ImageConversion.EncodeToPNG(generatedGradient);
-
-
-        File.WriteAllBytes(exportPath, bytesToExport);
-
+        byte[] bytes = generatedGradient.EncodeToPNG();
+        string path = Path.Combine(Application.persistentDataPath, "Gradient.png");
+        File.WriteAllBytes(path, bytes);
+        Debug.Log("Gradient saved to: " + path);
     }
 }

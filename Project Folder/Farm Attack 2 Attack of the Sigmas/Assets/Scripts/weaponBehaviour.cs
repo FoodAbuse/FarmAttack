@@ -53,7 +53,7 @@ public class weaponBehaviour : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0) && !playerController._isRunning) // is stationary and shooting
             {
-                if (index == 4)
+                if (selectedAmmo == AmmoType.Popcorn)
                 {
                     myAnim.Play("ShootPopCorn");
 
@@ -61,7 +61,15 @@ public class weaponBehaviour : MonoBehaviour
                     myAnim.SetBool("isRun", false);
                 }
 
-                if (index != 4)
+                if (selectedAmmo == AmmoType.Potato)
+                {
+                    myAnim.Play("ShootPotato");
+
+                    myAnim.SetBool("isShootingPotato", true);
+                    myAnim.SetBool("isRun", false);
+                }
+
+                if (selectedAmmo == AmmoType.Carrot)
                 {
                     myAnim.Play("Shoot");
 
@@ -73,7 +81,7 @@ public class weaponBehaviour : MonoBehaviour
 
             }
 
-            if (!Input.GetMouseButton(0) && !playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false) // not running or shooting
+            if (!Input.GetMouseButton(0) && !playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // not running or shooting
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
 
@@ -82,15 +90,27 @@ public class weaponBehaviour : MonoBehaviour
                 myAnim.SetBool("isRun", false);
 
             }
-            if (!Input.GetMouseButton(0) && playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false) // is running
+            if (!Input.GetMouseButton(0) && playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // is running
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
 
                 myAnim.SetBool("isShooting", false);
                 myAnim.SetBool("isShootingPopcorn", false);
+                myAnim.SetBool("isShootingPotato", false);
 
                 myAnim.SetBool("isRun", true);
             }
+
+            if (Input.GetMouseButtonUp(0)) // is running
+            {
+                handsAnim.SetBool("PlayerIsShooting", false);
+
+                myAnim.SetBool("isShooting", false);
+                myAnim.SetBool("isShootingPopcorn", false);
+                myAnim.SetBool("isShootingPotato", false);
+
+            }
+
         }
 
         if (!gameManager._CanAttack)
@@ -130,5 +150,9 @@ public class weaponBehaviour : MonoBehaviour
    public void TurnOffPopCorn()
     {
         myAnim.SetBool("isShootingPopcorn", false);
+    }
+    public void TurnOffPotato()
+    {
+        myAnim.SetBool("isShootingPotato", false);
     }
 }

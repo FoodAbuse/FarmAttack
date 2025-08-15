@@ -26,6 +26,8 @@ public class weaponBehaviour : MonoBehaviour
     public GameObject[] ammoTypeList;
     int index;
 
+    public ParticleSystem chilliParticles;
+
     public AudioSource soundSource;
     public AudioClip soundClip;
 
@@ -76,13 +78,18 @@ public class weaponBehaviour : MonoBehaviour
                     myAnim.SetBool("isShooting", true);
                     myAnim.SetBool("isRun", false);
                 }
-
+                if (selectedAmmo == AmmoType.Chilli)
+                {
+                    chilliParticles.enableEmission = true;
+                }
                 handsAnim.SetBool("PlayerIsShooting", true);
 
             }
 
             if (!Input.GetMouseButton(0) && !playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // not running or shooting
             {
+                chilliParticles.enableEmission = false;
+
                 handsAnim.SetBool("PlayerIsShooting", false);
 
                 myAnim.SetBool("isShooting", false);
@@ -93,6 +100,7 @@ public class weaponBehaviour : MonoBehaviour
             if (!Input.GetMouseButton(0) && playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // is running
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
+                chilliParticles.enableEmission = false;
 
                 myAnim.SetBool("isShooting", false);
                 myAnim.SetBool("isShootingPopcorn", false);
@@ -104,6 +112,7 @@ public class weaponBehaviour : MonoBehaviour
             if (Input.GetMouseButtonUp(0)) // is running
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
+                chilliParticles.enableEmission = false;
 
                 myAnim.SetBool("isShooting", false);
                 myAnim.SetBool("isShootingPopcorn", false);

@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlayerController : MonoBehaviour
+using Unity.Netcode;
+public class PlayerController : MyNetworkBehaviour
 {
     public float walkSpeed = 5f;
     public float sprintSpeed = 10f;
@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public Animator cameraMovementAnimator;
 
     public bool _isRunning;
-    private float idleThreshold = 0f; // Adjust this value based on your preference
+    private float idleThreshold = 0f;
 
     // Hugo's Testing - Freeze heat rotation when Radial Dial is Active
     public bool cameraFrozen;
@@ -28,12 +28,13 @@ public class PlayerController : MonoBehaviour
     private float knockbackTimer = 0f;
     private Vector3 knockbackDirection;
 
-    void Start()
+    protected override void OnLocalOwnerStart()
     {
+        transform.position = new Vector3(0f, 5f, 0f);
         characterController = GetComponent<CharacterController>();
     }
 
-    void Update()
+    protected override void OnLocalOwnerUpdate()
     {
         HeadMovement();
 
@@ -94,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
         float moveMagnitude = new Vector2(horizontal, vertical).magnitude;
         anim.SetBool("Walking", moveMagnitude > 0);
+       
 
         if (currentSpeed == sprintSpeed)
         {

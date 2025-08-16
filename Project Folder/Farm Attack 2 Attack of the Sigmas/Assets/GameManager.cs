@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     public int IndexNumber;
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LockMouse();
+        // LockMouse();
         _CanAttack = true;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 

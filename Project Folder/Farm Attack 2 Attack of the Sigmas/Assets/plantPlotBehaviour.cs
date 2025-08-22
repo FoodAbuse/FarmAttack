@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class plantPlotBehaviour : MonoBehaviour
+public class plantPlotBehaviour : MyNetworkBehaviour
 {
   
 
@@ -25,7 +26,7 @@ public class plantPlotBehaviour : MonoBehaviour
     public Transform playerPos;
 
     // Start is called before the first frame update
-    void Start()
+    public override void OnNetworkSpawn()
     {
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
     }

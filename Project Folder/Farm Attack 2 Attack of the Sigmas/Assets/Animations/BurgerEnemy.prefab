@@ -57,6 +57,12 @@ MonoBehaviour:
   rollSpeed: 10
   attackDistance: 3
   animator: {fileID: 1093143195226910503}
+  projectileMask:
+    serializedVersion: 2
+    m_Bits: 8192
+  threatDetectRadius: 6
+  dodgeDistance: 3
+  dodgeCooldown: 1
   intent: 1
   aggroRange: 25
   deAggroRange: 35

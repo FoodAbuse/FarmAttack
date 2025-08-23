@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -27,6 +27,8 @@ public class crabEnemyBehaviour : MonoBehaviour
 
     void Update()
     {
+        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+
         float distance = Vector3.Distance(transform.position, playerPos.position);
 
         if (!closeGap && !closeGapFollow && !exitGap)
@@ -43,6 +45,8 @@ public class crabEnemyBehaviour : MonoBehaviour
 
         if (closeGap)
         {
+            GetComponentInChildren<ModelFollowFloorBehaviour>()?.DisableFollowGround();
+
             myAgent.SetDestination(transform.position);
             anim.SetBool("Dig", true);
             timer += Time.deltaTime;
@@ -56,6 +60,8 @@ public class crabEnemyBehaviour : MonoBehaviour
 
         if (closeGapFollow)
         {
+            GetComponentInChildren<ModelFollowFloorBehaviour>()?.DisableFollowGround();
+
             myAgent.speed = 9;
             myAgent.SetDestination(playerPos.position);
 
@@ -78,6 +84,8 @@ public class crabEnemyBehaviour : MonoBehaviour
 
         if (exitGap)
         {
+            GetComponentInChildren<ModelFollowFloorBehaviour>()?.DisableFollowGround();
+
             myAgent.SetDestination(transform.position);
 
             timer += Time.deltaTime;
@@ -85,6 +93,8 @@ public class crabEnemyBehaviour : MonoBehaviour
             {
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", false);
+                GetComponentInChildren<ModelFollowFloorBehaviour>()?.EnableFollowGround();
+
                 exitGap = false;
             }
         }

@@ -89,7 +89,7 @@ public class crabEnemyBehaviour : MonoBehaviour
             myAgent.SetDestination(transform.position);
 
             timer += Time.deltaTime;
-            if (timer >= 1)
+            if (timer >= 1.5)
             {
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", false);

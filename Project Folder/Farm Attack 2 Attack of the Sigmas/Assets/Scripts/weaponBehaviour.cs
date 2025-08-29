@@ -53,14 +53,14 @@ public class weaponBehaviour : MonoBehaviour
         {
             myAnim.enabled = true;
 
-            if (Input.GetMouseButtonDown(0) && !playerController._isRunning) // is stationary and shooting
+            if (Input.GetMouseButtonDown(0)) // && !playerController._isRunning) // is stationary and shooting
             {
                 if (selectedAmmo == AmmoType.Popcorn)
                 {
                     myAnim.Play("ShootPopCorn");
 
                     myAnim.SetBool("isShootingPopcorn", true);
-                    myAnim.SetBool("isRun", false);
+                  //  myAnim.SetBool("isRun", false);
                 }
 
                 if (selectedAmmo == AmmoType.Potato)
@@ -68,7 +68,7 @@ public class weaponBehaviour : MonoBehaviour
                     myAnim.Play("ShootPotato");
 
                     myAnim.SetBool("isShootingPotato", true);
-                    myAnim.SetBool("isRun", false);
+                 //   myAnim.SetBool("isRun", false);
                 }
 
                 if (selectedAmmo == AmmoType.Carrot)
@@ -76,7 +76,7 @@ public class weaponBehaviour : MonoBehaviour
                     myAnim.Play("Shoot");
 
                     myAnim.SetBool("isShooting", true);
-                    myAnim.SetBool("isRun", false);
+                  //  myAnim.SetBool("isRun", false);
                 }
                 if (selectedAmmo == AmmoType.Chilli)
                 {
@@ -86,7 +86,7 @@ public class weaponBehaviour : MonoBehaviour
 
             }
 
-            if (!Input.GetMouseButton(0) && !playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // not running or shooting
+            if (!Input.GetMouseButton(0)&& myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // not running or shooting  && !playerController._isRunning 
             {
                 chilliParticles.enableEmission = false;
 
@@ -94,10 +94,10 @@ public class weaponBehaviour : MonoBehaviour
 
                 myAnim.SetBool("isShooting", false);
 
-                myAnim.SetBool("isRun", false);
+              //  myAnim.SetBool("isRun", false);
 
             }
-            if (!Input.GetMouseButton(0) && playerController._isRunning && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // is running
+            if (!Input.GetMouseButton(0) && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // is running && playerController._isRunning
             {
                 handsAnim.SetBool("PlayerIsShooting", false);
                 chilliParticles.enableEmission = false;
@@ -106,7 +106,7 @@ public class weaponBehaviour : MonoBehaviour
                 myAnim.SetBool("isShootingPopcorn", false);
                 myAnim.SetBool("isShootingPotato", false);
 
-                myAnim.SetBool("isRun", true);
+               // myAnim.SetBool("isRun", true);
             }
 
             if (Input.GetMouseButtonUp(0)) // is running

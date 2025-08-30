@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class crabEnemyBehaviour : MonoBehaviour
 {
+    public bool isAttacking;
     public bool closeGap;
     public bool closeGapFollow;
     public bool exitGap;
@@ -14,15 +15,11 @@ public class crabEnemyBehaviour : MonoBehaviour
     public Animator anim;
     float timer;
 
-    // Reference to the player's knockback script
-     PlayerController playerKnockback;
 
     void Start()
     {
         myAgent = GetComponent<NavMeshAgent>();
 
-        // Get reference to the player's knockback script
-        playerKnockback = playerPos.GetComponent<PlayerController>();
     }
 
     void Update()
@@ -33,15 +30,38 @@ public class crabEnemyBehaviour : MonoBehaviour
 
         if (!closeGap && !closeGapFollow && !exitGap)
         {
+
             myAgent.speed = 3;
             myAgent.SetDestination(playerPos.position);
-            anim.Play("Walk");
+
+            if (distance <= 2)
+            {
+                myAgent.enabled = false;
+                anim.SetBool("Attack", true);
+                isAttacking = true;
+            }
+            if (distance > 2)
+            {
+                anim.SetBool("Attack", false);
+                myAgent.enabled = true;
+
+                isAttacking = false;
+            }
+
+            if (!isAttacking)
+            {
+                anim.Play("Walk");
+            }
         }
 
         if (distance > 10)
-        {
+        { 
+
             closeGap = true;
         }
+
+       
+
 
         if (closeGap)
         {
@@ -65,20 +85,12 @@ public class crabEnemyBehaviour : MonoBehaviour
             myAgent.speed = 9;
             myAgent.SetDestination(playerPos.position);
 
-            // If the enemy is close enough to the player, exit and apply knockback
-            if (distance < 3)
+            if (distance < 3 )
             {
                 closeGapFollow = false;
                 exitGap = true;
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", true);
-
-                // Trigger knockback effect when the enemy exits close range
-                if (playerKnockback != null)
-                {
-                    // Call the knockback function passing the enemy's position
-                    playerKnockback.ApplyKnockback(transform.position);
-                }
             }
         }
 
@@ -89,14 +101,14 @@ public class crabEnemyBehaviour : MonoBehaviour
             myAgent.SetDestination(transform.position);
 
             timer += Time.deltaTime;
-            if (timer >= 1.5)
+            if (timer >= 1.15f)
             {
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", false);
                 GetComponentInChildren<ModelFollowFloorBehaviour>()?.EnableFollowGround();
-
                 exitGap = false;
             }
         }
     }
+
 }

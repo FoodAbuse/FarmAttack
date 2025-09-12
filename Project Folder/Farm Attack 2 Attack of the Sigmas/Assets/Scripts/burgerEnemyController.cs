@@ -13,6 +13,9 @@ public class burgerEnemyController : MonoBehaviour
     public float attackDistance = 1.5f;
     public Animator animator;
 
+    public AudioClip BiteSFX;
+    public AudioSource soundSource;
+
     private NavMeshAgent agent;
     private bool isAttacking;
 
@@ -27,6 +30,7 @@ public class burgerEnemyController : MonoBehaviour
 
     private enum State { Idle, Walking, Rolling }
     private State currentState = State.Idle;
+
 
     void Start()
     {
@@ -124,6 +128,10 @@ public class burgerEnemyController : MonoBehaviour
                 animator.SetTrigger("CancelAttack");
                 isAttacking = false;
                 agent.isStopped = false;
+                soundSource.PlayOneShot(BiteSFX, 1);
+
+
+
                 yield break;
             }
 

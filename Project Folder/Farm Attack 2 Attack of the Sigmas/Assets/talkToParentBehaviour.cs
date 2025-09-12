@@ -24,4 +24,9 @@ public class talkToParentBehaviour : MonoBehaviour
     {
         transform.GetComponentInParent<MarshmellowAIBehaviour>().doHop = false;
     }
+    public void CrabSlam()
+    {
+        transform.GetComponentInParent<crabEnemyBehaviour>().startSlam_ = true;
+        FindObjectOfType<cameraShakeBehaviour>().ShakeCamera(.25f);
+    }
 }

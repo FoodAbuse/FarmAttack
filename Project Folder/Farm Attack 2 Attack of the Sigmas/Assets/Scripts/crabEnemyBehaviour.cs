@@ -12,6 +12,10 @@ public class crabEnemyBehaviour : MonoBehaviour
     public Transform playerPos;
     NavMeshAgent myAgent;
 
+    public GameObject slamFX;
+    public Transform slamFXTransform;
+    public bool startSlam_;
+
     public Animator anim;
     float timer;
 
@@ -24,6 +28,15 @@ public class crabEnemyBehaviour : MonoBehaviour
 
     void Update()
     {
+        if (startSlam_)
+        {
+
+            GameObject newSlamFX = Instantiate(slamFX, slamFXTransform.position, slamFXTransform.rotation);
+            Destroy(newSlamFX, 2.5f);
+            startSlam_ = false;
+
+        }
+
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
 
         float distance = Vector3.Distance(transform.position, playerPos.position);
@@ -38,6 +51,7 @@ public class crabEnemyBehaviour : MonoBehaviour
             {
                 myAgent.enabled = false;
                 anim.SetBool("Attack", true);
+               
                 isAttacking = true;
             }
             if (distance > 2)
@@ -82,7 +96,7 @@ public class crabEnemyBehaviour : MonoBehaviour
         {
             GetComponentInChildren<ModelFollowFloorBehaviour>()?.DisableFollowGround();
 
-            myAgent.speed = 9;
+            myAgent.speed = 12;
             myAgent.SetDestination(playerPos.position);
 
             if (distance < 3 )
@@ -91,6 +105,7 @@ public class crabEnemyBehaviour : MonoBehaviour
                 exitGap = true;
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", true);
+
             }
         }
 

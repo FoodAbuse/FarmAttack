@@ -9,6 +9,9 @@ public class crabEnemyBehaviour : MonoBehaviour
     public bool closeGap;
     public bool closeGapFollow;
     public bool exitGap;
+    public bool circlePlayer;
+    public bool hasAttacked_;
+
     public Transform playerPos;
     NavMeshAgent myAgent;
 
@@ -18,8 +21,10 @@ public class crabEnemyBehaviour : MonoBehaviour
 
     public Animator anim;
     float timer;
+    float timerForAttack;
 
-
+    public float orbitRadius = 4f;
+    public float orbitTurn = 120f;
     void Start()
     {
         myAgent = GetComponent<NavMeshAgent>();
@@ -47,25 +52,10 @@ public class crabEnemyBehaviour : MonoBehaviour
             myAgent.speed = 3;
             myAgent.SetDestination(playerPos.position);
 
-            if (distance <= 2)
-            {
-                myAgent.enabled = false;
-                anim.SetBool("Attack", true);
-               
-                isAttacking = true;
-            }
-            if (distance > 2)
-            {
-                anim.SetBool("Attack", false);
-                myAgent.enabled = true;
-
-                isAttacking = false;
-            }
-
-            if (!isAttacking)
-            {
-                anim.Play("Walk");
-            }
+          //  if (!isAttacking && !circlePlayer)
+           // {
+           //     anim.Play("Walk");
+           // }
         }
 
         if (distance > 10)
@@ -124,6 +114,63 @@ public class crabEnemyBehaviour : MonoBehaviour
                 exitGap = false;
             }
         }
+
+        if(circlePlayer)
+        {
+            anim.SetBool("Attack", false);
+
+            myAgent.enabled = true;
+            isAttacking = false;
+            myAgent.speed = 5.5f;
+
+            Vector3 c = playerPos.position;
+            Vector3 d = transform.position - c; if (d.sqrMagnitude < 0.01f) d = transform.right;
+            Vector3 o = (Quaternion.Euler(0f, orbitTurn * Time.deltaTime, 0f) * d).normalized * orbitRadius;
+            myAgent.SetDestination(c + o);
+
+            Vector3 look = playerPos.position - transform.position; look.y = 0f;
+            if (look.sqrMagnitude > 0.0001f)
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(look), myAgent.angularSpeed * Time.deltaTime);
+
+
+            timerForAttack += Time.deltaTime;
+
+            if(timerForAttack >= 2.5f)
+            {
+                circlePlayer = false;
+                timerForAttack = 0;
+            }
+        }
+
+        if(!circlePlayer )
+        {
+            if (distance < 2)
+            {
+                myAgent.enabled = false;
+                anim.SetBool("Attack", true);
+
+                isAttacking = true;
+            }
+
+            if (distance > 2)
+            {
+
+                anim.SetBool("Attack", false);
+                myAgent.enabled = true;
+
+                isAttacking = false;
+             }
+        }
+
+        if(hasAttacked_)
+        {
+            circlePlayer = true;
+            isAttacking = false;
+            hasAttacked_ = false;
+ 
+        }
+
     }
 
+    
 }

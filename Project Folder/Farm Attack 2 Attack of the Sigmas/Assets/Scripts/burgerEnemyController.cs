@@ -128,7 +128,7 @@ public class burgerEnemyController : MonoBehaviour
                 animator.SetTrigger("CancelAttack");
                 isAttacking = false;
                 agent.isStopped = false;
-                soundSource.PlayOneShot(BiteSFX, 1);
+               // soundSource.PlayOneShot(BiteSFX, 1);
 
 
 

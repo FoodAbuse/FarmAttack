@@ -29,4 +29,9 @@ public class talkToParentBehaviour : MonoBehaviour
         transform.GetComponentInParent<crabEnemyBehaviour>().startSlam_ = true;
         FindObjectOfType<cameraShakeBehaviour>().ShakeCamera(.25f);
     }
+    public void CrabHasAttacked()
+    {
+        transform.GetComponentInParent<crabEnemyBehaviour>().hasAttacked_ = true;
+        print("Found!");
+    }
 }

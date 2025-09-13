@@ -112,6 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myHealth: 4
   damageAmount: 0
+  myDeathTimeSpawnGO: 0.15
   explodeGO: {fileID: 7581860087118433242, guid: 8ada9fbc66e454949aada97e288d3a6f, type: 3}
 --- !u!114 &-4339804677908402761
 MonoBehaviour:
@@ -165,11 +166,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: baf7790112a691e4587bf9adbfc8bafb, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 64a3c4748e2148a41a8cfb3347df9c8d, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

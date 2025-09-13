@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 2268079187744241549}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1421096586176530743
 MonoBehaviour:
@@ -49,23 +49,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fecd0a10e495b43bc9e7e548583a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAttacking: 0
+  closeGap: 0
+  closeGapFollow: 0
+  exitGap: 0
+  circlePlayer: 0
+  hasAttacked_: 0
   playerPos: {fileID: 0}
-  myAgent: {fileID: 1421096586176530742}
-  anim: {fileID: 2268079187744241548}
-  engageMin: 4
-  engageMax: 8
-  orbitRadius: 5
-  orbitAngularSpeed: 120
-  orbitMoveSpeed: 3.5
-  lungeSpeed: 10
-  pinchRange: 1.75
-  backOffDistance: 4
-  backOffSpeed: 6
-  lungeCooldownRange: {x: 1, y: 2}
-  lungeChancePerCheck: 0.35
   slamFX: {fileID: 4836726299721700335, guid: 6d5802527b598584fb62fda70e925a01, type: 3}
   slamFXTransform: {fileID: 5196877946467179456}
   startSlam_: 0
+  anim: {fileID: 2268079187744241548}
+  orbitRadius: 5
+  orbitTurn: 250
 --- !u!195 &1421096586176530742
 NavMeshAgent:
   m_ObjectHideFlags: 0

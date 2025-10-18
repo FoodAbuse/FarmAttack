@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,57 +6,60 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public int IndexNumber;
-
-    public GameObject hotBarGO;
     public GameObject seedsHotBarGO;
-    public GameObject itemHotBarGO;
 
     public bool _InHotBar;
     public bool _CanAttack;
 
-    [SerializeField]
-    private PlayerController player;
-    // Start is called before the first frame update
+    [SerializeField] private PlayerController player;
+    [SerializeField] private weaponBehaviour weapon;  // reference to the one gun in hand
+
+    // Two ammo slots
+    public weaponBehaviour.AmmoType weaponSlotA = weaponBehaviour.AmmoType.Carrot;
+    public weaponBehaviour.AmmoType weaponSlotB = weaponBehaviour.AmmoType.Potato;
+    private bool usingSlotA = true;
+
     void Start()
     {
-        // LockMouse();
         _CanAttack = true;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
+        // Start with slot A
+        weapon.selectedAmmo = weaponSlotA;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            weapon = FindObjectOfType<weaponBehaviour>();
+        }
+     
+
         IndexNumber = FindObjectOfType<playerItemSelector>().currentItemIndex;
 
-        if (Input.GetKeyDown(KeyCode.Tab))
+        // 🔄 Weapon ammo swapping (Index 1)
+        if (IndexNumber == 0 && Input.GetKeyDown(KeyCode.Q))
         {
-
-            if (IndexNumber == 0)
-            {
-                inHotBarInventory();
-
-            }
-            if (IndexNumber == 2)
-            {
-                inSeedsInventory();
-
-            }
-            if (IndexNumber == 1)
-            {
-                inItemInventory();
-
-            }
+            SwapWeaponAmmo();
         }
 
-        if (Input.GetKeyUp(KeyCode.Tab))
-        {
-            ExitSeedsInventory();
-            ExitHotBarInventory();
-            ExitItemInventory();
-        }
+        // 🧰 Items (Index 1) - you can do the same logic here later
 
+        // 🌱 Seeds inventory (Index 2)
+        if (IndexNumber == 2 && Input.GetKeyDown(KeyCode.Tab)) inSeedsInventory();
+        if (Input.GetKeyUp(KeyCode.Tab)) ExitSeedsInventory();
+
+        
+    }
+    private void SwapWeaponAmmo()
+    {
+        usingSlotA = !usingSlotA;
+
+        weapon.selectedAmmo = usingSlotA ? weaponSlotA : weaponSlotB;
+        weapon.UpdateAmmoPrefab();
+
+        weapon.myAnim.Play("PlayerSwapAmmo");
     }
 
 
@@ -65,100 +68,32 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
     public void UnlockMouse()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
-    public void inHotBarInventory()
-    {
-        // Hugo Addition - locking head rotation whilst selecting ammo type
-        if (player != null)
-        {
-            player.cameraFrozen = true;
-        }
-
-
-        _CanAttack = false; // stops player from shooting
-        Time.timeScale = .25f; // slows game speed
-        _InHotBar = true;
-        hotBarGO.SetActive(true); // enables the inventory screen
-        UnlockMouse();
-    }
     public void inSeedsInventory()
     {
-        // Hugo Addition - locking head rotation whilst selecting seed type
-        if (player != null)
-        {
-            player.cameraFrozen = true;
-        }
+        if (player != null) player.cameraFrozen = true;
 
-        _CanAttack = false; // stops player from shooting
-        Time.timeScale = .25f; // slows game speed
+        _CanAttack = false;
+        Time.timeScale = .25f;
         _InHotBar = true;
-        seedsHotBarGO.SetActive(true); // enables the inventory screen
-        UnlockMouse();
-    }
-    public void inItemInventory()
-    {
-        // Hugo Addition - locking head rotation whilst selecting seed type
-        if (player != null)
-        {
-            player.cameraFrozen = true;
-        }
-
-        _CanAttack = false; // stops player from shooting
-        Time.timeScale = .25f; // slows game speed
-        _InHotBar = true;
-        itemHotBarGO.SetActive(true); // enables the inventory screen
+        seedsHotBarGO.SetActive(true);
         UnlockMouse();
     }
 
-
-    public void ExitHotBarInventory()
-    {
-        // Hugo Addition - unlocking head rotation after ammo is selected
-        if (player != null)
-        {
-            player.cameraFrozen = false;
-        }
-
-        _CanAttack = true;
-
-        Time.timeScale = 1;
-        _InHotBar = false;
-        hotBarGO.SetActive(false);
-        LockMouse();
-    }
     public void ExitSeedsInventory()
     {
-        // Hugo Addition - unlocking head rotation after seed type is selected
-        if (player != null)
-        {
-            player.cameraFrozen = false;
-        }
+        if (player != null) player.cameraFrozen = false;
 
         _CanAttack = true;
-
         Time.timeScale = 1;
         _InHotBar = false;
         seedsHotBarGO.SetActive(false);
-        LockMouse();
-    }
-    public void ExitItemInventory()
-    {
-        // Hugo Addition - unlocking head rotation after seed type is selected
-        if (player != null)
-        {
-            player.cameraFrozen = false;
-        }
-
-        _CanAttack = true;
-
-        Time.timeScale = 1;
-        _InHotBar = false;
-        itemHotBarGO.SetActive(false);
         LockMouse();
     }
 }

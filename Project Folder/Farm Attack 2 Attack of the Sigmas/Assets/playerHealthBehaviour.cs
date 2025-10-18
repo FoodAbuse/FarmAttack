@@ -19,6 +19,19 @@ public class playerHealthBehaviour : MonoBehaviour
     }
     private void Update()
     {
+        if(healthSlider == null)
+        {
+            healthSlider = GameObject.Find("HealthBarImage").GetComponent<Image>();
+        }
+        if (healthText == null)
+        {
+            healthText = GameObject.Find("HealthAmountText").GetComponent<TMP_Text>();
+        }
+        if (anim == null)
+        {
+            anim = GameObject.Find("HealthBar").GetComponent<Animator>();
+        }
+
         UpdateHealthUI();
 
     }

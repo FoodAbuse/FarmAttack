@@ -12,156 +12,110 @@ public class weaponBehaviour : MonoBehaviour
         Chilli,
         Popcorn,
         Beans
-
     }
 
-    GameManager gameManager;
-    public Animator myAnim;
-    public Animator handsAnim;
-
-    public GameObject currentChosenAmmoType;
+    [Header("Setup")]
+    public AmmoType selectedAmmo;      // Active ammo type
+    public GameObject[] ammoTypeList;  // Prefabs for each ammo, index must match enum
     public Transform gunEnd;
 
-    public AmmoType selectedAmmo;
-    public GameObject[] ammoTypeList;
-    int index;
-
+    [Header("FX")]
+    public Animator myAnim;
+    public Animator handsAnim;
     public ParticleSystem chilliParticles;
-
     public AudioSource soundSource;
     public AudioClip soundClip;
 
-    PlayerController playerController;
+    private GameObject currentChosenAmmoType;
+    private GameManager gameManager;
+    private cameraShakeBehaviour camShake;
 
-    cameraShakeBehaviour CamShakeControl;
-
-    // Start is called before the first frame update
     void Start()
     {
-        CamShakeControl = FindObjectOfType<cameraShakeBehaviour>();
-        playerController = FindObjectOfType<PlayerController>();
-        selectedAmmo = AmmoType.Carrot;
+        camShake = FindObjectOfType<cameraShakeBehaviour>();
         gameManager = FindObjectOfType<GameManager>();
         myAnim = GetComponent<Animator>();
 
+        UpdateAmmoPrefab(); // set prefab on start
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (gameManager._CanAttack)
+        if (!gameManager._CanAttack) return;
+
+        if (Input.GetMouseButtonDown(0))
         {
-            myAnim.enabled = true;
-
-            if (Input.GetMouseButtonDown(0)) // && !playerController._isRunning) // is stationary and shooting
-            {
-                if (selectedAmmo == AmmoType.Popcorn)
-                {
-                    myAnim.Play("ShootPopCorn");
-
-                    myAnim.SetBool("isShootingPopcorn", true);
-                  //  myAnim.SetBool("isRun", false);
-                }
-
-                if (selectedAmmo == AmmoType.Potato)
-                {
-                    myAnim.Play("ShootPotato");
-
-                    myAnim.SetBool("isShootingPotato", true);
-                 //   myAnim.SetBool("isRun", false);
-                }
-
-                if (selectedAmmo == AmmoType.Carrot)
-                {
-                    myAnim.Play("Shoot");
-
-                    myAnim.SetBool("isShooting", true);
-                  //  myAnim.SetBool("isRun", false);
-                }
-                if (selectedAmmo == AmmoType.Chilli)
-                {
-                    chilliParticles.enableEmission = true;
-                }
-                handsAnim.SetBool("PlayerIsShooting", true);
-
-            }
-
-            if (!Input.GetMouseButton(0)&& myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // not running or shooting  && !playerController._isRunning 
-            {
-                chilliParticles.enableEmission = false;
-
-                handsAnim.SetBool("PlayerIsShooting", false);
-
-                myAnim.SetBool("isShooting", false);
-
-              //  myAnim.SetBool("isRun", false);
-
-            }
-            if (!Input.GetMouseButton(0) && myAnim.GetBool("isShootingPopcorn") == false && myAnim.GetBool("isShootingPotato") == false) // is running && playerController._isRunning
-            {
-                handsAnim.SetBool("PlayerIsShooting", false);
-                chilliParticles.enableEmission = false;
-
-                myAnim.SetBool("isShooting", false);
-                myAnim.SetBool("isShootingPopcorn", false);
-                myAnim.SetBool("isShootingPotato", false);
-
-               // myAnim.SetBool("isRun", true);
-            }
-
-            if (Input.GetMouseButtonUp(0)) // is running
-            {
-                handsAnim.SetBool("PlayerIsShooting", false);
-                chilliParticles.enableEmission = false;
-
-                myAnim.SetBool("isShooting", false);
-                myAnim.SetBool("isShootingPopcorn", false);
-                myAnim.SetBool("isShootingPotato", false);
-
-            }
-
+            HandleShootAnim();
+            handsAnim.SetBool("PlayerIsShooting", true);
         }
 
-        if (!gameManager._CanAttack)
+        if (!Input.GetMouseButton(0))
         {
-            //  myAnim.Play("Idle");
+            chilliParticles.enableEmission = false;
+            handsAnim.SetBool("PlayerIsShooting", false);
+            ResetShootBools();
         }
 
+        if (Input.GetMouseButtonUp(0))
+        {
+            chilliParticles.enableEmission = false;
+            handsAnim.SetBool("PlayerIsShooting", false);
+            ResetShootBools();
+        }
     }
 
-    public void SetAmmoType(string newAmmoType)
+    private void HandleShootAnim()
     {
-        if (System.Enum.TryParse(newAmmoType, out AmmoType parsedAmmoType))
+        switch (selectedAmmo)
         {
-            selectedAmmo = parsedAmmoType;
+            case AmmoType.Popcorn:
+                myAnim.Play("ShootPopCorn");
+                myAnim.SetBool("isShootingPopcorn", true);
+                break;
 
-            index = (int)selectedAmmo;
-            currentChosenAmmoType = ammoTypeList[index];
+            case AmmoType.Potato:
+                myAnim.Play("ShootPotato");
+                myAnim.SetBool("isShootingPotato", true);
+                break;
 
+            case AmmoType.Carrot:
+                myAnim.Play("Shoot");
+                myAnim.SetBool("isShooting", true);
+                break;
+
+            case AmmoType.Chilli:
+                chilliParticles.enableEmission = true;
+                break;
         }
     }
 
+    private void ResetShootBools()
+    {
+        myAnim.SetBool("isShooting", false);
+        myAnim.SetBool("isShootingPopcorn", false);
+        myAnim.SetBool("isShootingPotato", false);
+    }
 
     public void FireGun()
     {
-        CamShakeControl.ShakeCamera(.0175f);
-        Debug.Log("FireGun called");
+        if (currentChosenAmmoType == null) UpdateAmmoPrefab();
+
+        camShake.ShakeCamera(.0175f);
         soundSource.PlayOneShot(soundClip);
 
         Instantiate(currentChosenAmmoType, gunEnd.position, transform.rotation);
     }
 
-    public void selectedAmmoBehaviour()
+    /// <summary>
+    /// Call this whenever selectedAmmo changes.
+    /// </summary>
+    public void UpdateAmmoPrefab()
     {
-        myAnim.Play("Idle");
-    }
-
-   public void TurnOffPopCorn()
-    {
-        myAnim.SetBool("isShootingPopcorn", false);
-    }
-    public void TurnOffPotato()
-    {
-        myAnim.SetBool("isShootingPotato", false);
+        int index = (int)selectedAmmo;
+        if (index >= 0 && index < ammoTypeList.Length)
+        {
+            currentChosenAmmoType = ammoTypeList[index];
+        }
     }
 }
+

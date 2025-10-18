@@ -8,15 +8,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TreeFakeLeaf
-  m_Shader: {fileID: -6465566751694194690, guid: 974e659b5dc17934f960873d3d46154d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 427996fd11f999346b092e2bc5bf15df, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - MAIN_LIGHT_CALCULATE_SHADOWS
   - _MAIN_LIGHT_SHADOWS_CASCADE
-  - _RECIEVE_SHADOWS
   - _SHADOWS_SOFT
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - MAIN_LIGHT_CALCULATE_SHADOWS
+  - _RECIEVE_SHADOWS
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -53,6 +53,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -128,15 +132,17 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _UVSec: 0
+    - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 0.78431374, b: 0.5882353, a: 1}
-    - _Color: {r: 1, g: 0.78431374, b: 0.5882353, a: 1}
+    - _Color: {r: 0.6275755, g: 0.8018868, b: 0.5257654, a: 1}
     - _Colour: {r: 0.58143485, g: 0.745283, b: 0.53786933, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Strength: {r: 0.0001, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5637956344020694240
 MonoBehaviour:

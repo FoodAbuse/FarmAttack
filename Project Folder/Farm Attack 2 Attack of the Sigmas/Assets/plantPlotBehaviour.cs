@@ -14,15 +14,12 @@ public class plantPlotBehaviour : MyNetworkBehaviour
     public GameObject chosenPlantPrefab; // I choose you! To be set by when player clicks on the plot with the specific seeds in hand
     public GameObject[] PlantPrefabs; // Put those suckers in here
     public GameObject TempPrefabPlant;
-    public GameObject myCanvas;
-    public Image showcaseImage;
 
     public bool _finishedGrowing;
     public bool _startGrowing;
     public bool _spawnedPrefab;
     public bool _hasBeenHarvested;
 
-    public float activationDistance = 5f; // Detecting if player is close this is the max distance
     public Transform playerPos;
 
     // Start is called before the first frame update
@@ -36,13 +33,6 @@ public class plantPlotBehaviour : MyNetworkBehaviour
     {
         float distance = Vector3.Distance(playerPos.transform.position, transform.position);
 
-        // Enable if within range, disable if not
-        myCanvas.SetActive(distance <= activationDistance);
-
-        if(myCanvas != null)
-        {
-            myCanvas.transform.LookAt(playerPos);
-        }
 
 
         if (chosenPlantPrefab != null) // should stop this always being called or even being called if nothing is in here
@@ -80,7 +70,6 @@ public class plantPlotBehaviour : MyNetworkBehaviour
             _startGrowing = false;
             timer = 0;
             _hasBeenHarvested = false;
-            showcaseImage = null;
         }
 
     }

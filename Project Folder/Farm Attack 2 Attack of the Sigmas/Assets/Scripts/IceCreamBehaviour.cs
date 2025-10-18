@@ -14,7 +14,8 @@ public class IceCreamBehaviour : MonoBehaviour
     public NavMeshAgent myAgent;
     public Transform player;
 
-    public Animator anim;
+    public Animator Upperanim;
+    public Animator LowerAnim;
     public Transform torsoPivot; // The pivot for torso rotation
 
     public GameObject explodeGO;
@@ -22,14 +23,42 @@ public class IceCreamBehaviour : MonoBehaviour
 
     private Rigidbody rb;
 
+
+    public float shootAnimLength;
+    float resetShootanim;
+    bool _isShootingL;
+    bool _isShootingR;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         StartCoroutine(ShootRoutine());
     }
 
-    private void Update()
+    void Update()
     {
+
+        if(_isShootingL)
+        {
+            resetShootanim += Time.deltaTime;
+            if(resetShootanim >= shootAnimLength)
+            {
+                Upperanim.SetBool("LShoot", false);
+                resetShootanim = 0;
+                _isShootingL = false;
+            }
+        }
+        if (_isShootingR)
+        {
+            resetShootanim += Time.deltaTime;
+            if (resetShootanim >= shootAnimLength)
+            {
+                Upperanim.SetBool("RShoot", false);
+                resetShootanim = 0;
+                _isShootingR = false;
+            }
+        }
+
         HandleMovement();
         CheckHealth();
     }
@@ -89,9 +118,15 @@ public class IceCreamBehaviour : MonoBehaviour
         {
             yield return new WaitForSeconds(1.25f);
             ShootFromGun(gun1);
+            Upperanim.SetBool("LShoot", true);
+
+            _isShootingL = true;
 
             yield return new WaitForSeconds(1.25f);
             ShootFromGun(gun2);
+            Upperanim.SetBool("RShoot", true);
+            _isShootingR = true;
+
         }
     }
 

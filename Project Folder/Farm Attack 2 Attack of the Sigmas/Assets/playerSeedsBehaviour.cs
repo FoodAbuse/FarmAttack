@@ -25,6 +25,7 @@ public class playerSeedsBehaviour : MonoBehaviour
     public GameObject[] ammoTypeList;
     int index;
 
+    public Animator myAnim;
 
     PlayerController playerController;
     // Start is called before the first frame update
@@ -49,6 +50,7 @@ public class playerSeedsBehaviour : MonoBehaviour
             {
                 if(hit.transform.gameObject.tag == "Planter")
                 {
+                    myAnim.Play("Plant");
                     hit.transform.gameObject.GetComponent<plantPlotBehaviour>().RecieveInformation(index);
                 }
             }

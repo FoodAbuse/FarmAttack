@@ -33,7 +33,7 @@ public class UIHotwheelBehaviour : MonoBehaviour
     {
         if (_isForAmmo)
         {
-            WeaponBehaviour.SetAmmoType(myAmmoName);
+           // WeaponBehaviour.SetAmmoType(myAmmoName);
             FindObjectOfType<weaponBehaviour>().myAnim.Play("PlayerSwapAmmo");
 
         }

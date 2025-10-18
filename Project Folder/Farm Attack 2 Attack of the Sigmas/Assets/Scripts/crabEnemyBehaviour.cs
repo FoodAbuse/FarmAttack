@@ -33,6 +33,8 @@ public class crabEnemyBehaviour : MonoBehaviour
 
     void Update()
     {
+
+
         if (startSlam_)
         {
 
@@ -49,7 +51,7 @@ public class crabEnemyBehaviour : MonoBehaviour
         if (!closeGap && !closeGapFollow && !exitGap)
         {
 
-            myAgent.speed = 3;
+            myAgent.speed = 5;
             myAgent.SetDestination(playerPos.position);
 
           //  if (!isAttacking && !circlePlayer)
@@ -64,7 +66,8 @@ public class crabEnemyBehaviour : MonoBehaviour
             closeGap = true;
         }
 
-       
+      
+
 
 
         if (closeGap)
@@ -86,8 +89,10 @@ public class crabEnemyBehaviour : MonoBehaviour
         {
             GetComponentInChildren<ModelFollowFloorBehaviour>()?.DisableFollowGround();
 
-            myAgent.speed = 12;
             myAgent.SetDestination(playerPos.position);
+
+            myAgent.speed = 36;
+
 
             if (distance < 3 )
             {
@@ -103,11 +108,12 @@ public class crabEnemyBehaviour : MonoBehaviour
         {
             GetComponentInChildren<ModelFollowFloorBehaviour>()?.DisableFollowGround();
 
-            myAgent.SetDestination(transform.position);
+            //myAgent.SetDestination(transform.position);
 
             timer += Time.deltaTime;
             if (timer >= 1.15f)
             {
+             
                 anim.SetBool("Dig", false);
                 anim.SetBool("Exit", false);
                 GetComponentInChildren<ModelFollowFloorBehaviour>()?.EnableFollowGround();
@@ -121,7 +127,7 @@ public class crabEnemyBehaviour : MonoBehaviour
 
             myAgent.enabled = true;
             isAttacking = false;
-            myAgent.speed = 5.5f;
+            myAgent.speed = 5;
 
             Vector3 c = playerPos.position;
             Vector3 d = transform.position - c; if (d.sqrMagnitude < 0.01f) d = transform.right;
